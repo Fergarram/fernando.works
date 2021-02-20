@@ -1,0 +1,31 @@
+{
+	"name": "fernando.works",
+	"version": "2.0.0",
+	"description": "A new simple better design for fernando.works",
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"start": "serve dist"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^16.0.0",
+		"@rollup/plugin-dynamic-import-vars": "^1.1.0",
+		"@rollup/plugin-json": "^4.1.0",
+		"@rollup/plugin-node-resolve": "^11.2.0",
+		"ncp": "^2.0.0",
+		"node-sass": "^4.14.1",
+		"rimraf": "^3.0.0",
+		"rollup": "^1.12.0",
+		"rollup-plugin-execute": "^1.1.1",
+		"rollup-plugin-svelte": "^5.0.3",
+		"rollup-plugin-terser": "^7.0.2",
+		"serve": "^11.3.2",
+		"svelte": "^3.0.0",
+		"svelte-preprocess": "^4.5.1"
+	},
+	"author": "Fernando Garcia",
+	"license": "MIT",
+	"dependencies": {
+		"include-media": "^1.4.9"
+	}
+}

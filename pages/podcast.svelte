@@ -1,7 +1,5 @@
 <script>
-	// import WorkFeed from '../components/home/work-feed.svelte';
-	// import BlogFeed from '../components/home/blog-feed.svelte';
-	import SiteHeader from '../components/layout/site-header.svelte';
+	import Header from '../components/layout/header.svelte';
 
 	export let route;
 </script>
@@ -10,7 +8,7 @@
 	<title>Podcats - Fernando.Works</title>
 </svelte:head>
 
-<SiteHeader {route} />
+<Header {route} />
 
 <main class="main">
 	Podcats

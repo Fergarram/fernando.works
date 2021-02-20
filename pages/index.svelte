@@ -1,7 +1,8 @@
 <script>
+	import Header from '../components/layout/header.svelte';
+	import Section from '../components/home/section.svelte';
 	import WorkFeed from '../components/home/work-feed.svelte';
 	import BlogFeed from '../components/home/blog-feed.svelte';
-	import SiteHeader from '../components/layout/site-header.svelte';
 
 	export let route;
 </script>
@@ -10,97 +11,60 @@
 	<title>Home - Fernando.Works</title>
 </svelte:head>
 
-<SiteHeader {route} />
+<Header {route} />
 
 <main class="main">
 	<div class="main__wrapper">
-		<section class="section">
-			<header class="section__header">
-				<h1 class="section__title">
-					Fernando
-				</h1>
-				<picture class="section__picture">
-					<img
-						class="section__picture-image"
-						src="assets/yo.jpg"
-						alt="Fernando wearing a white cap"
-					/>
-				</picture>
-			</header>
-			<div class="section__content section__content--fernando">
-				<p>
-					Web artisan, sleeplessly finding new side projects to <s>never finish</s> invest my free time on.
-				</p>
-				<p>
-					Frontend Developer. UI Designer. Design Technologist wannabe.
-				</p>
-				<p>
-					I like Vue for apps and Svelte for websites.
-				</p>
-				<a class="link-button" href="/">Download my CV</a>
-				<a class="link-button" href="/">Download (old) portfolio</a>
-			</div>
-		</section>
-		<section class="section">
-			<header class="section__header">
-				<h1 class="section__title">
-					Podcast
-				</h1>
-				<picture class="section__picture">
-					<img
-						class="section__picture-image"
-						src="assets/podcast.jpg"
-						alt="Kid yelling to a microphone"
-					/>
-				</picture>
-			</header>
-			<div class="section__content">
-				<p>
-					I host a podcast called <a href="/">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
-				</p>
-				<a class="link-button" href="/podcast">See episodes</a>
-			</div>
-		</section>
-		<section class="section">
-			<header class="section__header">
-				<h1 class="section__title">
-					Work
-				</h1>
-				<picture class="section__picture">
-					<img
-						class="section__picture-image"
-						src="assets/work.jpg"
-						alt="Kid building with legos"
-					/>
-				</picture>
-			</header>
-			<div class="section__content">
-				<p>
-					Tools. Games. Apps. Websites.
-				</p>
-			</div>
+		<Section
+			isFernando={true}
+			title="Fernando"
+			imageSrc="assets/yo.jpg"
+			imageAlt="Fernando wearing a white cap">
+			<p>
+				Web artisan, sleeplessly finding new side projects to <s>never finish</s> invest my free time on.
+			</p>
+			<p>
+				Frontend Developer. UI Designer. Design Technologist wannabe.
+			</p>
+			<p>
+				I like Vue for apps and Svelte for websites.
+			</p>
+			<a class="link-button" href="/">
+				Download my CV
+			</a>
+			<a class="link-button" href="/">
+				Download (old) portfolio
+			</a>
+		</Section>
+		<Section
+			title="Podcast"
+			imageSrc="assets/podcast.jpg"
+			imageAlt="Kid yelling to a microphone">
+			<p>
+				I host a podcast called <a href="/">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
+			</p>
+			<a class="link-button" href="/podcast">
+				See episodes
+			</a>
+		</Section>
+		<Section
+			title="Work"
+			imageSrc="assets/work.jpg"
+			imageAlt="Kid building with legos">
+			<p>
+				Tools. Games. Apps. Websites.
+			</p>
 			<WorkFeed />
-		</section>
-		<section class="section">
-			<header class="section__header">
-				<h1 class="section__title">
-					Blog
-				</h1>
-				<picture class="section__picture">
-					<img
-						class="section__picture-image"
-						src="assets/blog.jpg"
-						alt="Old man reading newspapper"
-					/>
-				</picture>
-			</header>
-			<div class="section__content">
-				<p>
-					I like to write but I’m not as consistent as I’d like to be. Working on it, tho.
-				</p>
-			</div>
+		</Section>
+		<Section
+			title="Blog"
+			imageSrc="assets/blog.jpg"
+			imageAlt="Old man reading newspapper">
+			<p>
+				I like to write but I’m not as consistent as I’d like to be. Working on it, tho.
+			</p>
 			<BlogFeed />
-		</section>
+		</Section>
 	</div>
 </main>
 
@@ -141,131 +105,6 @@
 			@include media('>desktop-medium') {
 				padding: rem-calc(100);
 			}
-		}
-	}
-
-	.section {
-		margin-bottom: rem-calc(64);
-
-		&__header {
-			display: flex;
-			align-items: center;
-			margin-bottom: rem-calc(24);
-
-			@include media('>desktop-small') {
-				margin-bottom: rem-calc(32);
-			}
-		}
-
-		&__picture {
-			display: block;
-
-			&-image {
-				height: fluid('phone-xsmall', 'phone-small', 72px, 90px);
-				object-fit: cover;
-				object-position: center;
-
-				@include media('>phone-small') {
-					height: rem-calc(90);
-				}
-
-				@include media('>phone-medium') {
-					height: rem-calc(72);
-				}
-
-				@include media('>tablet') {
-					height: fluid('tablet', 'tablet-large', 72px, 90px);
-				}
-
-				@include media('>tablet-large') {
-					height: rem-calc(90);
-				}
-
-				@include media('>desktop-small') {
-					height: rem-calc(115);
-				}
-			}
-		}
-
-		&__title {
-			margin-right: fluid('phone-xsmall', 'phone-small', 16px, 24px);
-			font-size: fluid('phone-xsmall', 'phone-small', 48px, 64px);
-			font-family: $font-oswald;
-			letter-spacing: calc-letter(-5%);
-			transform: translateX(#{ calc-letter(-5%) });
-			font-weight: 700;
-			text-transform: uppercase;
-			line-height: 0.9;
-
-			@include media('>phone-small') {
-				font-size: rem-calc(64);
-				margin-right: rem-calc(24);
-			}
-
-			@include media('>phone-medium') {
-				font-size: rem-calc(48);
-				margin-right: rem-calc(16);
-			}
-
-			@include media('>tablet') {
-				margin-right: fluid('tablet', 'tablet-large', 16px, 24px);
-				font-size: fluid('tablet', 'tablet-large', 48px, 74px);
-			}
-
-			@include media('>tablet-large') {
-				margin-right: rem-calc(24);
-				font-size: rem-calc(74);
-			}
-
-			@include media('>desktop-small') {
-				margin-right: rem-calc(32);
-				font-size: fluid('desktop-small', 'desktop-medium', 80px, 100px);
-			}
-
-			@include media('>desktop-medium') {
-				font-size: rem-calc(100);
-			}
-		}
-
-		&__content {
-			line-height: 1.5;
-			font-weight: 500;
-
-			@include media('>phone-medium') {
-				font-size: rem-calc(14);
-			}
-
-			@include media('>tablet') {
-				max-width: 30em;
-				font-size: rem-calc(16);
-			}
-
-			@include media('>desktop-small') {
-				max-width: 32em;
-			}
-
-			p {
-				margin-bottom: rem-calc(20);
-			}
-
-			&--fernando {
-				@include media('>tablet') {
-					max-width: 25em;
-				}
-
-				@include media('>desktop-small') {
-					max-width: 30em;
-				}
-			}
-		}
-	}
-
-	.link-button {
-		display: inline-block;
-		margin-bottom: rem-calc(20);
-
-		&:not(:last-child) {
-			margin-right: rem-calc(20);
 		}
 	}
 </style>

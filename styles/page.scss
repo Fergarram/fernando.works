@@ -53,6 +53,15 @@ footer {
 	}
 }
 
+:global(.link-button) {
+	display: inline-block;
+	margin-bottom: rem-calc(20);
+
+	&:not(:last-child) {
+		margin-right: rem-calc(20);
+	}
+}
+
 //
 // Article Styles
 //

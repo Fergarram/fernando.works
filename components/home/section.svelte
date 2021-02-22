@@ -1,6 +1,7 @@
 <script>
 	export let title;
 	export let isFernando = false;
+	export let fixedContent = false;
 	export let imageSrc;
 	export let imageAlt;
 </script>
@@ -24,9 +25,13 @@
 			/>
 		</picture>
 	</header>
-	<div class={`section__content ${ isFernando ? 'section__content--fernando' : '' }`}>
+	<div
+		class="section__content"
+		class:section__content--fernando={ isFernando }
+		class:section__content--fixed={ fixedContent }>
 		<slot></slot>
 	</div>
+	<slot name="feed"></slot>
 </section>
 
 <style lang="scss">
@@ -34,6 +39,14 @@
 
 	.section {
 		margin-bottom: rem-calc(64);
+
+		@include media('>phone-medium') {
+			margin-bottom: rem-calc(32);
+		}
+
+		@include media('>tablet') {
+			margin-bottom: rem-calc(64);
+		}
 
 		&__header {
 			display: flex;
@@ -132,11 +145,11 @@
 				max-width: 32em;
 			}
 
-			:global(p) {
+			:global( & > p ) {
 				margin-bottom: rem-calc(20);
 			}
 
-			:global(p a) {
+			:global( & > p a) {
 				white-space: nowrap;
 			}
 
@@ -147,6 +160,12 @@
 
 				@include media('>desktop-small') {
 					max-width: 30em;
+				}
+			}
+
+			&--fixed {
+				@include media('>phone-medium') {
+					height: rem-calc(72);
 				}
 			}
 		}

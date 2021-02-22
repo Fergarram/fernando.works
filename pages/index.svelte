@@ -1,8 +1,7 @@
 <script>
 	import Header from '../components/layout/header.svelte';
 	import Section from '../components/home/section.svelte';
-	import WorkFeed from '../components/home/work-feed.svelte';
-	import BlogFeed from '../components/home/blog-feed.svelte';
+	import Feed from '../components/home/feed.svelte';
 
 	export let route;
 </script>
@@ -50,20 +49,26 @@
 		<Section
 			title="Work"
 			imageSrc="assets/work.jpg"
-			imageAlt="Kid building with legos">
+			imageAlt="Kid building with legos"
+			fixedContent={ true }>
 			<p>
 				Tools. Games. Apps. Websites.
 			</p>
-			<WorkFeed />
+			<div slot="feed">
+				<Feed type="work"/>
+			</div>
 		</Section>
 		<Section
 			title="Blog"
 			imageSrc="assets/blog.jpg"
-			imageAlt="Old man reading newspapper">
+			imageAlt="Old man reading newspapper"
+			fixedContent={ true }>
 			<p>
 				I like to write but I’m not as consistent as I’d like to be. Working on it, tho.
 			</p>
-			<BlogFeed />
+			<div slot="feed">
+				<Feed type="blog"/>
+			</div>
 		</Section>
 	</div>
 </main>
@@ -82,20 +87,25 @@
 
 			padding: rem-calc(24) rem-calc(20);
 
+			@include media('>phone-small') {
+				max-width: rem-calc(425);
+			}
+
 			@include media('>phone-medium') {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				column-gap: rem-calc(20);
+				max-width: rem-calc(1440);
 			}
 
 			@include media('>tablet') {
 				padding: rem-calc(48);
-				column-gap: rem-calc(32);
+				gap: rem-calc(32);
 			}
 
 			@include media('>tablet-large') {
 				padding: rem-calc(48) rem-calc(64);
-				column-gap: rem-calc(64);
+				gap: rem-calc(64);
 			}
 
 			@include media('>desktop-small') {

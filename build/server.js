@@ -46,5 +46,5 @@ ncp(path.resolve(process.cwd(), 'static'), path.resolve(process.cwd(), 'dist'), 
     fs.writeFileSync(htmlFile, template);
 
     // Clean up the .temp SSR directory.
-    rimraf.sync(path.resolve(process.cwd(), '.temp'));
+    // rimraf.sync(path.resolve(process.cwd(), '.temp'));
 });

@@ -38,7 +38,7 @@ const ClientBundleConfig = {
 };
 
 // Apparently get routes from this build process...
-const routes = [ 'index', 'podcast' ];
+const routes = [ 'index', 'podcast', '404' ];
 
 const RouteConfigurations = routes.map( route => {
 	return {
@@ -51,6 +51,7 @@ const RouteConfigurations = routes.map( route => {
 			svelte({
 				dev: !production,
 				generate: 'ssr',
+				hydratable: true,
 				preprocess: sveltePreprocess()
 			}),
 			resolve({

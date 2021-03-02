@@ -165,7 +165,7 @@
 
 			&--fixed {
 				@include media('>phone-medium') {
-					height: rem-calc(72);
+					// height: rem-calc(72);
 				}
 			}
 		}

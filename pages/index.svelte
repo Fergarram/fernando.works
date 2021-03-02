@@ -2,15 +2,13 @@
 	import Header from '../components/layout/header.svelte';
 	import Section from '../components/home/section.svelte';
 	import Feed from '../components/home/feed.svelte';
-
-	export let route;
 </script>
 
 <svelte:head>
 	<title>Home - Fernando.Works</title>
 </svelte:head>
 
-<Header {route} />
+<Header />
 
 <main class="main">
 	<div class="main__wrapper">
@@ -52,8 +50,11 @@
 			imageAlt="Kid building with legos"
 			fixedContent={ true }>
 			<p>
-				Tools. Games. Apps. Websites.
+				A mix of web toys, real websites, mobile apps, video games, and ui design mocks.
 			</p>
+			<a class="link-button" href="/work">
+				See all projects
+			</a>
 			<div slot="feed">
 				<Feed type="work"/>
 			</div>
@@ -64,8 +65,11 @@
 			imageAlt="Old man reading newspapper"
 			fixedContent={ true }>
 			<p>
-				I like to write but I’m not as consistent as I’d like to be. Working on it, tho.
+				I like to write about my projects, ideas, and learnings. Sometimes I just want to do a public dump of my brain, too.
 			</p>
+			<a class="link-button" href="/work">
+				See all writings
+			</a>
 			<div slot="feed">
 				<Feed type="blog"/>
 			</div>

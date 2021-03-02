@@ -38,14 +38,14 @@ const ClientBundleConfig = {
 };
 
 // Apparently get routes from this build process...
-const routes = [ 'index', 'podcast', '404' ];
+const routes = [ 'index', 'podcast', '404', 'blog/index', 'blog/slug' ];
 
 const RouteConfigurations = routes.map( route => {
 	return {
 		input: `pages/${route}.svelte`,
 		output: {
 			format: 'cjs',
-			dir: '.temp'
+			dir: `.temp/${route.includes('/') ? route.split('/')[0] : ''}`
 		},
 		plugins: [
 			svelte({

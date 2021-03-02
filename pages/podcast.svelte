@@ -1,14 +1,12 @@
 <script>
 	import Header from '../components/layout/header.svelte';
-
-	export let route;
 </script>
 
 <svelte:head>
 	<title>Podcats - Fernando.Works</title>
 </svelte:head>
 
-<Header {route} />
+<Header title="Podcast" />
 
 <main class="main">
 	Podcats

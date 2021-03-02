@@ -1,15 +1,6 @@
 <script>
 import MobileMenu from "./mobile-menu.svelte";
-
-	export let route;
-
-	let decorativeTitle = '';
-	switch(route) {
-	case 'podcast':
-		decorativeTitle = 'Podcast';
-		break;
-	}
-
+	export let title = '';
 	let showMenu = false;
 </script>
 
@@ -19,10 +10,10 @@ import MobileMenu from "./mobile-menu.svelte";
 			class="header__wrapper"
 			class:header__wrapper--show-menu={ showMenu }>
 			<a class="header__logo" href="/">
-				Fernando.Works { decorativeTitle && '//' }
-				{ #if decorativeTitle }
+				Fernando.Works { title && '//' }
+				{ #if title }
 					<span class="header__page-name">
-						{ decorativeTitle }
+						{ title }
 					</span>
 				{ /if }
 			</a>
@@ -153,7 +144,7 @@ import MobileMenu from "./mobile-menu.svelte";
 			outline: none;
 			border: none;
 			background-color: transparent;
-			background-image: url('assets/menu.svg');
+			background-image: url('/assets/menu.svg');
 			background-size: rem-calc(18) rem-calc(14);
 			background-position: center;
 			background-repeat: no-repeat;

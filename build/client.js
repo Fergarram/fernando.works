@@ -9,16 +9,14 @@
 	try {
 		new (await import(`../pages/${route}.svelte`)).default({
 			target,
-			hydrate: true,
-			props: { route }
+			hydrate: true
 		});
 
 	// Otherwise load the 404 JS bundle
 	} catch( error ) {
 		new (await import('../pages/404.svelte')).default({
 			target,
-			hydrate: true,
-			props: { route }
+			hydrate: true
 		});
 	}
 })();

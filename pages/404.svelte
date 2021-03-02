@@ -1,14 +1,12 @@
 <script>
 	import Header from '../components/layout/header.svelte';
-
-	export let route;
 </script>
 
 <svelte:head>
 	<title>Page not found - Fernando.Works</title>
 </svelte:head>
 
-<Header {route} />
+<Header />
 
 <main class="main">
 	Page not found

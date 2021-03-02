@@ -16,9 +16,12 @@ ncp(path.resolve(process.cwd(), 'static'), path.resolve(process.cwd(), 'dist'), 
 
     // This file comes from the SSR Svelte component.
     const page = require(`../.temp/${route}.js`);
+    const props = {
+        markdown: 'test'
+    };
 
     // Generate HTML files and directories
-    const { html, css, head } = page.render({ route: route.replace('/index', '') });
+    const { html, css, head } = page.render( props );
     const slugs = route.split('/');
 
     // Create directory if needed
@@ -30,7 +33,7 @@ ncp(path.resolve(process.cwd(), 'static'), path.resolve(process.cwd(), 'dist'), 
     }
 
     // Get the template so that we can replace the placeholders with the SSR stuff.
-    const clientScript = slugs.length > 1 ? '../client.js' : 'client.js';
+    const clientScript = slugs.length > 1 ? '../client/client.js' : 'client/client.js';
     const templateFile = path.resolve(process.cwd(), 'build/template.html');
     let template = fs.readFileSync(templateFile, 'utf-8');
 
@@ -38,7 +41,7 @@ ncp(path.resolve(process.cwd(), 'static'), path.resolve(process.cwd(), 'dist'), 
     template = template.replace('%head%', head);
     template = template.replace('%body%', html);
     template = template.replace('%styles%', `<style>${css.code}</style>`);
-    template = template.replace('%scripts%', `<script type="module" src="client/${clientScript}"></script>`)
+    template = template.replace('%scripts%', `<script type="module" src="${clientScript}"></script>`)
     template = template.replace('%scripts%', '')
 
     // Saving into a file.

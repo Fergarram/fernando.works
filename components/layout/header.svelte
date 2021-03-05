@@ -51,6 +51,7 @@ import MobileMenu from "./mobile-menu.svelte";
 			</nav>
 			<button
 				class="header__menu-button"
+				class:header__menu-button--show-menu={ showMenu }
 				on:click={ () => showMenu = !showMenu }>
 				Show Menu
 			</button>
@@ -91,7 +92,7 @@ import MobileMenu from "./mobile-menu.svelte";
 	}
 
 	.header {
-		height: rem-calc(53);
+		height: rem-calc(58);
 
 		&__sticky {
 			position: fixed;
@@ -137,7 +138,7 @@ import MobileMenu from "./mobile-menu.svelte";
 
 		&__menu-button {
 			position: absolute;
-			top: rem-calc(4);
+			top: rem-calc(7);
 			right: rem-calc(4);
 			width: rem-calc(44);
 			height: rem-calc(44);
@@ -153,6 +154,11 @@ import MobileMenu from "./mobile-menu.svelte";
 
 			@include media('>tablet') {
 				display: none;
+			}
+
+			&--show-menu {
+				background-image: url('/assets/close.svg');
+				background-size: rem-calc(16.5) rem-calc(16.5);
 			}
 		}
 	}

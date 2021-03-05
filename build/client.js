@@ -7,10 +7,17 @@
 
 	// Get the corresponding page JS bundle
 	try {
-		new (await import(`../pages/${route}.svelte`)).default({
-			target,
-			hydrate: true
-		});
+		if (route.includes('posts/')) {
+			new (await import(`../posts/${route.replace('posts/', '')}.svelte`)).default({
+				target,
+				hydrate: true
+			});
+		} else {
+			new (await import(`../pages/${route}.svelte`)).default({
+				target,
+				hydrate: true
+			});
+		}
 
 	// Otherwise load the 404 JS bundle
 	} catch( error ) {

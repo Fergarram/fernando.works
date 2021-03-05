@@ -1,5 +1,6 @@
 <script>
 	import Header from '../components/layout/header.svelte';
+	import Footer from '../components/layout/footer.svelte';
 	import Section from '../components/home/section.svelte';
 	import Feed from '../components/home/feed.svelte';
 </script>
@@ -77,9 +78,7 @@
 	</div>
 </main>
 
-<footer>
-	Copyright © Fernando Garcia. All rights reserved.
-</footer>
+<Footer />
 
 <style lang="scss">
 	@import '../styles/utils.scss';

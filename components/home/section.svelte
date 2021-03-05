@@ -129,7 +129,7 @@
 		}
 
 		&__content {
-			line-height: 1.5;
+			line-height: 1.7;
 			font-weight: 500;
 
 			@include media('>phone-medium') {

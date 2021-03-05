@@ -4,13 +4,13 @@
 </script>
 
 <svelte:head>
-	<title>Podcats - Fernando.Works</title>
+	<title>Blog - Fernando.Works</title>
 </svelte:head>
 
-<Header title="Podcast" />
+<Header title="Blog"/>
 
 <main class="main">
-	Podcats
+	blog listing
 </main>
 
 <Footer />

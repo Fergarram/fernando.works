@@ -16,24 +16,11 @@ ncp(path.resolve(process.cwd(), 'static'), path.resolve(process.cwd(), 'dist'), 
 
     // This file comes from the SSR Svelte component.
     const page = require(`../.temp/${route}.js`);
-    const props = {
-        markdown: 'test'
-    };
 
     // Generate HTML files and directories
-    const { html, css, head } = page.render( props );
-    const slugs = route.split('/');
-
-    // Create directory if needed
-    if (slugs.length > 1) {
-        const dir = `dist/${slugs[0]}`;
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir);
-        }
-    }
+    const { html, css, head } = page.render();
 
     // Get the template so that we can replace the placeholders with the SSR stuff.
-    const clientScript = slugs.length > 1 ? '../client/client.js' : 'client/client.js';
     const templateFile = path.resolve(process.cwd(), 'build/template.html');
     let template = fs.readFileSync(templateFile, 'utf-8');
 
@@ -41,8 +28,13 @@ ncp(path.resolve(process.cwd(), 'static'), path.resolve(process.cwd(), 'dist'), 
     template = template.replace('%head%', head);
     template = template.replace('%body%', html);
     template = template.replace('%styles%', `<style>${css.code}</style>`);
-    template = template.replace('%scripts%', `<script type="module" src="${clientScript}"></script>`)
+    template = template.replace('%scripts%', `<script type="module" src="/client/client.js"></script>`)
     template = template.replace('%scripts%', '')
+
+    // Create posts directory if needed
+    if (!fs.existsSync('dist/posts')) {
+        fs.mkdirSync('dist/posts');
+    }
 
     // Saving into a file.
     const htmlFile = path.resolve(process.cwd(), `dist/${route}.html`);

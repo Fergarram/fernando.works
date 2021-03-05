@@ -37,15 +37,22 @@ const ClientBundleConfig = {
 	]
 };
 
-// Apparently get routes from this build process...
-const routes = [ 'index', 'podcast', '404', 'blog/index', 'blog/slug' ];
+// @TODO: Get arrays from directory
+const pages = [
+	'pages/index',
+	'pages/podcast',
+	'pages/404',
+	'pages/blog',
+	'posts/lets-write-software'
+];
 
-const RouteConfigurations = routes.map( route => {
+const RouteConfigurations = pages.map( route => {
+	const dir = route.includes('posts/') ? '.temp/posts' : '.temp';
 	return {
-		input: `pages/${route}.svelte`,
+		input: `${route}.svelte`,
 		output: {
 			format: 'cjs',
-			dir: `.temp/${route.includes('/') ? route.split('/')[0] : ''}`
+			dir
 		},
 		plugins: [
 			svelte({
@@ -61,7 +68,7 @@ const RouteConfigurations = routes.map( route => {
 			}),
 			json(),
 			dynamicImportVars(),
-			execute(`node build/server.js ${route}`)
+			execute(`node build/server.js ${route.replace('pages/', '')}`)
 	  ]
 	};
 });

@@ -56,6 +56,8 @@
 			<a class="link-button" href="/work">
 				See all projects
 			</a>
+			<br>
+			<br>
 			<div slot="feed">
 				<Feed type="work"/>
 			</div>

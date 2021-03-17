@@ -30,8 +30,8 @@
 		<section class="main__episodes">
 			<Episode
 				title="Episode #1 - @rubna_"
-				imageSrc="assets/yo.jpg"
-				imageAlt="Fernando wearing a white cap"
+				imageSrc="assets/rub.jpg"
+				imageAlt="Ruben's twitter avatar"
 				simplecast="https://player.simplecast.com/c5e88d4f-ee4e-43cb-8e03-952f6c34c45c?dark=false"
 				spotify=""
 				itunes=""

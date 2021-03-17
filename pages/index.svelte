@@ -1,7 +1,7 @@
 <script>
 	import Header from '../components/layout/header.svelte';
 	import Footer from '../components/layout/footer.svelte';
-	import Section from '../components/home/section.svelte';
+	import HeroBlock from '../components/home/hero-block.svelte';
 	import Feed from '../components/home/feed.svelte';
 </script>
 
@@ -13,7 +13,7 @@
 
 <main class="main">
 	<div class="main__wrapper">
-		<Section
+		<HeroBlock
 			isFernando={true}
 			title="Fernando"
 			imageSrc="assets/yo.jpg"
@@ -33,8 +33,8 @@
 			<a class="link-button" href="/">
 				Download (old) portfolio
 			</a>
-		</Section>
-		<Section
+		</HeroBlock>
+		<HeroBlock
 			title="Podcast"
 			imageSrc="assets/podcast.jpg"
 			imageAlt="Kid yelling to a microphone">
@@ -44,8 +44,8 @@
 			<a class="link-button" href="/podcast">
 				See episodes
 			</a>
-		</Section>
-		<Section
+		</HeroBlock>
+		<HeroBlock
 			title="Work"
 			imageSrc="assets/work.jpg"
 			imageAlt="Kid building with legos"
@@ -53,30 +53,28 @@
 			<p>
 				A mix of web toys, real websites, mobile apps, video games, and ui design mocks.
 			</p>
-			<a class="link-button" href="/work">
+			<!-- <a class="link-button" href="/work">
 				See all projects
-			</a>
-			<br>
-			<br>
+			</a> -->
 			<div slot="feed">
 				<Feed type="work"/>
 			</div>
-		</Section>
-		<Section
+		</HeroBlock>
+		<HeroBlock
 			title="Blog"
 			imageSrc="assets/blog.jpg"
 			imageAlt="Old man reading newspapper"
 			fixedContent={ true }>
 			<p>
-				I like to write about my projects, ideas, and learnings. Sometimes I just want to do a public dump of my brain, too.
+				I like to write about my projects, ideas, success and failures within my career.
 			</p>
-			<a class="link-button" href="/work">
+			<!-- <a class="link-button" href="/work">
 				See all writings
-			</a>
+			</a> -->
 			<div slot="feed">
 				<Feed type="blog"/>
 			</div>
-		</Section>
+		</HeroBlock>
 	</div>
 </main>
 

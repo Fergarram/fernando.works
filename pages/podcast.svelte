@@ -1,7 +1,8 @@
 <script>
 	import Header from '../components/layout/header.svelte';
 	import Footer from '../components/layout/footer.svelte';
-	import Section from '../components/home/section.svelte';
+	import HeroBlock from '../components/home/hero-block.svelte';
+	import Episode from '../components/podcast/episode.svelte';
 </script>
 
 <svelte:head>
@@ -12,17 +13,33 @@
 
 <main class="main">
 	<div class="main__wrapper">
-		<Section
+		<HeroBlock
 			title="Podcast"
-			imageSrc="assets/podcast.jpg"
-			imageAlt="Kid yelling to a microphone">
+			single={true}>
 			<p>
 				I host a podcast called <a href="/">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
 			</p>
-			<a class="link-button" href="/podcast">
-				See episodes
-			</a>
-		</Section>
+			<picture
+				class="main__picture">
+				<img
+					src="/assets/mic.png"
+					alt="Microphone on table"
+				/>
+			</picture>
+		</HeroBlock>
+		<section class="main__episodes">
+			<Episode
+				title="Episode #1 - @rubna_"
+				imageSrc="assets/yo.jpg"
+				imageAlt="Fernando wearing a white cap"
+				simplecast="https://player.simplecast.com/c5e88d4f-ee4e-43cb-8e03-952f6c34c45c?dark=false"
+				spotify=""
+				itunes=""
+				youtube=""
+				amazon="">
+				Ruben <a href="twitter.com/rubna_">(@rubna_)</a>, a game developer from the Netherlands who’s part of Sokpop. We talk about his creative process...
+			</Episode>
+		</section>
 	</div>
 </main>
 
@@ -36,6 +53,7 @@
 		&__wrapper {
 			@extend %container;
 
+			position: relative;
 			padding: rem-calc(24) rem-calc(20);
 
 			@include media('>phone-small') {
@@ -61,6 +79,31 @@
 			@include media('>desktop-medium') {
 				padding: rem-calc(100);
 			}
+		}
+
+		&__picture {
+			display: none;
+
+			@include media('>phone-medium') {
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				transform: translateX(30%);
+				z-index: -1;
+			}
+
+			img {
+				width: 50vw;
+				max-width: rem-calc(502);
+			}
+		}
+	}
+
+	// Children Overrides
+	:global(.section .section__content) {
+		@include media('>phone-medium') {
+			width: 60%;
 		}
 	}
 </style>

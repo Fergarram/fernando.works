@@ -1,9 +1,10 @@
 <script>
 	export let title;
 	export let isFernando = false;
+	export let single = false;
 	export let fixedContent = false;
-	export let imageSrc;
-	export let imageAlt;
+	export let imageSrc = "";
+	export let imageAlt = "";
 </script>
 
 <section class="section">
@@ -17,17 +18,22 @@
 				{ title }
 			</h2>
 		{ /if }
-		<picture class="section__picture">
-			<img
-				class="section__picture-image"
-				src={ imageSrc }
-				alt={ imageAlt }
-			/>
-		</picture>
+		{ #if imageSrc }
+			<picture
+				class:section__picture--single={ single }
+				class="section__picture">
+				<img
+					class="section__picture-image"
+					src={ imageSrc }
+					alt={ imageAlt }
+				/>
+			</picture>
+		{ /if }
 	</header>
 	<div
 		class="section__content"
 		class:section__content--fernando={ isFernando }
+		class:section__content--single={ single }
 		class:section__content--fixed={ fixedContent }>
 		<slot></slot>
 	</div>
@@ -84,6 +90,12 @@
 
 				@include media('>desktop-small') {
 					height: rem-calc(115);
+				}
+			}
+
+			&--single {
+				@include media('>phone-medium') {
+					display: none;
 				}
 			}
 		}
@@ -163,9 +175,9 @@
 				}
 			}
 
-			&--fixed {
-				@include media('>phone-medium') {
-					// height: rem-calc(72);
+			&--single {
+				@include media('>tablet') {
+					max-width: 100%;
 				}
 			}
 		}

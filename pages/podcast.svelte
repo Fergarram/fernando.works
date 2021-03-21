@@ -17,7 +17,7 @@
 			title="Podcast"
 			single={true}>
 			<p>
-				I host a podcast called <a href="/">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
+				I host a podcast called <a href="https://digital-crafters.simplecast.com/">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
 			</p>
 			<picture
 				class="main__picture">
@@ -28,6 +28,17 @@
 			</picture>
 		</HeroBlock>
 		<section class="main__episodes">
+			<Episode
+				title="Episode #2 - @raysan5"
+				imageSrc="assets/ray.jpg"
+				imageAlt="Ramon Santamaria"
+				simplecast="https://player.simplecast.com/c5e88d4f-ee4e-43cb-8e03-952f6c34c45c?dark=false"
+				spotify=""
+				itunes=""
+				youtube=""
+				amazon="">
+				Ramon <a href="twitter.com/rubna_">(@raysan5)</a>, a game developer from the Netherlands who’s part of Sokpop. We talk about his creative process...
+			</Episode>
 			<Episode
 				title="Episode #1 - @rubna_"
 				imageSrc="assets/rub.jpg"
@@ -62,22 +73,20 @@
 
 			@include media('>phone-medium') {
 				max-width: rem-calc(1440);
+				padding: fluid('phone-medium', 'tablet', 24px, 48px);
 			}
 
 			@include media('>tablet') {
-				padding: rem-calc(48);
+				padding: fluid('tablet', 'tablet-large', 48px, 80px);
 			}
 
 			@include media('>tablet-large') {
-				padding: rem-calc(48) rem-calc(64);
+				padding: rem-calc(80) rem-calc(80);
 			}
 
 			@include media('>desktop-small') {
-				padding: rem-calc(64) rem-calc(80);
-			}
-
-			@include media('>desktop-medium') {
-				padding: rem-calc(100);
+				padding: rem-calc(112) rem-calc(128);
+				max-width: rem-calc(1200);
 			}
 		}
 
@@ -93,17 +102,21 @@
 				z-index: -1;
 			}
 
+			@include media('>desktop-small') {
+				transform: translateX(20%);
+				top: rem-calc(28);
+			}
+
 			img {
 				width: 50vw;
 				max-width: rem-calc(502);
 			}
 		}
-	}
 
-	// Children Overrides
-	:global(.section .section__content) {
-		@include media('>phone-medium') {
-			width: 60%;
+		&__episodes {
+			@include media('>tablet') {
+				max-width: rem-calc(600);
+			}
 		}
 	}
 </style>

@@ -25,23 +25,23 @@
 	color: $color-link;
 }
 
-:global(s) {
-	position: relative;
-	text-decoration: none;
-	white-space: nowrap;
+// :global(s) {
+// 	position: relative;
+// 	text-decoration: none;
+// 	white-space: nowrap;
 
-	&::after {
-		content: '';
-		display: block;
-		position: absolute;
-		width: calc(100% + 4px);
-		height: 2px;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, 0);
-		background-color: red;
-	}
-}
+// 	&::after {
+// 		content: '';
+// 		display: block;
+// 		position: absolute;
+// 		width: calc(100% + 4px);
+// 		height: 2px;
+// 		left: 50%;
+// 		top: 50%;
+// 		transform: translate(-50%, 0);
+// 		background-color: red;
+// 	}
+// }
 
 :global(.link-button) {
 	display: inline-block;

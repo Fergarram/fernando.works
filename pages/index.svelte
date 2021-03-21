@@ -39,7 +39,7 @@
 			imageSrc="assets/podcast.jpg"
 			imageAlt="Kid yelling to a microphone">
 			<p>
-				I host a podcast called <a href="/">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
+				I host a podcast called <a href="https://digital-crafters.simplecast.com/">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
 			</p>
 			<a class="link-button" href="/podcast">
 				See episodes

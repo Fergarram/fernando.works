@@ -7,23 +7,23 @@
 	export let imageAlt = "";
 </script>
 
-<section class="section">
-	<header class="section__header">
+<section class="hero-block" class:hero-block--single={ single }>
+	<header class="hero-block__header">
 		{ #if isFernando }
-			<h1 class="section__title">
+			<h1 class="hero-block__title">
 				{ title }
 			</h1>
 		{ :else }
-			<h2 class="section__title">
+			<h2 class="hero-block__title">
 				{ title }
 			</h2>
 		{ /if }
 		{ #if imageSrc }
 			<picture
-				class:section__picture--single={ single }
-				class="section__picture">
+				class:hero-block__picture--single={ single }
+				class="hero-block__picture">
 				<img
-					class="section__picture-image"
+					class="hero-block__picture-image"
 					src={ imageSrc }
 					alt={ imageAlt }
 				/>
@@ -31,10 +31,9 @@
 		{ /if }
 	</header>
 	<div
-		class="section__content"
-		class:section__content--fernando={ isFernando }
-		class:section__content--single={ single }
-		class:section__content--fixed={ fixedContent }>
+		class="hero-block__content"
+		class:hero-block__content--fernando={ isFernando }
+		class:hero-block__content--fixed={ fixedContent }>
 		<slot></slot>
 	</div>
 	<slot name="feed"></slot>
@@ -43,7 +42,7 @@
 <style lang="scss">
 	@import '../../styles/utils.scss';
 
-	.section {
+	.hero-block {
 		margin-bottom: rem-calc(64);
 
 		@include media('>phone-medium') {
@@ -51,7 +50,7 @@
 		}
 
 		@include media('>tablet') {
-			margin-bottom: rem-calc(64);
+			margin-bottom: rem-calc(24);
 		}
 
 		&__header {
@@ -174,10 +173,43 @@
 					max-width: 30em;
 				}
 			}
+		}
 
-			&--single {
+		&--single {
+			@include media('>phone-medium') {
+				margin-bottom: rem-calc(72);
+			}
+
+			.hero-block__title {
+				@include media('>phone-medium') {
+					font-size: rem-calc(72);
+				}
+
+				@include media('>tablet-large') {
+					margin-bottom: rem-calc(16);
+					font-size: rem-calc(86);
+				}
+
+				@include media('>desktop-small') {
+					font-size: fluid('desktop-small', 'desktop-medium', 80px, 100px);
+				}
+
+				@include media('>desktop-medium') {
+					font-size: rem-calc(100);
+				}
+			}
+			.hero-block__content {
+				@include media('>phone-medium') {
+					width: 65%;
+				}
+
 				@include media('>tablet') {
 					max-width: 100%;
+				}
+
+				@include media('>desktop-small') {
+					width: 80%;
+					max-width: 40em;
 				}
 			}
 		}

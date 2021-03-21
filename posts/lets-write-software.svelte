@@ -75,6 +75,8 @@
 
 	.main__wrapper {
 		@extend %container;
+
+		max-width: rem-calc(1600);
 	}
 
 	.header {
@@ -132,7 +134,11 @@
 			}
 
 			@include media('>desktop-medium') {
-				font-size: rem-calc(64);
+				font-size: fluid('desktop-medium', 'desktop-mlarge', 64px, 72px);
+			}
+
+			@include media('>desktop-mlarge') {
+				font-size: rem-calc(72);
 			}
 		}
 
@@ -171,7 +177,7 @@
 				}
 
 				@include media('>desktop-small') {
-					max-height: rem-calc(520);
+					max-height: rem-calc(600);
 				}
 			}
 

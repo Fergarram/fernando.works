@@ -48,22 +48,23 @@
 			</li>
 			<li>
 				<button
+					title="Show inline web player"
 					class="episode__button"
 					on:click={ () => showPlayer = !showPlayer }>
-					{ !showPlayer ? 'Show ' : 'Hide ' } Player
+					{ !showPlayer ? 'Web ' : 'Hide ' } Player
 				</button>
 			</li>
 		</ul>
+		{ #if showPlayer }
+			<iframe
+				title={ title }
+				class="episode__player"
+				height="200px" width="100%"
+				frameborder="no" scrolling="no"
+				seamless src={ simplecast }>
+			</iframe>
+		{ /if }
 	</div>
-	{ #if showPlayer }
-		<!-- svelte-ignore a11y-missing-attribute -->
-		<iframe
-			class="episode__player"
-			height="200px" width="100%"
-			frameborder="no" scrolling="no"
-			seamless src={ simplecast }>
-		</iframe>
-	{ /if }
 </article>
 
 <style lang="scss">
@@ -71,17 +72,41 @@
 	@import '../../styles/page.scss';
 
 	.episode {
+		margin-bottom: rem-calc(48);
+
+		@include media('>phone-medium') {
+			display: flex;
+		}
+
 		&__title {
 			font-family: $font-oswald;
 			font-weight: 700;
 			font-size: rem-calc(28);
 			letter-spacing: -0.05em;
+
+			@include media('>phone-medium') {
+				font-size: rem-calc(24);
+			}
+
+			@include media('>tablet') {
+				font-size: rem-calc(32);
+			}
 		}
 
 		&__summary {
 			margin-top: rem-calc(24);
 			margin-bottom: rem-calc(32);
 			line-height: 1.5;
+
+			@include media('>phone-medium') {
+				margin-top: rem-calc(12);
+				margin-bottom: rem-calc(24);
+				font-size: rem-calc(14);
+			}
+
+			@include media('>tablet') {
+				font-size: rem-calc(16);
+			}
 		}
 
 		&__list {
@@ -92,11 +117,36 @@
 			li:not(:last-child) {
 				margin-right: rem-calc(24);
 			}
+
+			li {
+				@include media('>phone-medium') {
+					font-size: rem-calc(14);
+				}
+
+				@include media('>tablet') {
+					font-size: rem-calc(16);
+				}
+			}
 		}
 
 		&__button {
+			color: $color-link;
 			font-family: $font-mono;
-			padding: rem-calc(2) rem-calc(6);
+			font-weight: 700;
+			background: none;
+			border: none;
+			outline: none;
+			text-decoration: underline;
+			cursor: pointer;
+			font-size: rem-calc(16);
+
+			@include media('>phone-medium') {
+				font-size: rem-calc(14);
+			}
+
+			@include media('>tablet') {
+				font-size: rem-calc(16);
+			}
 		}
 
 		&__picture {
@@ -104,7 +154,13 @@
 			display: block;
 			filter: drop-shadow(0px 4px rem-calc(20) rgba(0, 0, 0, 0.25));
 			padding-bottom: rem-calc(12);
+			padding-right: rem-calc(12);
 			margin-bottom: rem-calc(20);
+			margin-right: rem-calc(20);
+
+			@include media('>phone-medium') {
+				margin-top: rem-calc(12);
+			}
 
 			&::before {
 				content: '';
@@ -119,6 +175,7 @@
 
 			img {
 				position: relative;
+				min-width: rem-calc(80);
 				width: rem-calc(80);
 				height: rem-calc(80);
 				padding: 8px;

@@ -28,22 +28,22 @@
 		<ul class="episode__list">
 			<li>
 				<a class="link-button" href={ youtube }>
-					YouTube
+					⎋ YouTube
 				</a>
 			</li>
 			<li>
 				<a class="link-button" href={ spotify }>
-					Spotify
+					⎋ Spotify
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a class="link-button" href={ itunes }>
-					iTunes
+					⎋ iTunes
 				</a>
-			</li>
+			</li> -->
 			<li>
 				<a class="link-button" href={ amazon }>
-					Amazon
+					⎋ Amazon
 				</a>
 			</li>
 			<li>

@@ -74,11 +74,11 @@
 		}
 
 		@include media('>desktop-small') {
-			max-width: fluid('desktop-small', 'desktop-medium', 416px, 540px);
+			max-width: fluid('desktop-small', 'desktop-medium', 416px, 448px);
 		}
 
 		@include media('>desktop-medium') {
-			max-width: rem-calc(540);
+			max-width: rem-calc(448);
 		}
 
 		&__cover {
@@ -108,11 +108,11 @@
 			}
 
 			@include media('>desktop-small') {
-				height: fluid('desktop-small', 'desktop-medium', 200px, 245px);
+				height: fluid('desktop-small', 'desktop-medium', 200px, 208px);
 			}
 
 			@include media('>desktop-medium') {
-				height: rem-calc(245);
+				height: rem-calc(208);
 			}
 		}
 

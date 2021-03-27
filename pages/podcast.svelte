@@ -86,7 +86,7 @@
 
 			@include media('>desktop-small') {
 				padding: rem-calc(112) rem-calc(128);
-				max-width: rem-calc(1200);
+				max-width: rem-calc(1280);
 			}
 		}
 
@@ -103,7 +103,7 @@
 			}
 
 			@include media('>desktop-small') {
-				transform: translateX(20%);
+				transform: translateX(10%);
 				top: rem-calc(28);
 			}
 

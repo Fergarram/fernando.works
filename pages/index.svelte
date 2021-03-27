@@ -46,7 +46,7 @@
 			</a>
 		</HeroBlock>
 		<HeroBlock
-			title="Work"
+			title="Projects"
 			imageSrc="assets/work.jpg"
 			imageAlt="Kid building with legos"
 			fixedContent={ true }>

@@ -141,7 +141,7 @@
 
 		&__content {
 			line-height: 1.7;
-			font-weight: 500;
+			font-weight: 400;
 
 			@include media('>phone-medium') {
 				font-size: rem-calc(14);

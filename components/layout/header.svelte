@@ -22,15 +22,15 @@ import MobileMenu from "./mobile-menu.svelte";
 					<li class="nav__item">
 						<a
 							class="nav__link"
-							href="/work">
-							Work
+							href="/blog">
+							Blog
 						</a>
 					</li>
 					<li class="nav__item">
 						<a
 							class="nav__link"
-							href="/blog">
-							Blog
+							href="/projects">
+							Projects
 						</a>
 					</li>
 					<li class="nav__item">
@@ -43,8 +43,8 @@ import MobileMenu from "./mobile-menu.svelte";
 					<li class="nav__item">
 						<a
 							class="nav__link"
-							href="/contact">
-							Contact
+							href="/about">
+							About Me
 						</a>
 					</li>
 				</ul>

@@ -43,7 +43,7 @@
 				{#if type === 'work'}
 					View project
 				{:else}
-					Read full article
+					Read article
 				{/if}
 			</a>
 		</article>

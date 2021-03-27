@@ -28,10 +28,19 @@
 				I like Vue for apps and Svelte for websites.
 			</p>
 			<a class="link-button" href="/">
-				Download my CV
+				CV
 			</a>
 			<a class="link-button" href="/">
-				Download (old) portfolio
+				LinkedIn
+			</a>
+			<a class="link-button" href="/">
+				Github
+			</a>
+			<a class="link-button" href="/">
+				Portfolio
+			</a>
+			<a class="link-button" href="/">
+				Twitter
 			</a>
 		</HeroBlock>
 		<HeroBlock
@@ -39,7 +48,7 @@
 			imageSrc="assets/podcast.jpg"
 			imageAlt="Kid yelling to a microphone">
 			<p>
-				I host a podcast called <a href="https://digital-crafters.simplecast.com/">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
+				I host a podcast called <a href="https://www.youtube.com/channel/UCPBwZWChghNODkWGWDga-tw">Digital Crafters</a> where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
 			</p>
 			<a class="link-button" href="/podcast">
 				See episodes
@@ -51,26 +60,26 @@
 			imageAlt="Kid building with legos"
 			fixedContent={ true }>
 			<p>
-				A mix of web toys, real websites, mobile apps, video games, and ui design mocks.
+				A mix of toys, marketing websites, mobile apps, videogames, and ui design mocks.
 			</p>
-			<!-- <a class="link-button" href="/work">
+			<a class="link-button" href="/projects">
 				See all projects
-			</a> -->
+			</a>
 			<div slot="feed">
 				<Feed type="work"/>
 			</div>
-		</HeroBlock>
+	</HeroBlock>
 		<HeroBlock
 			title="Blog"
 			imageSrc="assets/blog.jpg"
 			imageAlt="Old man reading newspapper"
 			fixedContent={ true }>
 			<p>
-				I like to write about my projects, ideas, success and failures within my career.
+				I like to write about my projects, ideas, successes and failures within my career.
 			</p>
-			<!-- <a class="link-button" href="/work">
+			<a class="link-button" href="/work">
 				See all writings
-			</a> -->
+			</a>
 			<div slot="feed">
 				<Feed type="blog"/>
 			</div>

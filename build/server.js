@@ -36,6 +36,11 @@ ncp(path.resolve(process.cwd(), 'static'), path.resolve(process.cwd(), 'dist'), 
         fs.mkdirSync('dist/posts');
     }
 
+    // Create projects directory if needed
+    if (!fs.existsSync('dist/projects')) {
+        fs.mkdirSync('dist/projects');
+    }
+
     // Saving into a file.
     const htmlFile = path.resolve(process.cwd(), `dist/${route}.html`);
     fs.writeFileSync(htmlFile, template);

@@ -103,3 +103,55 @@ $breakpoints: (
 	margin-right: auto;
 	margin-left: auto;
 }
+
+//
+// Font Imports
+//
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('/assets/fonts/Oswald-Light.ttf');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('/assets/fonts/Oswald-Medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('/assets/fonts/Oswald-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/assets/fonts/RobotoMono-Light.ttf');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/assets/fonts/RobotoMono-Regular.ttf');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/assets/fonts/RobotoMono-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

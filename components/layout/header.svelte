@@ -10,10 +10,10 @@ import MobileMenu from "./mobile-menu.svelte";
 			class="header__wrapper"
 			class:header__wrapper--show-menu={ showMenu }>
 			<a class="header__logo" href="/">
-				Fernando.Works { title && '//' }
+				Fernando.Works
 				{ #if title }
 					<span class="header__page-name">
-						{ title }
+						// { title }
 					</span>
 				{ /if }
 			</a>
@@ -44,7 +44,7 @@ import MobileMenu from "./mobile-menu.svelte";
 						<a
 							class="nav__link"
 							href="/about">
-							About Me
+							About
 						</a>
 					</li>
 				</ul>
@@ -133,7 +133,12 @@ import MobileMenu from "./mobile-menu.svelte";
 		}
 
 		&__page-name {
+			display: none;
 			font-weight: 300;
+
+			@include media('>phone-small') {
+				display: inline;
+			}
 		}
 
 		&__menu-button {

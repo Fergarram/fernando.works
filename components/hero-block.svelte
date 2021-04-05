@@ -40,7 +40,7 @@
 </section>
 
 <style lang="scss">
-	@import '../../styles/utils.scss';
+	@import '../styles/utils.scss';
 
 	.hero-block {
 		margin-bottom: rem-calc(64);

@@ -12,6 +12,11 @@
 				target,
 				hydrate: true
 			});
+		} else if (route.includes('projects/')) {
+			new (await import(`../projects/${route.replace('projects/', '')}.svelte`)).default({
+				target,
+				hydrate: true
+			});
 		} else {
 			new (await import(`../pages/${route}.svelte`)).default({
 				target,

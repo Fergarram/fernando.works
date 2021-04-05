@@ -8,15 +8,15 @@
 			<li class="mobile-menu__item">
 				<a
 					class="mobile-menu__link"
-					href="/work">
-					Work
+					href="/blog">
+					Blog
 				</a>
 			</li>
 			<li class="mobile-menu__item">
 				<a
 					class="mobile-menu__link"
-					href="/blog">
-					Blog
+					href="/projects">
+					Projects
 				</a>
 			</li>
 			<li class="mobile-menu__item">
@@ -29,8 +29,8 @@
 			<li class="mobile-menu__item">
 				<a
 					class="mobile-menu__link"
-					href="/contact">
-					Contact
+					href="/about">
+					About
 				</a>
 			</li>
 		</ul>

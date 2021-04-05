@@ -43,11 +43,18 @@ const pages = [
 	'pages/podcast',
 	'pages/404',
 	'pages/blog',
-	'posts/lets-write-software'
+	'posts/lets-write-software',
+	'projects/amateur-archaeology'
 ];
 
 const RouteConfigurations = pages.map( route => {
-	const dir = route.includes('posts/') ? '.temp/posts' : '.temp';
+	let dir = '.temp';
+	if (route.includes('posts/')) {
+		dir = '.temp/posts';
+	} else if (route.includes('projects/')) {
+		dir = '.temp/projects';
+	}
+
 	return {
 		input: `${route}.svelte`,
 		output: {

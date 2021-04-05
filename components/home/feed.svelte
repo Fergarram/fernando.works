@@ -150,7 +150,7 @@
 			display: block;
 			margin-bottom: rem-calc(16);
 			font-weight: 400;
-			line-height: 1.5;
+			line-height: 1.7;
 
 			@include media('>phone-medium') {
 				font-size: rem-calc(14);

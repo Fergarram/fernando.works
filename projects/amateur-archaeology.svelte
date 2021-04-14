@@ -50,7 +50,7 @@
 					</li>
 					<li>
 						<a class="link-button" href="/">
-							Read the article
+							Read the devlog
 						</a>
 					</li>
 				</ul>
@@ -176,7 +176,7 @@
 			padding: rem-calc(6) rem-calc(12);
 			margin-right: rem-calc(12);
 			margin-bottom: rem-calc(12);
-			border-radius: 5px;
+			border-radius: rem-calc(10);
 			font-size: rem-calc(12);
 			text-transform: capitalize;
 			background-color: #CFCFCF;
@@ -350,7 +350,7 @@
 				@include media('>tablet-large') {
 					height: 100%;
 					max-height: 100%;
-					border-radius: 5px;
+					border-radius: rem-calc(10);
 				}
 			}
 		}

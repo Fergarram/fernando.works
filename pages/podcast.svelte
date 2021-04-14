@@ -114,8 +114,27 @@
 		}
 
 		&__episodes {
+			@include media('>phone-medium') {
+				margin-top: rem-calc(72);
+			}
+
 			@include media('>tablet') {
 				max-width: rem-calc(600);
+			}
+		}
+
+		:global(.hero-block__content) {
+			@include media('>phone-medium') {
+				width: 65%;
+			}
+
+			@include media('>tablet') {
+				max-width: 100%;
+			}
+
+			@include media('>desktop-small') {
+				width: 80%;
+				max-width: 40em;
 			}
 		}
 	}

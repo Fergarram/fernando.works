@@ -42,6 +42,17 @@
 <style lang="scss">
 	@import '../styles/utils.scss';
 
+	@keyframes entrance {
+		0% {
+			transform: translateY(2rem);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
 	.hero-block {
 		margin-bottom: rem-calc(64);
 
@@ -65,11 +76,20 @@
 
 		&__picture {
 			display: block;
+			transform: translateY(0);
+			opacity: 0;
+			animation-name: entrance;
+			animation-delay: 0.2s;
+			animation-duration: 1s;
+			animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+			animation-fill-mode: forwards;
+			animation-iteration-count: 1;
 
 			&-image {
 				height: fluid('phone-xsmall', 'phone-small', 72px, 90px);
 				object-fit: cover;
 				object-position: center;
+				border-radius: rem-calc(10);
 
 				@include media('>phone-small') {
 					height: rem-calc(90);
@@ -108,6 +128,14 @@
 			font-weight: 700;
 			text-transform: uppercase;
 			line-height: 0.9;
+			transform: translateY(0);
+			opacity: 0;
+			animation-name: entrance;
+			animation-delay: 0s;
+			animation-duration: 1s;
+			animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+			animation-fill-mode: forwards;
+			animation-iteration-count: 1;
 
 			@include media('>phone-small') {
 				font-size: rem-calc(64);
@@ -149,6 +177,9 @@
 
 			@include media('>tablet') {
 				max-width: 30em;
+			}
+
+			@include media('>tablet-large') {
 				font-size: rem-calc(16);
 			}
 
@@ -176,10 +207,6 @@
 		}
 
 		&--single {
-			@include media('>phone-medium') {
-				margin-bottom: rem-calc(72);
-			}
-
 			.hero-block__title {
 				@include media('>phone-medium') {
 					font-size: rem-calc(72);
@@ -196,20 +223,6 @@
 
 				@include media('>desktop-medium') {
 					font-size: rem-calc(100);
-				}
-			}
-			.hero-block__content {
-				@include media('>phone-medium') {
-					width: 65%;
-				}
-
-				@include media('>tablet') {
-					max-width: 100%;
-				}
-
-				@include media('>desktop-small') {
-					width: 80%;
-					max-width: 40em;
 				}
 			}
 		}

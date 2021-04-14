@@ -41,6 +41,7 @@ const ClientBundleConfig = {
 const pages = [
 	'pages/index',
 	'pages/podcast',
+	'pages/projects',
 	'pages/404',
 	'pages/blog',
 	'posts/lets-write-software',

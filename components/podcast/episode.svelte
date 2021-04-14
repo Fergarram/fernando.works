@@ -27,6 +27,14 @@
 		</p>
 		<ul class="episode__list">
 			<li>
+				<button
+					title="Show inline web player"
+					class="episode__button"
+					on:click={ () => showPlayer = !showPlayer }>
+					{ !showPlayer ? 'Web ' : 'Hide ' } Player
+				</button>
+			</li>
+			<li>
 				<a class="link-button" href={ youtube }>
 					⎋ YouTube
 				</a>
@@ -45,14 +53,6 @@
 				<a class="link-button" href={ amazon }>
 					⎋ Amazon
 				</a>
-			</li>
-			<li>
-				<button
-					title="Show inline web player"
-					class="episode__button"
-					on:click={ () => showPlayer = !showPlayer }>
-					{ !showPlayer ? 'Web ' : 'Hide ' } Player
-				</button>
 			</li>
 		</ul>
 		{ #if showPlayer }
@@ -136,7 +136,6 @@
 			background: none;
 			border: none;
 			outline: none;
-			text-decoration: underline;
 			cursor: pointer;
 			font-size: rem-calc(16);
 
@@ -171,6 +170,7 @@
 				width: rem-calc(80);
 				height: rem-calc(80);
 				background-color: black;
+				border-radius: rem-calc(10);
 			}
 
 			img {
@@ -183,6 +183,7 @@
 				object-fit: cover;
 				object-position: center;
 				transform: translate( 0.75rem, 0.75rem );
+				border-radius: rem-calc(10);
 			}
 		}
 	}

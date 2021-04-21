@@ -14,19 +14,12 @@
 <main class="main">
 	<div class="main__wrapper">
 		<HeroBlock
-			isFernando={true}
+			isMain={true}
 			title="Fernando"
 			imageSrc="assets/yo.jpg"
 			imageAlt="Fernando wearing a white cap">
-			<p>
-				Web artisan, sleeplessly finding new side projects to <s>never finish</s> invest my free time on.
-			</p>
-			<p>
-				Frontend Developer. UI Designer. Design Technologist wannabe.
-			</p>
-			<p>
-				I like Vue for apps and Svelte for websites.
-			</p>
+			<p>UX Developer. I make sure the products I build help their target audience and are easy to maintain.</p>
+			<p>Experienced making Vue.js applications and business-oriented marketing pages with Next.js and WordPress.</p>
 			<a class="link-button" href="/">
 				Bio
 			</a>
@@ -48,10 +41,10 @@
 			imageSrc="assets/podcast.jpg"
 			imageAlt="Kid yelling to a microphone">
 			<p>
-				I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
+				I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations.
 			</p>
 			<a class="link-button" href="/podcast">
-				See episodes
+				See all episodes
 			</a>
 		</HeroBlock>
 		<HeroBlock

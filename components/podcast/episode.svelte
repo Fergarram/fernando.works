@@ -138,6 +138,11 @@
 			outline: none;
 			cursor: pointer;
 			font-size: rem-calc(16);
+			text-transform: uppercase;
+
+			&:hover {
+				text-decoration: underline;
+			}
 
 			@include media('>phone-medium') {
 				font-size: rem-calc(14);

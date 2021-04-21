@@ -193,6 +193,10 @@
 				margin-top: rem-calc(32);
 			}
 
+			@include media('>tablet') {
+				font-size: rem-calc(16);
+			}
+
 			:global(li) {
 				@include media('>phone-medium') {
 					margin-right: 2em;

@@ -1,6 +1,6 @@
 <script>
 	export let title;
-	export let isFernando = false;
+	export let isMain = false;
 	export let single = false;
 	export let fixedContent = false;
 	export let imageSrc = "";
@@ -9,7 +9,7 @@
 
 <section class="hero-block" class:hero-block--single={ single }>
 	<header class="hero-block__header">
-		{ #if isFernando }
+		{ #if isMain }
 			<h1 class="hero-block__title">
 				{ title }
 			</h1>
@@ -32,7 +32,6 @@
 	</header>
 	<div
 		class="hero-block__content"
-		class:hero-block__content--fernando={ isFernando }
 		class:hero-block__content--fixed={ fixedContent }>
 		<slot></slot>
 	</div>
@@ -69,6 +68,13 @@
 			align-items: center;
 			margin-bottom: rem-calc(24);
 
+			&:hover {
+				cursor: e-resize;
+				.hero-block__picture-image {
+					transform: scale(1.1);
+				}
+			}
+
 			@include media('>desktop-small') {
 				margin-bottom: rem-calc(32);
 			}
@@ -79,7 +85,7 @@
 			transform: translateY(0);
 			opacity: 0;
 			animation-name: entrance;
-			animation-delay: 0.2s;
+			animation-delay: 0.7s;
 			animation-duration: 1s;
 			animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
 			animation-fill-mode: forwards;
@@ -90,6 +96,8 @@
 				object-fit: cover;
 				object-position: center;
 				border-radius: rem-calc(10);
+				transform-origin: center left;
+				transition: transform 500ms $material-easing;
 
 				@include media('>phone-small') {
 					height: rem-calc(90);
@@ -131,7 +139,7 @@
 			transform: translateY(0);
 			opacity: 0;
 			animation-name: entrance;
-			animation-delay: 0s;
+			animation-delay: 0.5s;
 			animation-duration: 1s;
 			animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
 			animation-fill-mode: forwards;
@@ -193,16 +201,6 @@
 
 			:global( & > p a) {
 				white-space: nowrap;
-			}
-
-			&--fernando {
-				@include media('>tablet') {
-					max-width: 25em;
-				}
-
-				@include media('>desktop-small') {
-					max-width: 30em;
-				}
 			}
 		}
 

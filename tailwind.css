@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind utilities;
 
+.link-button {
+	@apply font-mono text-18 uppercase font-semibold;
+}
+
 .link-button::before {
 	content: '>> ';
 	white-space: nowrap;

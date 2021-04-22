@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind utilities;
+
+.link-button::before {
+	content: '>> ';
+	white-space: nowrap;
+}

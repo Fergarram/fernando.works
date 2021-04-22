@@ -3,7 +3,7 @@
 </script>
 
 <section class="bg-green pt-48 pb-40">
-	<div class="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 lg:px-20 xl:px-28">
+	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
 		<picture class="block mb-10">
 			<img
 				class="w-60 h-60 rounded-full"

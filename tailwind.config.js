@@ -1,6 +1,8 @@
 module.exports = {
-  purge: [
-  ],
+  // mode: 'jit',
+  // purge: [
+  //   './src/**/*.svelte'
+  // ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontSize: {
@@ -10,6 +12,7 @@ module.exports = {
       '18': '1.125rem',
       '20': '1.25rem',
       '24': '1.5rem',
+      '32': '2rem',
       '44': '2.75rem',
       '64': '4rem',
     },
@@ -30,12 +33,22 @@ module.exports = {
       'light-gray': '#ECECEC',
       'blue': '#005FB6',
       'black-a-20': 'rgba(0,0,0,0.2)',
-      'black-a-50': 'rgba(0,0,0,0.5)',
+      'black-a-40': 'rgba(0,0,0,0.4)',
       'black-a-70': 'rgba(0,0,0,0.7)',
+    },
+    screens: {
+      'xs': '26.5625rem',
+      'sm': '37.5rem',
+      'md': '48rem',
+      'lg': '64rem',
+      'xl': '80rem',
     },
     extend: {
       maxWidth: {
         '24em': '24em'
+      },
+      boxShadow: {
+        'cat': '0 0 3rem 1.25rem rgba(0,0,0,0.35)'
       }
     },
   },

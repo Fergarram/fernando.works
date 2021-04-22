@@ -4,7 +4,7 @@
 	export let segment;
 </script>
 
-<header class="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 lg:px-20 xl:px-28">
+<header class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
 	<div class="absolute pt-8">
 		<img alt="Fernando.Works" src={logo} />
 		<nav class="pt-8">

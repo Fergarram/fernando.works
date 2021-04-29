@@ -33,7 +33,7 @@ module.exports = {
       'yellow': '#F6EDD4',
       'dark-gray': '#CAD3D7',
       'light-gray': '#ECECEC',
-      'blue': '#005FB6',
+      'blue': '#0056B6',
       'black-a-10': 'rgba(0,0,0,0.1)',
       'black-a-20': 'rgba(0,0,0,0.2)',
       'black-a-40': 'rgba(0,0,0,0.4)',
@@ -53,6 +53,9 @@ module.exports = {
       maxWidth: {
         '24em': '24em',
         '30em': '30em'
+      },
+      minHeight: {
+        'cover': '12rem'
       },
       boxShadow: {
         'cat': '0 0 3rem 1.25rem rgba(0,0,0,0.35)'

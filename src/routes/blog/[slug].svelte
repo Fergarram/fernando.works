@@ -26,7 +26,7 @@
 	<div class="max-w-screen-xl mx-auto sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-8 xl:mb-16">
 		<picture class="block">
 			<img
-				class="w-full h-auto"
+				class="w-full h-auto min-h-cover object-center object-cover"
 				alt=""
 				src={cover}
 			/>

@@ -4,26 +4,28 @@
 	export let segment;
 </script>
 
-<header class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
-	<div class="absolute pt-8">
-		<img alt="Fernando.Works" src={logo} />
-		<nav class="pt-8">
+<header class="relative max-w-screen-xl mx-auto">
+	<div class="absolute max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28 w-full pt-6 xs:pt-12 md:pt-20 lg:pt-24 xl:pt-32 flex flex-col sm:flex-row sm:items-center justify-between z-50">
+		<a class="block" href="/" aria-label="Home page">
+			<img alt="Fernando.Works" src={logo} />
+		</a>
+		<nav class="hidden xs:block pt-8 sm:pt-0">
 			<ul class="font-mono uppercase font-semibold flex">
-				<li class="mr-4">
+				<li class="mr-6">
 					<a
 						aria-current="{segment === 'projects' ? 'page' : undefined}"
 						href="projects">
 						projects
 					</a>
 				</li>
-				<li class="mr-4">
+				<li class="mr-6">
 					<a
 						aria-current="{segment === 'blog' ? 'page' : undefined}"
 						href="blog">
 						blog
 					</a>
 				</li>
-				<li class="mr-4">
+				<li class="mr-6">
 					<a
 						rel=prefetch aria-current="{segment === 'podcast' ? 'page' : undefined}"
 						href="podcast">
@@ -32,8 +34,8 @@
 				</li>
 				<li>
 					<a
-						rel=prefetch aria-current="{segment === 'bio' ? 'page' : undefined}"
-						href="bio">
+						rel=prefetch aria-current="{segment === 'about' ? 'page' : undefined}"
+						href="about">
 						bio
 					</a>
 				</li>

@@ -5,7 +5,7 @@
 <section class="bg-yellow py-32 overflow-hidden">
 	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:pl-16 md:pr-0 lg:px-20 xl:px-28 grid md:grid-cols-12 gap-8 lg:gap-16">
 		<div class="md:col-span-7 order-2 md:order-none">
-			<h2 class="font-bold text-44 leading-115 sm:text-64 mb-10">
+			<h2 class="font-bold text-44 leading-115 tracking-title sm:text-64 mb-10">
 				Podcast<i>er</i>
 			</h2>
 			<p class="max-w-24em font-light text-20 sm:text-24 leading-150 mb-10">

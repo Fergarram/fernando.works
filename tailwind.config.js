@@ -12,8 +12,10 @@ module.exports = {
       '18': '1.125rem',
       '20': '1.25rem',
       '24': '1.5rem',
+      '28': '1.75rem',
       '32': '2rem',
       '44': '2.75rem',
+      '48': '3rem',
       '64': '4rem',
     },
     lineHeight: {
@@ -32,9 +34,13 @@ module.exports = {
       'dark-gray': '#CAD3D7',
       'light-gray': '#ECECEC',
       'blue': '#005FB6',
+      'black-a-10': 'rgba(0,0,0,0.1)',
       'black-a-20': 'rgba(0,0,0,0.2)',
       'black-a-40': 'rgba(0,0,0,0.4)',
       'black-a-70': 'rgba(0,0,0,0.7)',
+    },
+    letterSpacing: {
+      'title': '-0.005em'
     },
     screens: {
       'xs': '26.5625rem',
@@ -45,7 +51,8 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        '24em': '24em'
+        '24em': '24em',
+        '30em': '30em'
       },
       boxShadow: {
         'cat': '0 0 3rem 1.25rem rgba(0,0,0,0.35)'

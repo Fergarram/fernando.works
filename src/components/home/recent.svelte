@@ -5,7 +5,7 @@
 
 <section class="bg-light-gray pt-32 pb-60">
 	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
-		<h2 class="font-bold text-44 leading-115 sm:text-64 mb-10">
+		<h2 class="font-bold text-44 leading-115 tracking-title sm:text-64 mb-10">
 			Recent Publications
 		</h2>
 		<a class="inline-block link-button mb-16" href="/">
@@ -13,12 +13,12 @@
 		</a>
 		<div class="grid sm:grid-cols-2 gap-16 md:gap-20 lg:gap-28 xl:gap-36">
 			<article class="max-w-xs sm:max-w-none">
-				<a href="/" class="block relative overflow-hidden" aria-label="Read Article">
-					<span aria-hidden="true" class="block absolute top-0 left-0 bg-black text-white text-12 uppercase rounded-md ml-4 mt-4 px-3 py-2 font-semibold shadow-cat">
+				<a href="/" class="block relative overflow-hidden rounded-md" aria-label="Read Article">
+					<span aria-hidden="true" class="block absolute top-0 left-0 bg-black text-white text-12 uppercase rounded-md ml-4 mt-4 px-3 py-2 font-semibold shadow-cat z-10">
 						Project
 					</span>
 					<img
-						class="rounded-md w-full h-auto object-cover object-center"
+						class="rounded-md w-full h-auto object-cover object-center transform hover:scale-105 transition-transform"
 						alt=""
 						src={article1}
 					/>
@@ -39,12 +39,12 @@
 				</a>
 			</article>
 			<article class="max-w-xs sm:max-w-none">
-				<a href="/" class="block relative overflow-hidden" aria-label="Read Article">
-					<span class="block absolute top-0 left-0 bg-black text-white text-12 uppercase rounded-md ml-4 mt-4 px-3 py-2 font-semibold shadow-cat">
+				<a href="/" class="block relative overflow-hidden rounded-md" aria-label="Read Article">
+					<span aria-hidden="true" class="block absolute top-0 left-0 bg-black text-white text-12 uppercase rounded-md ml-4 mt-4 px-3 py-2 font-semibold shadow-cat z-10">
 						Blog post
 					</span>
 					<img
-						class="rounded-md w-full h-auto object-cover object-center"
+						class="rounded-md w-full h-auto object-cover object-center transform hover:scale-105 transition-transform"
 						alt=""
 						src={article2}
 					/>

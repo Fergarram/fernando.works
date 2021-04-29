@@ -2,7 +2,7 @@
 	import avatar from '../../assets/yo.jpg';
 </script>
 
-<section class="bg-green pt-48 pb-40">
+<section class="bg-green pt-32 xs:pt-48 md:pt-56 lg:pt-64 xl:pt-80 pb-40">
 	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
 		<picture class="block mb-10">
 			<img
@@ -11,11 +11,11 @@
 				src={avatar}
 			/>
 		</picture>
-		<h1 class="font-bold text-44 leading-115 sm:text-64 mb-10">
+		<h1 class="font-bold text-44 sm:text-64 leading-115 tracking-title mb-10">
 			Fernando Garcia
 		</h1>
 		<p class="max-w-24em font-light text-20 sm:text-24 leading-150 mb-16">
-			I am a <s>Frontend</s> UX Developer, I make sure the products I build help their target audience and are easy to maintain. I create Vue.js applications and business-oriented marketing pages with Next.js and WordPress.
+			I am a Frontend Developer, I make sure the products I build help their target audience reach their goals while keeping the codebase maintanable and joyful to work on. I work with <a class="underline" href="/">Vue</a>, <a class="underline" href="/">Next</a>, <a class="underline" href="/">Svelte</a>, and <a class="underline" href="/">WordPress</a>.
 		</p>
 		<ul class="flex flex-wrap">
 			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">

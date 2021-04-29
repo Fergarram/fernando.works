@@ -14,51 +14,31 @@
 </script>
 
 <script>
+	import cover from '../../assets/article-cover-test.jpg';
 	export let post;
 </script>
 
-<style>
-	/*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
-	.content :global(h2) {
-		font-size: 1.4em;
-		font-weight: 500;
-	}
-
-	.content :global(pre) {
-		background-color: #f9f9f9;
-		box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-		padding: 0.5em;
-		border-radius: 2px;
-		overflow-x: auto;
-	}
-
-	.content :global(pre) :global(code) {
-		background-color: transparent;
-		padding: 0;
-	}
-
-	.content :global(ul) {
-		line-height: 1.5;
-	}
-
-	.content :global(li) {
-		margin: 0 0 0.5em 0;
-	}
-</style>
-
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{ post.title }</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
-
-<div class="content">
-	{@html post.html}
-</div>
+<article class="bg-light-gray min-h-screen pt-20 xs:pt-44 sm:pt-32 md:pt-44 lg:pt-56 xl:pt-64 pb-40">
+	<div class="max-w-screen-xl mx-auto sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-8 xl:mb-16">
+		<picture class="block">
+			<img
+				class="w-full h-auto"
+				alt=""
+				src={cover}
+			/>
+		</picture>
+	</div>
+	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
+		<h1 class="font-bold text-32 sm:text-44 md:text-48 lg:text-64 leading-125 tracking-title mb-6 md:mb-10 lg:mb-12">
+			{ post.title }
+		</h1>
+		<time class="block font-mono text-14 font-thin mb-8 sm:mb-16 md:mb-20 lg:mb-32" datetime="2021-07-07">July 7, 2021</time>
+		<div class="article-content">
+			{ @html post.html }
+		</div>
+	</div>
+</article>

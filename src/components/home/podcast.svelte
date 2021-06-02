@@ -11,7 +11,7 @@
 			<p class="max-w-24em font-light text-20 sm:text-24 leading-150 mb-10">
 				I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations.
 			</p>
-			<a class="link-button" href="/">
+			<a class="link-button" href="/podcast">
 				Learn More
 			</a>
 		</div>

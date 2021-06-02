@@ -44,10 +44,10 @@
 		<h1 class="font-bold text-44 md:text-64 leading-125 tracking-title mb-4">
 			Amateur Archaeology KaiOS Edition
 		</h1>
-		<time class="block text-24 sm:text-28 font-thin " datetime="2021-07-07">
+		<time class="block text-24 font-thin " datetime="2021-07-07">
 			April 2020
 		</time>
-		<ul class="flex flex-wrap mb-14 sm:mb-20 md:mb-24 lg:mb-32 mt-16">
+		<ul class="flex flex-wrap mb-14 sm:mb-20 md:mb-24 lg:mb-24 mt-16">
 			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
 				<a class="link-button" href="/">
 					play game

@@ -18,7 +18,7 @@
 						Project
 					</span>
 					<img
-						class="rounded-md w-full h-auto object-cover object-center transform hover:scale-105 transition-transform"
+						class="rounded-md w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-500"
 						alt=""
 						src={article1}
 					/>
@@ -44,7 +44,7 @@
 						Blog post
 					</span>
 					<img
-						class="rounded-md w-full h-auto object-cover object-center transform hover:scale-105 transition-transform"
+						class="rounded-md w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-500"
 						alt=""
 						src={article2}
 					/>

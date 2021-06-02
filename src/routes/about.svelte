@@ -8,31 +8,6 @@
 
 <section class="bg-green pt-24 xs:pt-48 md:pt-56 lg:pt-64 xl:pt-80 pb-40">
 	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
-		<h1 class="font-bold text-44 leading-115 tracking-title sm:text-64 mb-8">
-			About Me
-		</h1>
-		<ul class="flex flex-wrap mb-10">
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					LinkedIn
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					Twitter
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					Dev.to
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					Instagram
-				</a>
-			</li>
-		</ul>
 		<picture class="block mb-16">
 			<img
 				class="w-full max-w-xl h-auto rounded-md"
@@ -40,6 +15,9 @@
 				src={photo}
 			/>
 		</picture>
+		<h1 class="font-bold text-44 leading-115 tracking-title sm:text-64 mb-8">
+			About Me
+		</h1>
 		<div class="max-w-30em font-light text-20 sm:text-24 leading-150 mb-16">
 			<p class="mb-8">
 				As you could already tell, my name is Fernando Garcia. I am a frontend developer currently based in Mexico. I specialize in web technology although I have <a class="underline" href="/">created apps</a> for Android and iOS, too.

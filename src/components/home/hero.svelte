@@ -15,7 +15,7 @@
 			Fernando Garcia
 		</h1>
 		<p class="max-w-24em font-light text-20 sm:text-24 leading-150 mb-16">
-			I am a Frontend Developer, I make sure the products I build help their target audience reach their goals while keeping the codebase maintanable and joyful to work on. I work with <a class="underline" href="/">Vue</a>, <a class="underline" href="/">Next</a>, <a class="underline" href="/">Svelte</a>, and <a class="underline" href="/">WordPress</a>.
+			I am a Frontend Developer and Designer. I make sure the products I build help their target audience reach their goals while keeping the codebase maintanable and joyful to work on. <br><br>I work with <a class="underline" href="/">Vue</a>, <a class="underline" href="/">Next</a>, <a class="underline" href="/">Svelte</a>, and <a class="underline" href="/">Figma</a>.
 		</p>
 		<ul class="flex flex-wrap">
 			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">

@@ -43,7 +43,7 @@ module.exports = {
       'title': '-0.005em'
     },
     screens: {
-      'xs': '26.5625rem',
+      'xs': '23.4375rem',
       'sm': '37.5rem',
       'md': '48rem',
       'lg': '64rem',

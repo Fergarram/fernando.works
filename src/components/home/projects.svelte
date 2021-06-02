@@ -8,7 +8,7 @@
 			Projects
 		</h2>
 		<p class="max-w-24em font-light text-20 sm:text-24 leading-150 mb-10">
-			The projects I’ve worked on consist of a mix of toys, marketing websites, mobile apps, videogames, and ui design mocks.
+			The projects I’ve worked on consist of a mix of toys, websites, mobile apps, video games, and UI design mocks.
 		</p>
 		<a class="link-button" href="/">
 			See Projects

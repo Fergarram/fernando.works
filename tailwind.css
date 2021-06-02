@@ -2,7 +2,7 @@
 @tailwind utilities;
 
 .link-button {
-	@apply font-mono text-16 lg:text-18 uppercase font-semibold;
+	@apply font-mono text-16 uppercase font-semibold;
 }
 
 .link-button::before {

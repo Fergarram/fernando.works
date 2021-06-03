@@ -5,6 +5,10 @@ module.exports = {
   // ],
   darkMode: false,
   theme: {
+    fontFamily: {
+      'mono': [ 'Roboto Mono', 'monospace' ],
+      'sans': [ '-apple-system', 'Roboto' ]
+    },
     fontSize: {
       '12': '0.75rem',
       '14': '0.875rem',
@@ -32,8 +36,8 @@ module.exports = {
       'current': 'currentColor',
       'black': 'black',
       'white': 'white',
-      'green': '#C0C79E',
-      'yellow': '#F6EDD4',
+      'green': 'rgb(189, 206, 142)',
+      'yellow': 'rgb(255, 226, 158)',
       'dark-gray': '#CAD3D7',
       'light-gray': '#ECECEC',
       'blue': '#0056B6',

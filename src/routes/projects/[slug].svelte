@@ -32,16 +32,16 @@
 			/>
 		</picture>
 	</div>
-	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
+	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 		<ul class="flex flex-wrap mb-4 xs:mb-8">
-			<li class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white mr-5 my-2">
+			<li class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white mr-4 my-2">
 				Video Game
 			</li>
-			<li class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white mr-5 my-2">
+			<li class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white my-2">
 				Web Development
 			</li>
 		</ul>
-		<h1 class="font-bold text-44 md:text-64 leading-125 tracking-title mb-4">
+		<h1 class="font-bold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-125 tracking-title mb-4">
 			Amateur Archaeology KaiOS Edition
 		</h1>
 		<time class="block text-24 font-thin " datetime="2021-07-07">

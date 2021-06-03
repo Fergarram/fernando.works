@@ -5,7 +5,7 @@
 </script>
 
 <header class="relative max-w-screen-xl mx-auto">
-	<div class="absolute max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28 w-full pt-6 xs:pt-12 md:pt-20 lg:pt-24 xl:pt-32 flex flex-col sm:flex-row sm:items-center justify-between z-50">
+	<div class="absolute max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 w-full pt-6 xs:pt-12 md:pt-20 lg:pt-24 flex flex-col sm:flex-row sm:items-center justify-between z-50">
 		<a class="block" href="/" aria-label="Home page">
 			<img alt="Fernando.Works" src={logo} />
 		</a>

@@ -3,16 +3,16 @@
 	import article2 from '../../assets/article2.jpg';
 </script>
 
-<section class="bg-light-gray pt-32 pb-60">
-	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
-		<h2 class="font-bold text-44 leading-115 tracking-title sm:text-64 mb-10">
+<section class="bg-light-gray pt-12 md:pt-16 lg:pt-20 xl:pt-28 pb-60">
+	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
+		<h2 class="font-bold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-6 md:mb-10">
 			Recent Publications
 		</h2>
 		<a class="inline-block link-button mb-16" href="/">
 			See Archive
 		</a>
-		<div class="grid sm:grid-cols-2 gap-16 md:gap-20 lg:gap-28 xl:gap-36">
-			<article class="max-w-xs sm:max-w-none">
+		<div class="grid sm:grid-cols-2 gap-8 md:gap-12 lg:gap-20 xl:gap-36">
+			<article class="max-w-sm sm:max-w-none">
 				<a href="/" class="block relative overflow-hidden rounded-md" aria-label="Read Article">
 					<span aria-hidden="true" class="block absolute top-0 left-0 bg-black text-white text-12 uppercase rounded-md ml-4 mt-4 px-3 py-2 font-semibold shadow-cat z-10">
 						Project
@@ -38,7 +38,7 @@
 					See Project
 				</a>
 			</article>
-			<article class="max-w-xs sm:max-w-none">
+			<article class="max-w-sm sm:max-w-none">
 				<a href="/" class="block relative overflow-hidden rounded-md" aria-label="Read Article">
 					<span aria-hidden="true" class="block absolute top-0 left-0 bg-black text-white text-12 uppercase rounded-md ml-4 mt-4 px-3 py-2 font-semibold shadow-cat z-10">
 						Blog post

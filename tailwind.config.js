@@ -3,7 +3,7 @@ module.exports = {
   // purge: [
   //   './src/**/*.svelte'
   // ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     fontSize: {
       '12': '0.75rem',
@@ -14,8 +14,11 @@ module.exports = {
       '24': '1.5rem',
       '28': '1.75rem',
       '32': '2rem',
+      '36': '2.25rem',
+      '40': '2.5rem',
       '44': '2.75rem',
       '48': '3rem',
+      '56': '3.5rem',
       '64': '4rem',
     },
     lineHeight: {

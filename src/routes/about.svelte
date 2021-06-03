@@ -6,19 +6,19 @@
 	import photo from '../assets/about.jpg';
 </script>
 
-<section class="bg-green pt-24 xs:pt-48 md:pt-56 lg:pt-64 xl:pt-80 pb-40">
-	<div class="max-w-screen-xl mx-auto px-4 xs:px-12 md:px-16 lg:px-20 xl:px-28">
-		<picture class="block mb-16">
+<section class="bg-green pt-24 xs:pt-48 md:pt-56 lg:pt-64 pb-40">
+	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
+		<picture class="block mb-8 md:mb-16">
 			<img
 				class="w-full max-w-xl h-auto rounded-md"
 				alt="Fernando semi-squating looking at the sky on top of an ancient mexican pyramid."
 				src={photo}
 			/>
 		</picture>
-		<h1 class="font-bold text-44 leading-115 tracking-title sm:text-64 mb-8">
+		<h1 class="font-bold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 			About Me
 		</h1>
-		<div class="max-w-30em font-light text-20 sm:text-24 leading-150 mb-16">
+		<div class="max-w-30em font-light text-18 xs:text-20 md:text-24 leading-150 mb-16">
 			<p class="mb-8">
 				As you could already tell, my name is Fernando Garcia. I am a frontend developer currently based in Mexico. I specialize in web technology although I have <a class="underline" href="/">created apps</a> for Android and iOS, too.
 			</p>
@@ -28,7 +28,7 @@
 			<p class="mb-8">
 				Although, I’ll push for Vue for more complex web applications and Next for headless marketing sites since it’s a more developed ecosystem. For personal projects, I will most likely use Svelte or Vue, though.
 			</p>
-			<h2 class="font-semibold text-32 sm:text-44 leading-115 tracking-title mt-12 mb-6">
+			<h2 class="font-semibold text-32 sm:text-40 lg:text-44 leading-115 tracking-title mt-12 mb-6">
 				More stuff about me lol
 			</h2>
 			<p class="mb-8">

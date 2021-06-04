@@ -36,32 +36,32 @@
 			</legend>
 			<ul class="flex flex-wrap">
 				<li class="mr-3 my-2">
-					<button class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white">
+					<button class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black">
 						Raspberry Pi
 					</button>
 				</li>
 				<li class="mr-3 my-2">
-					<button class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white">
+					<button class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black">
 						UX & UI Design
 					</button>
 				</li>
 				<li class="mr-3 my-2">
-					<button class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white">
+					<button class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black">
 						Vue.js
 					</button>
 				</li>
 				<li class="mr-3 my-2">
-					<button class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white">
+					<button class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black">
 						Svelte
 					</button>
 				</li>
 				<li class="mr-3 my-2">
-					<button class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white">
+					<button class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black">
 						Video Game
 					</button>
 				</li>
 				<li class="my-2">
-					<button class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white">
+					<button class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black">
 						Web Development
 					</button>
 				</li>

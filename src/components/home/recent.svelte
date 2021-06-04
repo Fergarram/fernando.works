@@ -27,10 +27,10 @@
 					Amateur Archaeology KaiOS Edition
 				</span>
 				<ul class="hidden lg:flex flex-wrap mt-3">
-					<li class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white mr-5 my-2">
+					<li class="h-max-content bg-black-a-20 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black mr-5 my-2">
 						Video Game
 					</li>
-					<li class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white mr-5 my-2">
+					<li class="h-max-content bg-black-a-20 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black mr-5 my-2">
 						Web Development
 					</li>
 				</ul>

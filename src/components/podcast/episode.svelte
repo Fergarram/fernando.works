@@ -10,7 +10,7 @@
 			class="w-36 h-36 border-4"
 		/>
 	</picture>
-	<h3 class="font-bold text-24 sm:text-28 lg:text-32 leading-115 tracking-title mb-5 sm:mb-6">
+	<h3 class="font-semibold text-24 sm:text-28 lg:text-32 leading-115 tracking-title mb-5 sm:mb-6">
 		Episode {episode.number}  —  <span class="whitespace-nowrap">{episode.guest}</span>
 	</h3>
 	<p class="text-18 md:text-20 font-light leading-150 mb-6">

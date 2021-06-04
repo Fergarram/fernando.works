@@ -5,7 +5,7 @@
 
 <section class="bg-light-gray pt-12 md:pt-16 lg:pt-20 xl:pt-28 pb-60">
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-		<h2 class="font-bold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-6 md:mb-10">
+		<h2 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-6 md:mb-10">
 			Recent Publications
 		</h2>
 		<a class="inline-block link-button mb-16" href="/">

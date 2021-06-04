@@ -17,30 +17,20 @@
 		<p class="max-w-24em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-16">
 			I am a Frontend Developer and Designer. I make sure the products I build help their target audience reach their goals while keeping the codebase maintanable and joyful to work on.
 		</p>
-		<ul class="flex flex-wrap">
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					bio
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					Portfolio
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
+		<ul class="flex">
+			<li class="mr-6 xs:mr-10">
 				<a class="link-button" href="/">
 					LinkedIn
 				</a>
 			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
+			<li class="mr-6 xs:mr-10">
 				<a class="link-button" href="/">
 					Github
 				</a>
 			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3">
+			<li class="">
 				<a class="link-button" href="/">
-					Twitter
+					Behance
 				</a>
 			</li>
 		</ul>

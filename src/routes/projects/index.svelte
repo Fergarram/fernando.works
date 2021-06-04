@@ -31,7 +31,7 @@
 			The projects I’ve worked on consistof a mix of toys, marketing websites, mobile apps, videogames, and ui design mocks.
 		</p>
 		<fieldset>
-			<legend class="block text-18 font-normal mb-2">
+			<legend class="block text-18 xs:text-20 font-normal mb-2">
 				Project filters:
 			</legend>
 			<ul class="flex flex-wrap">

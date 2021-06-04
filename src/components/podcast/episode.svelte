@@ -13,7 +13,7 @@
 	<h3 class="font-semibold text-24 sm:text-28 lg:text-32 leading-115 tracking-title mb-5 sm:mb-6">
 		Episode {episode.number}  —  <span class="whitespace-nowrap">{episode.guest}</span>
 	</h3>
-	<p class="text-18 md:text-20 font-light leading-150 mb-6">
+	<p class="text-18 md:text-20 font-normal leading-150 mb-6">
 		{@html episode.summary}
 	</p>
 	<ul class="flex flex-wrap">

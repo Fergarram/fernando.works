@@ -18,7 +18,7 @@
 		<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 			About Me
 		</h1>
-		<div class="max-w-30em font-light text-18 xs:text-20 md:text-24 leading-150 mb-16">
+		<div class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-16">
 			<p class="mb-8">
 				As you could already tell, my name is Fernando Garcia. I am a frontend developer currently based in Mexico. I specialize in web technology although I have <a class="underline" href="/">created apps</a> for Android and iOS, too.
 			</p>

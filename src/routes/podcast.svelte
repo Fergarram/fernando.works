@@ -42,7 +42,7 @@
 		<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 			Digital Crafters
 		</h1>
-		<div class="max-w-30em font-light text-18 xs:text-20 md:text-24 leading-150 mb-8 md:mb-16">
+		<div class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-8 md:mb-16">
 			<p>
 				I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
 			</p>

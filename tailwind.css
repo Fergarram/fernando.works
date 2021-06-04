@@ -2,7 +2,7 @@
 @tailwind utilities;
 
 .link-button {
-	@apply font-mono text-16 md:text-18 uppercase font-semibold;
+	@apply font-mono text-16 md:text-18 uppercase font-semibold whitespace-nowrap border-b-2;
 }
 
 .article-content {

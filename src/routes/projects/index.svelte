@@ -27,12 +27,12 @@
 		<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 			Projects
 		</h1>
-		<p class="max-w-30em font-light text-18 xs:text-20 md:text-24 leading-150 mb-10 md:mb-16">
+		<p class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-10 md:mb-16">
 			The projects I’ve worked on consistof a mix of toys, marketing websites, mobile apps, videogames, and ui design mocks.
 		</p>
 		<fieldset>
-			<legend class="block text-16 font-semibold mb-2">
-				Project filters
+			<legend class="block text-18 font-normal mb-2">
+				Project filters:
 			</legend>
 			<ul class="flex flex-wrap">
 				<li class="mr-3 my-2">

@@ -7,7 +7,7 @@
 		<h2 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 			Projects
 		</h2>
-		<p class="max-w-24em font-light text-18 xs:text-20 md:text-24 leading-150 mb-10">
+		<p class="max-w-24em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-10">
 			The projects I’ve worked on consist of a mix of toys, websites, mobile apps, video games, and UI design mocks.
 		</p>
 		<a class="link-button" href="/projects">

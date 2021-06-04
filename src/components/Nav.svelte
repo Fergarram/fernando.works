@@ -36,7 +36,7 @@
 					<a
 						rel=prefetch aria-current="{segment === 'about' ? 'page' : undefined}"
 						href="about">
-						bio
+						About
 					</a>
 				</li>
 			</ul>

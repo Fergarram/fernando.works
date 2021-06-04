@@ -19166,10 +19166,12 @@ video {
 }
 
 .link-button {
+  border-bottom-width: 2px;
   font-family: Roboto Mono, monospace;
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 @media (min-width: 48rem) {

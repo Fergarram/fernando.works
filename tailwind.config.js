@@ -36,6 +36,7 @@ module.exports = {
       'current': 'currentColor',
       'black': 'black',
       'white': 'white',
+      'red': 'rgb(232, 132, 93)',
       'green': 'rgb(176, 196, 121)',
       'yellow': 'rgb(255, 219, 133)',
       'dark-gray': '#CAD3D7',

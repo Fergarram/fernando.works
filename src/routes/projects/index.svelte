@@ -11,13 +11,6 @@
 	export let posts;
 </script>
 
-<style>
-	ul {
-		margin: 0 0 1em 0;
-		line-height: 1.5;
-	}
-</style>
-
 <svelte:head>
 	<title>Projects - Fernando.Works</title>
 </svelte:head>
@@ -69,6 +62,8 @@
 		</fieldset>
 	</section>
 	<section class="max-w-screen-xl mx-auto px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 grid sm:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 lg:gap-16 xl:gap-8">
+		<PostCard />
+		<PostCard />
 		<PostCard />
 		<PostCard />
 		<PostCard />

@@ -3,7 +3,9 @@
 
 	export let post = {
 		title: 'Amateur Archaeology KaiOS Edition',
-		type: 'project',
+		type: 'post',
+		date: '07-07-2021',
+		dateFormatted: 'July 7, 2021',
 		showType: false,
 		mainTag: 'Video Game',
 		tags: [ 'Video Game', 'Web Development' ],
@@ -32,9 +34,17 @@
 	<span class="inline-block mt-6 text-24 sm:text-20 md:text-24 lg:text-32 xl:text-24 leading-125 tracking-title font-bold">
 		{ post.title }
 	</span>
-	<span class="inline-block mt-3 h-max-content bg-black-a-70 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white mr-5 my-2 last:mr-0">
-		{ post.mainTag }
-	</span>
+	{#if post.type === 'project'}
+		<span class="inline-block mt-3 h-max-content bg-black-a-70 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white mr-5 my-2 last:mr-0">
+			{ post.mainTag }
+		</span>
+	{:else}
+		<time
+			class="block font-light text-16 md:text-18 xl:text-16 font-thin mt-1"
+			datetime={ post.date }>
+			{ post.dateFormatted }
+		</time>
+	{/if}
 	{#if post.buttonLabel}
 		<a class="inline-block link-button mt-4" href="/">
 			{ post.buttonLabel }

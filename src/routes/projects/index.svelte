@@ -9,6 +9,10 @@
 <script>
 	import PostCard from '../../components/post-card.svelte';
 	export let posts;
+	export let fields = {
+		heading: 'Projects',
+		paragraph: 'The projects I’ve worked on consistof a mix of toys, marketing websites, mobile apps, videogames, and ui design mocks.',
+	};
 </script>
 
 <svelte:head>
@@ -18,10 +22,10 @@
 <div class="bg-dark-gray min-h-screen pt-28 xs:pt-44 sm:pt-32 md:pt-44 lg:pt-56 xl:pt-64 pb-40">
 	<section class="max-w-screen-xl mx-auto px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 md:mb-8">
 		<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
-			Projects
+			{ fields.heading }
 		</h1>
 		<p class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-10 md:mb-16">
-			The projects I’ve worked on consistof a mix of toys, marketing websites, mobile apps, videogames, and ui design mocks.
+			{ fields.paragraph }
 		</p>
 		<fieldset>
 			<legend class="block text-18 xs:text-20 font-normal mb-2">

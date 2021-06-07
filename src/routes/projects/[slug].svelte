@@ -22,7 +22,7 @@
 	<title>Amateur Archaeology KaiOS Edition</title>
 </svelte:head>
 
-<article class="bg-dark-gray min-h-screen pt-20 xs:pt-44 sm:pt-32 md:pt-44 lg:pt-56 xl:pt-64 pb-40">
+<article class="bg-dark-gray min-h-screen pt-20 xs:pt-44 sm:pt-32 md:pt-44 lg:pt-56 pb-40">
 	<div class="max-w-screen-xl mx-auto sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4">
 		<picture class="block">
 			<img

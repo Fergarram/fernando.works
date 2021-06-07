@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Fernando Garcia - UX Developer</title>
+	<title>Home - Fernando Works</title>
 </svelte:head>
 
 <Hero />

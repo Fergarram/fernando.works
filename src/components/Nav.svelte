@@ -1,6 +1,5 @@
 <script>
 	import logo from '../assets/logo.svg';
-
 	export let segment;
 </script>
 
@@ -13,6 +12,7 @@
 			<ul class="font-mono uppercase font-semibold flex">
 				<li class="mr-6">
 					<a
+						rel=prefetch
 						aria-current="{segment === 'projects' ? 'page' : undefined}"
 						href="projects">
 						projects
@@ -20,6 +20,7 @@
 				</li>
 				<li class="mr-6">
 					<a
+						rel=prefetch
 						aria-current="{segment === 'blog' ? 'page' : undefined}"
 						href="blog">
 						blog
@@ -27,14 +28,16 @@
 				</li>
 				<li class="mr-6">
 					<a
-						rel=prefetch aria-current="{segment === 'podcast' ? 'page' : undefined}"
+						rel=prefetch
+						aria-current="{segment === 'podcast' ? 'page' : undefined}"
 						href="podcast">
 						podcast
 					</a>
 				</li>
 				<li>
 					<a
-						rel=prefetch aria-current="{segment === 'about' ? 'page' : undefined}"
+						rel=prefetch
+						aria-current="{segment === 'about' ? 'page' : undefined}"
 						href="about">
 						About
 					</a>

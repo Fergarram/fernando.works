@@ -101,7 +101,7 @@
 					{#if post.tags }
 						<ul class="hidden lg:flex flex-wrap mt-3">
 							{#each post.tags as tag }
-								<li class="h-max-content bg-black-a-20 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black mr-5 my-2 last:mr-0">
+								<li class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black mr-5 my-2 last:mr-0">
 									{ tag }
 								</li>
 							{/each}

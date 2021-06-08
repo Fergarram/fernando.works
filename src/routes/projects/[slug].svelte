@@ -34,10 +34,10 @@
 	</div>
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 		<ul class="flex flex-wrap mb-4 xs:mb-8">
-			<li class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white mr-4 my-2">
+			<li class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black mr-4 my-2">
 				Video Game
 			</li>
-			<li class="h-max-content bg-black-a-40 px-3 py-2 rounded-md uppercase text-12 font-semibold text-white my-2">
+			<li class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black my-2">
 				Web Development
 			</li>
 		</ul>

@@ -1,14 +1,31 @@
-<script context="module">
+<!-- <script context="module">
 	export function preload() {
 		return this.fetch(`blog.json`).then(r => r.json()).then(posts => {
 			return { posts };
 		});
 	}
-</script>
+</script> -->
 
 <script>
 	import PostCard from '../../components/post-card.svelte';
-	export let posts;
+	import article2 from '../../assets/article2.jpg';
+	export let posts = [
+		{
+			title: 'The window based personal website that I almost ended up using',
+			type: 'Blog post',
+			date: '07-07-2021',
+			dateFormatted: 'July 7, 2021',
+			showType: true,
+			mainTag: null,
+			tags: null,
+			buttonLabel: '',
+			link: '/blog/how-can-i-get-involved',
+			thumb: {
+				url: article2,
+				alt: 'cover alt'
+			}
+		},
+	];
 </script>
 
 <svelte:head>
@@ -21,8 +38,8 @@
 	}
 </style>
 
-<div class="bg-light-gray min-h-screen pt-28 xs:pt-44 sm:pt-32 md:pt-44 lg:pt-56 xl:pt-64 pb-40">
-	<section class="max-w-screen-xl mx-auto px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 md:mb-8">
+<div class="bg-light-gray min-h-screen pt-28 xs:pt-32 sm:pt-40 md:pt-44 lg:pt-56 xl:pt-64 pb-40">
+	<section class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 md:mb-8">
 		<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-8 xs:mb-12 sm:mb-16">
 			Blog Archive
 		</h1>
@@ -43,6 +60,7 @@
 			<select
 				name="order"
 				id="order-field"
+				aria-controls="posts-section"
 				aria-label="Pick order"
 				class="bg-transparent text-16 cursor-pointer focus:outline-none">
 				<option value="newest">Showing newest first</option>
@@ -50,12 +68,12 @@
 			</select>
 		</div>
 	</section>
-	<section class="max-w-screen-xl mx-auto px-6 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 grid sm:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 lg:gap-16 xl:gap-8">
-		<PostCard />
-		<PostCard />
-		<PostCard />
-		<PostCard />
-		<PostCard />
-		<PostCard />
+	<section
+		id="posts-section"
+		aria-live="polite"
+		class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 grid sm:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 lg:gap-16 xl:gap-8">
+		{#each posts as post}
+			<PostCard {post}/>
+		{/each}
 	</section>
 </div>

@@ -4,9 +4,39 @@
 
 <script>
 	import Episode from '../components/podcast/episode.svelte';
-	import photo from '../assets/delete-me.png';
+	import yoyo from '../assets/yoyo.jpg';
+	import rayray from '../assets/rayray.jpg';
 	import rubna from '../assets/rubna.jpg';
 	import ray from '../assets/ray.jpg';
+
+	export const fields = {
+		images: {
+			host: {
+				url: yoyo,
+				alt: ''
+			},
+			guest: {
+				url: rayray,
+				alt: ''
+			}
+		},
+		heading: 'Digital Crafters',
+		paragraph: 'I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.',
+		links: [
+			{
+				label: 'Youtube',
+				url: 'https://www.youtube.com/channel/UCPBwZWChghNODkWGWDga-tw',
+			},
+			{
+				label: 'Spotify',
+				url: 'https://open.spotify.com/show/1Nluhq1TWoWoaFAhM2K8yN?si=RsvU1lBfTo-2q89GD9XMLQ&dl_branch=1',
+			},
+			{
+				label: 'Amazon',
+				url: 'https://music.amazon.com/podcasts/24ca2851-bb56-4bf9-916e-bbfa9031304b/Digital-Crafters',
+			},
+		]
+	};
 
 	const episodes = [
 		{
@@ -30,39 +60,59 @@
 	];
 </script>
 
-<section class="bg-yellow pt-24 xs:pt-48 md:pt-56 lg:pt-64 pb-12 md:pb-16 lg:pb-20 xl:pb-28">
+<style>
+	.host-picture {
+		display: block;
+		width: 70%;
+		height: 38vw;
+		max-height: 18.5rem;
+	}
+
+	.guest-picture {
+		display: block;
+		position: absolute;
+		width: 45%;
+		height: 25vw;
+		max-height: 12rem;
+		bottom: -15%;
+		right: 0;
+	}
+</style>
+
+<section class="bg-yellow pt-24 xs:pt-32 sm:pt-40 md:pt-56 lg:pt-64 pb-12 md:pb-16 lg:pb-20 xl:pb-28">
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-		<picture class="block mb-8 md:mb-16">
-			<img
-				class="max-w-full h-auto rounded-md"
-				alt="Fernando semi-squating looking at the sky on top of an ancient mexican pyramid."
-				src={photo}
-			/>
-		</picture>
+		<div class="relative mb-10 xs:mb-14 sm:mb-20 md:mb-32 max-w-2xl">
+			<picture class="host-picture">
+				<img
+					src={ fields.images.host.url }
+					alt={ fields.images.host.alt }
+					class="rounded-md object-cover object-center w-full h-full"
+				/>
+			</picture>
+			<picture class="guest-picture">
+				<img
+					src={ fields.images.guest.url }
+					alt={ fields.images.guest.alt }
+					class="rounded-md object-cover object-center w-full h-full"
+				/>
+			</picture>
+		</div>
 		<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
-			Digital Crafters
+			{@html fields.heading } 
 		</h1>
 		<div class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-8 md:mb-16">
 			<p>
-				I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.
+				{@html fields.paragraph }
 			</p>
 		</div>
 		<ul class="flex flex-wrap">
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					Youtube
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					Spotify
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3">
-				<a class="link-button" href="/">
-					Amazon
-				</a>
-			</li>
+			{#each fields.links as link }
+				<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3 sm:mr-10 last:mr-0">
+					<a class="link-button" rel="noopener" href={ link.url }>
+						{ link.label }
+					</a>
+				</li>
+			{/each}
 		</ul>
 	</div>
 </section>

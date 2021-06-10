@@ -17,17 +17,17 @@
 		{@html episode.summary}
 	</p>
 	<ul class="flex flex-wrap">
-		<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
+		<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3 sm:mr-10">
 			<a class="link-button" href={episode.youtubeUrl}>
 				Youtube
 			</a>
 		</li>
-		<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
+		<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3 sm:mr-10">
 			<a class="link-button" href={episode.spotifyUrl}>
 				Spotify
 			</a>
 		</li>
-		<li class="w-1/2 sm:w-auto flex mb-3">
+		<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3">
 			<a class="link-button" href={episode.amazonUrl}>
 				Amazon
 			</a>

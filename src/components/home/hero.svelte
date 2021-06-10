@@ -28,7 +28,7 @@
 	};
 </script>
 
-<section class="bg-green pt-28 xs:pt-40 md:pt-56 lg:pt-64 pb-12 md:pb-16 lg:pb-20 xl:pb-28">
+<section class="bg-green pt-28 xs:pt-32 sm:pt-40 md:pt-56 lg:pt-64 pb-12 md:pb-16 lg:pb-20 xl:pb-28">
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 		<picture class="block mb-10">
 			<img

@@ -22,7 +22,7 @@
 	<title>{ post.title }</title>
 </svelte:head>
 
-<article class="bg-light-gray min-h-screen pt-20 xs:pt-44 sm:pt-32 md:pt-44 lg:pt-56 pb-40">
+<article class="bg-light-gray min-h-screen pt-20 xs:pt-32 sm:pt-40 md:pt-44 lg:pt-56 pb-40">
 	<div class="max-w-screen-xl mx-auto sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-8 xl:mb-16">
 		<picture class="block">
 			<img

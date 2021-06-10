@@ -8,7 +8,7 @@
 		<a class="block" href="/" aria-label="Home page">
 			<img alt="Fernando.Works" src={logo} />
 		</a>
-		<nav class="hidden xs:block pt-8 sm:pt-0">
+		<nav class="hidden sm:block pt-8 sm:pt-0">
 			<ul class="font-mono uppercase font-semibold flex">
 				<li class="mr-6">
 					<a

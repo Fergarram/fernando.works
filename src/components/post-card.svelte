@@ -1,21 +1,5 @@
 <script>
-	import article1 from '../assets/article1.jpg';
-
-	export let post = {
-		title: 'Amateur Archaeology KaiOS Edition',
-		type: 'project',
-		date: '07-07-2021',
-		dateFormatted: 'July 7, 2021',
-		showType: false,
-		mainTag: 'Video Game',
-		tags: [ 'Video Game', 'Web Development' ],
-		buttonLabel: '',
-		link: '/projects/how-can-i-get-involved',
-		thumb: {
-			url: article1,
-			alt: 'cover alt'
-		}
-	};
+	export let post;
 </script>
 
 <article class="max-w-sm sm:max-w-none">

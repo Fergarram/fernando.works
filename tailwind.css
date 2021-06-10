@@ -5,6 +5,18 @@
 	@apply font-mono text-16 md:text-18 uppercase font-semibold whitespace-nowrap border-b-2;
 }
 
+.page-content p {
+	@apply mb-8 last:mb-0;
+}
+
+.page-content a {
+	text-decoration: underline;
+}
+
+.page-content h2 {
+	@apply font-semibold text-32 sm:text-40 lg:text-44 leading-115 tracking-title mt-12 mb-6;
+}
+
 .article-content {
 	@apply leading-175 font-light text-16 md:text-18;
 

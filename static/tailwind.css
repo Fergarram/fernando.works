@@ -21518,6 +21518,39 @@ video {
   }
 }
 
+.page-content p {
+  margin-bottom: 2rem;
+}
+
+.page-content p:last-child {
+  margin-bottom: 0px;
+}
+
+.page-content a {
+  text-decoration: underline;
+}
+
+.page-content h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  letter-spacing: -0.005em;
+}
+
+@media (min-width: 37.5rem) {
+  .page-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .page-content h2 {
+    font-size: 2.75rem;
+  }
+}
+
 .article-content {
   font-weight: 300;
   font-size: 1rem;

@@ -2,6 +2,26 @@
 	export let post;
 </script>
 
+<style>
+	.responsive-thumb {
+		height: 50vw;
+		max-height: 13.75rem;
+	}
+
+	@media screen and (min-width: 37.5rem) {
+		.responsive-thumb {
+			height: 23.5vw;
+			max-height: 100%;
+		}
+	}
+
+	@media screen and (min-width: 80rem) {
+		.responsive-thumb {
+			height: 12rem;
+		}
+	}
+</style>
+
 <article class="max-w-sm sm:max-w-none">
 	<a href={ post.link } class="block relative overflow-hidden rounded-md" aria-label="Read Article">
 		{#if post.showType}
@@ -10,7 +30,7 @@
 			</span>
 		{/if}
 		<img
-			class="rounded-md w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-500"
+			class="rounded-md w-full responsive-thumb object-cover object-center transform hover:scale-105 transition-transform duration-500"
 			alt={post.thumb.alt}
 			src={post.thumb.url}
 		/>

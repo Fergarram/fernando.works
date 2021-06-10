@@ -29,7 +29,7 @@
 		</div>
 		<picture class="block md:col-span-5 self-center order-1 md:order-none">
 			<img
-				class="w-40 md:w-80 h-auto rounded-md transform md:translate-x-10 lg:transform-none"
+				class="w-40 md:w-80 h-40 md:h-80 rounded-md object-contain object-center transform md:translate-x-10 lg:transform-none"
 				alt={ fields.logo.alt }
 				src={ fields.logo.url }
 			/>

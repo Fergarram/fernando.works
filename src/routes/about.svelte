@@ -61,7 +61,7 @@
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 		<picture class="block mb-8 md:mb-16">
 			<img
-				class="w-full max-w-xl h-auto rounded-md"
+				class="w-full max-w-xl h-48 xs:h-56 sm:h-80 md:h-96 rounded-md object-cover object-center"
 				alt={ fields.image.alt }
 				src={ fields.image.url }
 			/>

@@ -74,6 +74,32 @@
 	];
 </script>
 
+<style>
+	.responsive-thumb {
+		height: 50vw;
+		max-height: 13.75rem;
+	}
+
+	@media screen and (min-width: 37.5rem) {
+		.responsive-thumb {
+			height: 23.5vw;
+		}
+	}
+
+	@media screen and (min-width: 48rem) {
+		.responsive-thumb {
+			height: 22.5vw;
+			max-height: 100%;
+		}
+	}
+
+	@media screen and (min-width: 80rem) {
+		.responsive-thumb {
+			height: 16rem;
+		}
+	}
+</style>
+
 <section class="bg-light-gray pt-12 md:pt-16 lg:pt-20 xl:pt-28 pb-60">
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 		<h2 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-6 md:mb-10">
@@ -90,7 +116,7 @@
 							{ post.type }
 						</span>
 						<img
-							class="rounded-md w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-500"
+							class="rounded-md w-full responsive-thumb object-cover object-center transform hover:scale-105 transition-transform duration-500"
 							alt={ post.thumb.alt }
 							src={ post.thumb.url }
 						/>

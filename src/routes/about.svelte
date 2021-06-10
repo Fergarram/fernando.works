@@ -6,7 +6,7 @@
 	import photo from '../assets/about.jpg';
 </script>
 
-<section class="bg-green pt-24 xs:pt-48 md:pt-56 lg:pt-64 pb-40">
+<section class="bg-green pb-40">
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 		<picture class="block mb-8 md:mb-16">
 			<img

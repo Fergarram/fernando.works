@@ -58,7 +58,7 @@
 	}
 </style>
 
-<div class="bg-dark-gray min-h-screen pt-28 xs:pt-32 sm:pt-40 md:pt-44 lg:pt-56 xl:pt-64 pb-40">
+<div class="bg-dark-gray min-h-screen pb-40">
 	<section class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 md:mb-8">
 		<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 			{@html fields.heading }

@@ -67,11 +67,16 @@ module.exports = {
       },
       boxShadow: {
         'cat': '0 0 3rem 1.25rem rgba(0,0,0,0.35)'
+      },
+      borderWidth: {
+        '3': '3px'
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      margin: ['last']
+    },
   },
   plugins: [],
 }

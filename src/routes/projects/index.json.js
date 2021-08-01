@@ -1,9 +1,15 @@
-import posts from './_posts.js';
+import posts from './_projects.js';
 
 const contents = JSON.stringify(posts.map(post => {
 	return {
 		title: post.title,
-		slug: post.slug
+		link: `projects/${post.slug}`,
+		slug: post.slug,
+		cover: post.cover,
+		primaryTag: post.primaryTag,
+		secondaryTags: post.secondaryTags,
+		tags: post.tags,
+		type: 'project'
 	};
 }));
 

@@ -17,7 +17,7 @@
 
 	@media screen and (min-width: 80rem) {
 		.responsive-thumb {
-			height: 12rem;
+			height: 11rem;
 		}
 	}
 </style>
@@ -31,16 +31,16 @@
 		{/if}
 		<img
 			class="rounded-md w-full responsive-thumb object-cover object-center transform hover:scale-105 transition-transform duration-500"
-			alt={post.thumb.alt}
-			src={post.thumb.url}
+			alt={post.cover.alt}
+			src={post.cover.url}
 		/>
 	</a>
-	<span class="inline-block mt-6 text-24 sm:text-20 md:text-24 lg:text-32 xl:text-24 leading-125 tracking-title font-bold">
+	<span class="block mt-6 text-24 sm:text-20 md:text-24 lg:text-32 xl:text-24 leading-125 tracking-title font-bold">
 		{ post.title }
 	</span>
 	{#if post.type === 'project'}
 		<span class="inline-block mt-3 h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black mr-5 my-2 last:mr-0">
-			{ post.mainTag }
+			{ post.primaryTag }
 		</span>
 	{:else}
 		<time

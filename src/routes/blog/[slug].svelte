@@ -22,11 +22,47 @@
 	<title>{ post.title }</title>
 </svelte:head>
 
+<style>
+	.cover {
+		width: 100%;
+		height: 60vw;
+	}
+
+	/* SM */
+	@media screen and (min-width: 37.5rem) {
+		.cover {
+			height: calc((100vw - 6rem) * 0.6);
+		}
+	}
+
+	/* MD */
+	@media screen and (min-width: 48rem) {
+		.cover {
+			height: calc((100vw - 8rem) * 0.6);
+		}
+	}
+
+	/* LG */
+	@media screen and (min-width: 64rem) {
+		.cover {
+			height: calc((100vw - 10rem) * 0.6);
+		}
+	}
+
+	/* XL */
+	@media screen and (min-width: 80rem) {
+		.cover {
+			height: 39.5rem;
+		}
+	}
+</style>
+
+
 <article class="bg-light-gray min-h-screen pb-40">
 	<div class="max-w-screen-xl mx-auto sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-8 xl:mb-16">
-		<picture class="block">
+		<picture class="cover block">
 			<img
-				class="w-full h-auto min-h-cover object-center object-cover"
+				class="w-full h-full object-center object-cover"
 				alt=""
 				src={cover}
 			/>

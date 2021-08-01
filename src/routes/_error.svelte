@@ -26,7 +26,7 @@
 			<pre class="mt-4">{error.stack}</pre>
 		{/if}
 
-		<a class="link-button inline-block mt-6" href="/projects">
+		<a class="link-button inline-block mt-6" href="/">
 			Return Home
 		</a>
 	</section>

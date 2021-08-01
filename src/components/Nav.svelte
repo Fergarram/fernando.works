@@ -26,13 +26,7 @@
 	];
 </script>
 
-<header
-	class:bg-green={ !isErrorPage && (segment === undefined || segment === 'about') }
-	class:bg-yellow={ segment === 'podcast' }
-	class:bg-dark-gray={ segment === 'projects' }
-	class:bg-light-gray={ segment === 'blog' }
-	class:bg-red={ isErrorPage }
-	class="pb-6">
+<header class="pb-6">
 	<div
 		class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 w-full py-6 sm:py-12 md:py-20 lg:py-24 flex items-center justify-between z-50">
 		<a

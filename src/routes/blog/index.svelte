@@ -15,7 +15,7 @@
 			type: 'Blog post',
 			date: '07-07-2021',
 			dateFormatted: 'July 7, 2021',
-			showType: true,
+			showType: false,
 			mainTag: null,
 			tags: null,
 			buttonLabel: '',

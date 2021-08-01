@@ -18,7 +18,7 @@
 }
 
 .article-content {
-	@apply leading-175 font-light text-16 md:text-18;
+	@apply leading-175 text-16 md:text-18;
 
 	max-width: 45em;
 }
@@ -106,6 +106,16 @@
 	@apply bg-transparent rounded-none p-0 text-white font-light;
 
 	font-size: 1em;
+}
+
+.article-content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.article-content figure figcaption {
+	margin-top: 0.3em;
+	font-size: 0.8em;
 }
 
 .article-content blockquote {

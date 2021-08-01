@@ -1,8 +1,6 @@
 <script context="module">
 	export async function preload({ params }) {
-		// the `slug` parameter is available because
-		// this file is called [slug].svelte
-		const res = await this.fetch(`blog/${params.slug}.json`);
+		const res = await this.fetch(`projects/${params.slug}.json`);
 		const data = await res.json();
 
 		if (res.status === 200) {
@@ -14,55 +12,81 @@
 </script>
 
 <script>
-	import cover from '../../assets/amateur.jpg';
 	export let post;
 </script>
 
 <svelte:head>
-	<title>Amateur Archaeology KaiOS Edition</title>
+	<title>{ post.title }</title>
 </svelte:head>
+
+<style>
+	.cover {
+		width: 100%;
+		height: 50vw;
+	}
+
+	/* SM */
+	@media screen and (min-width: 37.5rem) {
+		.cover {
+			height: calc((100vw - 6rem) / 2 );
+		}
+	}
+
+	/* MD */
+	@media screen and (min-width: 48rem) {
+		.cover {
+			height: calc((100vw - 8rem) / 2 );
+		}
+	}
+
+	/* LG */
+	@media screen and (min-width: 64rem) {
+		.cover {
+			height: calc((100vw - 10rem) / 2 );
+		}
+	}
+
+	/* XL */
+	@media screen and (min-width: 80rem) {
+		.cover {
+			height: 33rem
+		}
+	}
+</style>
 
 <article class="bg-dark-gray min-h-screen pb-40">
 	<div class="max-w-screen-xl mx-auto sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4">
-		<picture class="block">
+		<picture class="cover block">
 			<img
-				class="w-full h-auto min-h-cover object-center object-cover"
-				alt=""
-				src={cover}
+				class="w-full h-full object-center object-cover"
+				alt={post.cover.alt}
+				src={post.cover.url}
 			/>
 		</picture>
 	</div>
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 		<ul class="flex flex-wrap mb-4 xs:mb-8">
-			<li class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black mr-4 my-2">
-				Video Game
-			</li>
-			<li class="h-max-content bg-black-a-10 px-3 py-2 rounded-md uppercase text-12 font-semibold text-black my-2">
-				Web Development
-			</li>
+			{#each [ post.primaryTag, ...post.secondaryTags ] as tag }
+				<li class="h-max-content bg-black-a-10 rounded-md uppercase text-12 font-semibold text-black mr-4 last:mr-0 my-2">
+					<!-- Tags should be clickable with url req query -->
+					<a class="block w-full h-full px-3 py-2" href="/projects">{ tag }</a>
+				</li>
+			{/each}
 		</ul>
 		<h1 class="font-bold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-125 tracking-title mb-4">
-			Amateur Archaeology KaiOS Edition
+			{ post.title }
 		</h1>
-		<time class="block text-24 font-thin " datetime="2021-07-07">
-			April 2020
+		<time class="block text-24 font-thin " datetime={ post.date }>
+			{ post.dateFormatted }
 		</time>
-		<ul class="flex flex-wrap mb-14 sm:mb-20 md:mb-24 lg:mb-24 mt-16">
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					play game
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					fork code
-				</a>
-			</li>
-			<li class="w-1/2 sm:w-auto flex mb-3 sm:mr-10">
-				<a class="link-button" href="/">
-					Read devlog
-				</a>
-			</li>
+		<ul class="flex flex-wrap mb-6 sm:mb-10 lg:mb-14 mt-10">
+			{#each post.links as link }
+				<li class="w-full xs:w-1/3 sm:w-auto flex mb-5 sm:mr-10 last:mr-0">
+					<a class="link-button" href={ link.url }>
+						{ link.label }
+					</a>
+				</li>
+			{/each}
 		</ul>
 		<div class="article-content">
 			{ @html post.html }

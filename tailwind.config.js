@@ -62,9 +62,6 @@ module.exports = {
         '24em': '24em',
         '30em': '30em'
       },
-      minHeight: {
-        'cover': '12rem'
-      },
       boxShadow: {
         'cat': '0 0 3rem 1.25rem rgba(0,0,0,0.35)'
       },

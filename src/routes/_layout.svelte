@@ -8,9 +8,13 @@
 </script>
 
 <div
-	class:bg-red={ !!$page.error }
-	class:min-h-screen={ !!$page.error }>
-	<Nav {segment} isErrorPage={ !!$page.error }/>
+	class:bg-green={ !(!!$page.error) && (segment === undefined || segment === 'about') }
+	class:bg-yellow={ !(!!$page.error) && segment === 'podcast' }
+	class:bg-dark-gray={ !(!!$page.error) && segment === 'projects' }
+	class:bg-light-gray={ !(!!$page.error) && segment === 'blog' }
+	class:bg-red={ (!!$page.error) }
+	class:min-h-screen={ (!!$page.error) }>
+	<Nav {segment}/>
 	<main>
 		<slot></slot>
 	</main>

@@ -1,9 +1,9 @@
 <script>
 	export let fields = {
-		heading: 'Projects',
-		paragraph: 'The projects I’ve worked on consist of a mix of toys, websites, mobile apps, video games, and UI design mocks.',
+		heading: 'Projects & Work',
+		paragraph: 'The things I’ve worked on consist of a mix of toys, websites, mobile apps, video games, and UI design mocks.',
 		cta: {
-			label: 'See Projects',
+			label: 'See all work',
 			url: '/projects'
 		}
 	};

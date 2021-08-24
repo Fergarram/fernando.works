@@ -27,14 +27,14 @@ const posts = [
 		html: `
 			<p>Back in December of 2015, my cousin <a href="https://flogar.itch.io/">Mario</a> and I created a game called <a href="https://fergarram.itch.io/amateur-archaeology-iii">Amateur Archaeology III</a> for the <a href="https://gm48.net/">GM48 Jam</a>. As this supposes, we built this game using Game Maker 8. Mario implemented the initial idea and all the visual and audio assets for the game. Once that was in place I polished and implemented the “complex” mechanics of the game like the level generation.</p>
 
-			<p>Amateur Archaeology KaiOS Edition, is a remaster of the original idea developed using Javascript and WebGL for KaiOS-powered feature phones such as the Nokia 8110 aka “Banana Phone”.</p>
-
 			<figure>
 				<img style="max-width: 25rem; height: auto;" src="https://img.itch.zone/aW1hZ2UvMzEwOTIvMTMxMzQwLnBuZw==/347x500/KIOOAZ.png" alt="Screenshot of the GM48 version" />
 				<figcaption>
 					Screenshot of GM48 jam version
-				</figcaption
+				</figcaption>
 			</figure>
+
+			<p>Amateur Archaeology KaiOS Edition, is a remake of the original idea developed using Javascript and WebGL for KaiOS-powered feature phones such as the Nokia 8110 aka The Banana Phone.</p>
 
 			<h2 id="Scope">Scope</h2>
 			<p>This project started as a way of trying out development for the KaiOS platform. I wanted to make a small game that would allow me quickly implement something meaningful. I thought that I could make this game in a weekend or two but in really took about two times that. I went into more detail in the <a href="/blog">devlog</a>. Something else that motivated me to work on this project was the idea of implementing a “simulator” to see how an app or game would look like inside a phone shell, so I implemented it, too.</p>

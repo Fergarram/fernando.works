@@ -113,6 +113,10 @@
 	height: auto;
 }
 
+.article-content figure {
+	margin-bottom: 1.3em;
+}
+
 .article-content figure figcaption {
 	margin-top: 0.3em;
 	font-size: 0.8em;

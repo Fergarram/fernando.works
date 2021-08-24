@@ -4,7 +4,7 @@
   "version": "6.6.6",
   "scripts": {
     "dev": "sapper dev",
-    "styles": "tailwindcss-cli build ./tailwind.css -o ./static/tailwind.css",
+    "styles": "tailwindcss-cli build -i ./tailwind.css -o ./static/tailwind.css",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build"

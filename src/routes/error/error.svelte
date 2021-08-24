@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<title>Page Not Found - Fernando Works</title>
+	<link rel="icon" type="image/png" href="/icon-48-red.png">
 	<meta name="description" content="" />
 </svelte:head>
 

@@ -16,6 +16,7 @@
 
 <svelte:head>
 	<title>Projects - Fernando Works</title>
+	<link rel="icon" type="image/png" href="/icon-48-dark-gray.png">
 	<meta name="description" content="" />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>

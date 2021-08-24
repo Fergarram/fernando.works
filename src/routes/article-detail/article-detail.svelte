@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>{frontmatter.title} - Fernando Works</title>
+	<link rel="icon" type="image/png" href="/icon-48-light-gray.png">
 	<meta name="description" content={frontmatter.excerpt} />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>

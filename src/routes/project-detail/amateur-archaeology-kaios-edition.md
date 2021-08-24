@@ -1,9 +1,9 @@
 ---
 title: 'Amateur Archaeology KaiOS Edition'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt tellus et quam hendrerit.'
+description: ''
+author: Fernando Garcia
 date: '2020-02-22'
 dateFormatted: 'Feb 2020'
-author: Fernando Garcia
 links:
   - label: 'Play Game'
     url: '/amateur-archaeology/'
@@ -19,7 +19,7 @@ secondaryTags:
   - Webpack
   - WebGL
 cover:
-  url: '/assets/amateur-archaeology-project.png'
+  url: '/images/amateur-archaeology-project.png'
   alt: ''
 ---
 

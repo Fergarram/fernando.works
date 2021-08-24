@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<title>Blog Archive - Fernando Works</title>
+	<link rel="icon" type="image/png" href="/icon-48-light-gray.png">
 	<meta name="description" content="" />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>

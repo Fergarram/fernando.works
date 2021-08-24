@@ -57,6 +57,7 @@
 
 <svelte:head>
 	<title>About - Fernando Works</title>
+	<link rel="icon" type="image/png" href="/icon-48-green.png">
 	<meta name="description" content="" />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>

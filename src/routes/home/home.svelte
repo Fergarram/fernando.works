@@ -10,6 +10,7 @@
 
 <svelte:head>
 	<title>Home - Fernando Works</title>
+	<link rel="icon" type="image/png" href="/icon-48-green.png">
 	<meta name="description" content="" />
 	<link href="/" rel="canonical" />
 </svelte:head>

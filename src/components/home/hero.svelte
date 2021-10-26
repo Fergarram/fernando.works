@@ -18,8 +18,8 @@
 				external: true
 			},
 			{
-				label: 'Behance',
-				url: 'https://www.behance.net/fergarram',
+				label: 'Twitter',
+				url: 'https://www.twitter.com/_fergarram_',
 				external: true
 			},
 		]

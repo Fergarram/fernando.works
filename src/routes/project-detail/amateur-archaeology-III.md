@@ -1,5 +1,5 @@
 ---
-title: 'Amateur Archaeology: KaiOS Edition'
+title: 'Amateur Archaeology III'
 description: ''
 author: Fernando Garcia
 date: '2020-02-22'
@@ -19,7 +19,7 @@ secondaryTags:
   - Webpack
   - WebGL
 cover:
-  url: '/images/amateur-archaeology-project.png'
+  url: '/images/aogla.jpg'
   alt: ''
 ---
 

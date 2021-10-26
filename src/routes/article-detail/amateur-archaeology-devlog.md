@@ -5,8 +5,12 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidu
 date: '2020-02-22'
 dateFormatted: 'July 7, 2021'
 author: Fernando Garcia
+primaryTag: 'Web Development'
+secondaryTags:
+  - Web Development
+  - Svelte
 cover:
-  url: '/assets/amateur.jpg'
+  url: '/images/amateur.jpg'
   alt: ''
 ---
 ## Introduction NOT REAL

@@ -5,19 +5,13 @@
 
 	export let data, request, helpers;
 
-	const posts = data.posts;
-	const tags = data.tags;
-
-	export let fields = {
-		heading: 'Projects & Work',
-		paragraph: 'The things I’ve worked on consist of a mix of toys, websites, mobile apps, videogames, and ui design mocks.<br><br>You can also see my <a href="/" class="border-b-2 whitespace-nowrap">curriculum vitae</a>.',
-	};
+	const { posts, tags, fields } = data;
 </script>
 
 <svelte:head>
-	<title>Projects - Fernando Works</title>
+	<title>{fields.head.title}</title>
 	<link rel="icon" type="image/png" href="/icon-48-dark-gray.png">
-	<meta name="description" content="" />
+	<meta name="description" content="{fields.head.description}" />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>
 

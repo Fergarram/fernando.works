@@ -31,7 +31,7 @@
 			</span>
 		{/if}
 		<img
-			class="rounded-md w-full responsive-thumb object-cover object-center transform hover:scale-105 transition-transform duration-500"
+			class="rounded-md w-full responsive-thumb object-cover object-center"
 			alt={post.frontmatter.cover.alt}
 			src={post.frontmatter.cover.url}
 		/>

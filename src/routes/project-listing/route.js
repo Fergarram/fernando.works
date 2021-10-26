@@ -39,6 +39,14 @@ module.exports = {
 
 		data.posts = posts;
 		data.tags = tags;
+		data.fields = {
+			head: {
+				title: "Projects - Fernando Works",
+				description: "The things I’ve worked on"
+			},
+			heading: 'Projects & Work',
+			paragraph: 'The things I’ve worked on consist of a mix of toys, websites, mobile apps, videogames, and ui design mocks. Visit my <a class="border-b-2 whitespace-nowrap" ref="noopener" target="_blank" href="https://github.com/Fergarram/">Github</a> for smaller code-only projects.',
+		};
 
 		return data;
 	},

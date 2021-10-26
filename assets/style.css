@@ -598,10 +598,6 @@ video {
   --tw-shadow: 0 0 #0000;
 }
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
 .absolute {
   position: absolute;
 }
@@ -616,14 +612,6 @@ video {
 
 .left-0 {
   left: 0px;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.left-3 {
-  left: 0.75rem;
 }
 
 .z-50 {
@@ -688,12 +676,12 @@ video {
   margin-top: 0.25rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-16 {
@@ -716,12 +704,16 @@ video {
   margin-bottom: 2rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .mr-4 {
@@ -730,10 +722,6 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .block {
@@ -926,6 +914,11 @@ video {
   background-color: rgba(0,0,0,0.1);
 }
 
+.bg-darker-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgba(172, 172, 172, var(--tw-bg-opacity));
+}
+
 .bg-green {
   --tw-bg-opacity: 1;
   background-color: rgba(176, 196, 121, var(--tw-bg-opacity));
@@ -1013,11 +1006,6 @@ video {
   padding-right: 1rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1048,34 +1036,6 @@ video {
 
 .pb-64 {
   padding-bottom: 16rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pl-11 {
-  padding-left: 2.75rem;
 }
 
 .text-center {
@@ -1191,12 +1151,6 @@ video {
 
 .transition-transform {
   transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-colors {
-  transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1459,14 +1413,6 @@ video {
 
 .hover\:bg-black-a-20:hover {
   background-color: rgba(0,0,0,0.2);
-}
-
-.hover\:bg-black-a-10:hover {
-  background-color: rgba(0,0,0,0.1);
-}
-
-.focus\:bg-black-a-10:focus {
-  background-color: rgba(0,0,0,0.1);
 }
 
 .focus\:outline-none:focus {

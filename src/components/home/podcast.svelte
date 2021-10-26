@@ -3,7 +3,7 @@
 		heading: 'Podcast<i>er</i>',
 		paragraph: 'I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations.',
 		cta: {
-			label: 'See Episodes',
+			label: 'Watch Episodes',
 			url: '/podcast'
 		},
 		logo: {

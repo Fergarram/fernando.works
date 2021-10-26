@@ -41,6 +41,7 @@ module.exports = {
       'green': 'rgb(176, 196, 121)',
       'yellow': 'rgb(255, 219, 133)',
       'dark-gray': '#CAD3D7',
+      'darker-gray': '#acacac',
       'light-gray': '#ECECEC',
       'blue': '#0056B6',
       'black-a-10': 'rgba(0,0,0,0.1)',

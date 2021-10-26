@@ -4,6 +4,7 @@
 	import Hero from '../../components/home/hero.svelte';
 	import Podcast from '../../components/home/podcast.svelte';
 	import Projects from '../../components/home/projects.svelte';
+	import CognitiveResearch from '../../components/home/cognitive-research.svelte';
 	import Recent from '../../components/home/recent.svelte';
 	export let data, helpers;
 </script>
@@ -21,6 +22,7 @@
 	<main>
 		<Hero />
 		<Podcast />
+		<CognitiveResearch />
 		<Projects />
 		<Recent />
 	</main>

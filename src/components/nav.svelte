@@ -5,12 +5,16 @@
 
 	const items = [
 		{
+			label: 'research',
+			slug: '/cognitive-research'
+		},
+		{
 			label: 'projects',
 			slug: '/projects'
 		},
 		{
 			label: 'blog',
-			slug: '/blog'
+			slug: '/archive'
 		},
 		{
 			label: 'podcast',
@@ -37,7 +41,7 @@
 			on:click={ () => isOpen = !isOpen }
 			aria-label="Open Menu"
 			aria-controls="mobile-menu-section"
-			class="sm:hidden p-2 hover:bg-black-a-20 focus:outline-none rounded-md transition">
+			class="md:hidden p-2 hover:bg-black-a-20 focus:outline-none rounded-md transition">
 			{#if isOpen }
 				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
 			{:else}
@@ -45,10 +49,10 @@
 			{/if}
 		</button>
 		<nav
-			class="hidden sm:block pt-8 sm:pt-0">
-			<ul class="font-mono uppercase font-bold flex">
+			class="hidden md:block pt-8 sm:pt-0">
+			<ul class="font-semibold uppercase font-bold flex">
 				{#each items as item }
-					<li class="mr-6 last:mr-0">
+					<li class="mr-10 last:mr-0 font-mono">
 						<a href={ item.slug }>
 							{ item.label }
 						</a>
@@ -60,11 +64,11 @@
 	<section
 		id="mobile-menu-section"
 		aria-live="polite"
-		class="sm:hidden">
+		class="md:hidden">
 		{#if isOpen }
 			<nav
 				transition:slide|local
-				class="w-full p-6 xs:px-8 pt-2">
+				class="w-full p-6 xs:px-8 sm:px-12 pt-2">
 				<ul class="uppercase font-bold text-24">
 					{#each items as item }
 						<li class="mb-6 last:mb-0">

@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="/style.css">
 	<!-- <link rel="manifest" href="manifest.json" crossorigin="use-credentials"> -->
 	<!-- <link rel="apple-touch-icon" href="logo-192.png"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
 </svelte:head>
 
 {@html templateHtml}

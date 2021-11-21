@@ -21,10 +21,10 @@
 
 	<main>
 		<Hero />
-		<Podcast />
-		<CognitiveResearch />
-		<Projects />
-		<Recent />
+		<Podcast {helpers} />
+		<CognitiveResearch {helpers} />
+		<Projects {helpers} />
+		<Recent {data} {helpers} />
 	</main>
 
 	<Foot />

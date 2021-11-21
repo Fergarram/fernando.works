@@ -45,7 +45,7 @@
 		</span>
 	{:else}
 		<time
-			class="block font-light text-16 md:text-18 xl:text-16 font-thin mt-1"
+			class="block font-light text-16 md:text-18 xl:text-16 mt-1"
 			datetime={ post.frontmatter.date }>
 			{ post.frontmatter.dateFormatted }
 		</time>

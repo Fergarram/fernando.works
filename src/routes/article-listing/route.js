@@ -34,7 +34,7 @@ const getPosts = (posts) => {
 
 
 module.exports = {
-	permalink: '/blog/',
+	permalink: '/archive/',
 	data: ({ data }) => {
 		const { posts, tags } = getPosts( data.markdown['article-detail'] );
 

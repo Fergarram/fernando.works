@@ -39,6 +39,15 @@
 
 	const episodes = [
 		{
+			guest: 'Alejandro Leon',
+			photo: '/images/alelepd.jpg',
+			number: 3,
+			summary: 'Ruben (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_">@rubna_</a>), a game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>. We talk about his creative process...',
+			youtubeUrl: 'https:/youtube.com',
+			amazonUrl: 'https:/amazon.com',
+			spotifyUrl: 'https:/spotify.com',
+		},
+		{
 			guest: 'Ramon Santamaria',
 			photo: ray,
 			number: 2,
@@ -127,7 +136,7 @@
 			</section>
 			<section class="bg-yellow pt-12 pb-60">
 				<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-					<h2 class="font-semibold text-32 sm:text-40 lg:text-44 leading-115 tracking-title mb-12 sm:mb-16 md:mb-20">
+					<h2 id="episodes" class="font-semibold text-32 sm:text-40 lg:text-44 leading-115 tracking-title mb-12 sm:mb-16 md:mb-20">
 						Episodes
 					</h2>
 					{#each episodes as episode}

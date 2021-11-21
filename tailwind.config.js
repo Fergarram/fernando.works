@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'mono': [ 'Roboto Mono', 'monospace' ],
-      'sans': [ '-apple-system', 'Roboto' ]
+      'sans': [ '-apple-system', 'Inter', 'Roboto' ]
     },
     fontSize: {
       '12': '0.75rem',
@@ -41,7 +41,7 @@ module.exports = {
       'green': 'rgb(176, 196, 121)',
       'yellow': 'rgb(255, 219, 133)',
       'dark-gray': '#CAD3D7',
-      'darker-gray': '#acacac',
+      'darker-gray': 'rgb(187, 179, 172)',
       'light-gray': '#ECECEC',
       'blue': '#0056B6',
       'black-a-10': 'rgba(0,0,0,0.1)',
@@ -60,6 +60,9 @@ module.exports = {
       'xl': '80rem',
     },
     extend: {
+      listStyleType: {
+        roman: 'upper-roman',
+      },
       maxWidth: {
         '24em': '24em',
         '30em': '30em'

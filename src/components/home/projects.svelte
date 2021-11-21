@@ -1,10 +1,11 @@
 <script>
+	export let helpers;
 	export let fields = {
 		heading: 'Projects & Work',
 		paragraph: 'The things I’ve worked on consist of a mix of toys, websites, mobile apps, video games, and UI design mocks.',
 		cta: {
 			label: 'Browse all work',
-			url: '/projects'
+			url: helpers.permalinks['project-listing']()
 		}
 	};
 </script>

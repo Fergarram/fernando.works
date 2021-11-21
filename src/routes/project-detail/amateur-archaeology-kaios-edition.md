@@ -10,7 +10,7 @@ links:
   - label: 'Fork Code'
     url: 'https://github.com/Fergarram/amateur-archaeology/'
   - label: 'Read Devlog'
-    url: '/blog/creating-a-game-for-feature-phones-using-javascript'
+    url: '/archive/creating-a-game-for-feature-phones-using-javascript'
 primaryTag: 'Video Game'
 secondaryTags:
   - Web Development

@@ -1,10 +1,11 @@
 <script>
+	export let helpers;
 	export let fields = {
 		heading: 'Cognitive Research',
 		paragraph: 'I like to spend my free time figuring out how to implement artificial minds.',
 		cta: {
 			label: 'Read Introduction',
-			url: '/projects'
+			url: helpers.permalinks['cognitive-research']()
 		}
 	};
 </script>

@@ -3,12 +3,12 @@ title: 'AICA Access'
 description: ''
 author: Fernando Garcia
 date: '2018-01-09'
-dateFormatted: 'Jan 9, 2018'
+dateFormatted: 'Jan 2018'
 links:
   - label: 'Facebook Page'
     url: 'https://www.facebook.com/AICAAGENCIA'
-  - label: 'Gallery'
-    url: '#gallery'
+  # - label: 'Gallery'
+  #   url: '#gallery'
 primaryTag: 'Mobile App'
 secondaryTags:
   - Startup MVP
@@ -51,6 +51,3 @@ Here's a summary of tools used:
 ## Conclusion
 
 Working solo on this and the other projects in this startup pushed me to learn different development environments and experience some of the drawbacks of working with Android. Design-wise, I was able to test my mockups with real deaf users which taught me a lot about the difference between UI and UX. There's more to say about this project like why it failed even though the MVP was successfully created, but writing this in 2021, I feel I've told this story many times in person so I wont go into detail.
-
-## Gallery
-

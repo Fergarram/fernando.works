@@ -19,18 +19,22 @@
 	<ul class="flex flex-wrap">
 		<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3 sm:mr-10">
 			<a class="link-button" href={episode.youtubeUrl}>
-				Youtube
+				Watch on Youtube
 			</a>
 		</li>
-		<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3 sm:mr-10">
-			<a class="link-button" href={episode.spotifyUrl}>
-				Spotify
-			</a>
-		</li>
-		<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3">
-			<a class="link-button" href={episode.amazonUrl}>
-				Amazon
-			</a>
-		</li>
+		{#if 0}
+			<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3 sm:mr-10">
+				<a class="link-button" href={episode.spotifyUrl}>
+					Spotify
+				</a>
+			</li>
+		{/if}
+		{#if 0}
+			<li class="w-1/2 xs:w-1/3 sm:w-auto flex mb-3">
+				<a class="link-button" href={episode.amazonUrl}>
+					Amazon
+				</a>
+			</li>
+		{/if}
 	</ul>
 </article>

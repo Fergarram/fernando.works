@@ -1,9 +1,9 @@
 ---
 title: 'Creating a game for feature phones using JavaScript'
+description: 'I wrote a devlog on dev.to where I tell the story of how I built a video game for feature phones using JavaScript. I shared my experience working with KaiOS and WebGL.'
 slug: creating-a-game-for-feature-phones-using-javascript
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt tellus et quam hendrerit.'
-date: '2020-02-22'
-dateFormatted: 'July 7, 2021'
+date: '2020-04-20'
+dateFormatted: 'April 20, 2020'
 author: Fernando Garcia
 primaryTag: 'Web Development'
 secondaryTags:
@@ -11,8 +11,9 @@ secondaryTags:
   - Svelte
 cover:
   url: '/images/amateur.jpg'
-  alt: ''
+  alt: 'Photo of Nokia banana phone with game'
 ---
+
 ## Introduction
 This is one of those projects which you start after a burst of excitement but end up leaving unfinished to the uncomfortable point where it isn’t good enough to publish but it is good enough to talk about it.
 
@@ -25,7 +26,7 @@ I bought a banana phone after watching [this video](https://www.youtube.com/watc
 
 Anyways, I bought the thing and went on to enable development mode and got a Hello World app running.
 
-A few months past by and suddenly decided I wanted to do something with it. I thought of remaking [a game I made](https://fergarram.itch.io/amateur-archaeology-iii) for a game jam some years ago using Game Maker.  This was a perfect idea, the game was simple enough so I started on working on it.
+A few months past by and suddenly decided I wanted to do something with it. I thought of remaking [a game](https://fergarram.itch.io/amateur-archaeology-iii) my cousin [Mario](https://flogar.itch.io/) and I made for a game jam some years ago using Game Maker.  This was a perfect idea, the game was simple enough so I started on working on it.
 
 ## Defining the MVP
 As a starting point, the game should have the same functionalities as the original game with some variations and additions:

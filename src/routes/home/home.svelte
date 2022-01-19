@@ -10,9 +10,9 @@
 </script>
 
 <svelte:head>
-	<title>Home - Fernando Works</title>
+	<title>Fernando Garcia</title>
 	<link rel="icon" type="image/png" href="/icon-48-green.png">
-	<meta name="description" content="" />
+	<meta name="description" content="I'm Fernando Garcia, a developer and designer. I make products that help their target audience reach their goals." />
 	<link href="/" rel="canonical" />
 </svelte:head>
 

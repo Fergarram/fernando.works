@@ -6,7 +6,7 @@
 	export let fields = {
 		heading: 'Recent Publications',
 		cta: {
-			label: 'See Archive',
+			label: 'See Journal',
 			url: helpers.permalinks['article-listing']()
 		}
 	};

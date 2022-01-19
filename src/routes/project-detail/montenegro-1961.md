@@ -1,23 +1,20 @@
 ---
 title: 'Montenegro 1961'
-description: ''
+description: 'Montenegro is a small game that follows the story of a boyscout who likes a girlscout.'
 author: Fernando Garcia
-date: '2021-06-13'
-dateFormatted: 'Jun 2021'
+date: '2015-12-15'
+dateFormatted: 'Dec 2015'
 links:
-  - label: 'Play Game'
-    url: 'https://surerytabe.netlify.app/'
-  - label: 'Fork Code'
-    url: 'https://github.com/Fergarram/surery-tabe'
-  - label: 'Submission'
-    url: 'https://fergarram.itch.io/surery-tabe'
+  - label: 'Download Game'
+    url: 'https://flogar.itch.io/montenegro'
 primaryTag: 'Video Game'
 secondaryTags:
-  - Web Development
-  - Svelte
+  - Game Maker
+  - 3D Graphics
+  - Game Jam
 cover:
   url: '/images/monte.png'
-  alt: ''
+  alt: "Screenshot of game's starting screen"
 ---
 
-Pefom surery to clien
+Montenegro is a small game that follows the story of a boy who likes a girl in a boy/girl scout camp. This game was made in under 48 hours and was made using Game Maker 8.1 (my favorite version of GM). It was very fun to make with my cousin [Mario](https://flogar.itch.io/), he came up with the base idea and we developed it together.

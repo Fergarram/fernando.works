@@ -13,5 +13,5 @@ module.exports = {
 
 	data: {},
 	all: () => [],
-	permalink: '/archive/:slug/',
+	permalink: '/journal/:slug/',
 };

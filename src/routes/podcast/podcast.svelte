@@ -12,28 +12,28 @@
 		images: {
 			host: {
 				url: yoyo,
-				alt: ''
+				alt: 'Photo of Fernando interviewing a guest'
 			},
 			guest: {
 				url: rayray,
-				alt: ''
+				alt: 'Photo of Ramon Santamaria being interviewed by Fernando'
 			}
 		},
 		heading: 'Digital Crafters',
-		paragraph: 'I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations — whether it’s a piece of digital art, a tool, game, or product — they have found a way to fully dedicate themselves to work on the projects they own and love.',
+		paragraph: 'I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations, whether it’s a piece of digital art, a tool, game, or product, they have found a way to fully dedicate themselves to work on the projects they own and love.',
 		links: [
 			{
-				label: 'Youtube',
+				label: 'Youtube Channel',
 				url: 'https://www.youtube.com/channel/UCPBwZWChghNODkWGWDga-tw',
 			},
-			{
-				label: 'Spotify',
-				url: 'https://open.spotify.com/show/1Nluhq1TWoWoaFAhM2K8yN?si=RsvU1lBfTo-2q89GD9XMLQ&dl_branch=1',
-			},
-			{
-				label: 'Amazon',
-				url: 'https://music.amazon.com/podcasts/24ca2851-bb56-4bf9-916e-bbfa9031304b/Digital-Crafters',
-			},
+			// {
+			// 	label: 'Spotify',
+			// 	url: 'https://open.spotify.com/show/4uahTtWC7TVnqrtSAMhoYa?si=8e9932f06d9944d9',
+			// },
+			// {
+			// 	label: 'Amazon',
+			// 	url: 'https://music.amazon.com/podcasts/24ca2851-bb56-4bf9-916e-bbfa9031304b/Digital-Crafters',
+			// },
 		]
 	};
 
@@ -42,28 +42,28 @@
 			guest: 'Alejandro Leon',
 			photo: '/images/alelepd.jpg',
 			number: 3,
-			summary: 'Ruben (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_">@rubna_</a>), a game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>. We talk about his creative process...',
-			youtubeUrl: 'https:/youtube.com',
-			amazonUrl: 'https:/amazon.com',
-			spotifyUrl: 'https:/spotify.com',
+			summary: `Alejandro Leon <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/alelepd/">(@alelepd)</a> is the founder and creator of <a class="underline" target="_blank" rel="noopener" href="//spline.design">spline.design</a>. He's a very talented designer and developer passionate about 3D graphics, UX, and many other topics.`,
+			youtubeUrl: 'https://www.youtube.com/watch?v=y7ns-_Ywb3o',
+			amazonUrl: '',
+			spotifyUrl: '',
 		},
 		{
 			guest: 'Ramon Santamaria',
 			photo: ray,
 			number: 2,
-			summary: 'Ruben (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_">@rubna_</a>), a game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>. We talk about his creative process...',
-			youtubeUrl: 'https:/youtube.com',
-			amazonUrl: 'https:/amazon.com',
-			spotifyUrl: 'https:/spotify.com',
+			summary: `Ramon Santamaria <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/raysan5/">(@raysan5)</a> is the passionate creator of the <a class="underline" target="_blank" rel="noopener" href="https://www.raylib.com/">Raylib library</a>. He's a game development lecturer and software developer.`,
+			youtubeUrl: 'https://www.youtube.com/watch?v=wnbJpdjAHg8',
+			amazonUrl: '',
+			spotifyUrl: '',
 		},
 		{
 			guest: 'Ruben',
 			photo: rubna,
 			number: 1,
-			summary: 'Ruben (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_">@rubna_</a>), a game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>. We talk about his creative process...',
-			youtubeUrl: 'https:/youtube.com',
-			amazonUrl: 'https:/amazon.com',
-			spotifyUrl: 'https:/spotify.com',
+			summary: `Ruben (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_/">@rubna_</a>) is a game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>. We'll be talking about his creative process, how he got to where he is, and what the future may hold for him.`,
+			youtubeUrl: 'https://www.youtube.com/watch?v=co0H6MBKPzk',
+			amazonUrl: 'https://music.amazon.com/podcasts/24ca2851-bb56-4bf9-916e-bbfa9031304b/episodes/74f11eca-144f-4bf9-a6ba-29f5db7944a3/digital-crafters-ep-1-ruben-arubna_',
+			spotifyUrl: 'https://open.spotify.com/episode/2WehpR6gbJym13La6sZePe?si=2517056630894afa',
 		}
 	];
 </script>
@@ -90,7 +90,7 @@
 <svelte:head>
 	<title>Digital Crafters - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-yellow.png">
-	<meta name="description" content="" />
+	<meta name="description" content="I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers." />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>
 

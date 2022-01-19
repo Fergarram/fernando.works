@@ -28,7 +28,7 @@
 <svelte:head>
 	<title>Cognitive Research - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-dark-gray.png">
-	<meta name="description" content="" />
+	<meta name="description" content="Public research about the implementation of artifical minds." />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>
 
@@ -44,26 +44,27 @@
 						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others as a means of inspiration or entertainment. In any case, since the concepts I talk about are very tecnical, I'm assuming you have some background in programming or at least are interested in how computers or minds work.
 					</p>
 					<p>
-						Having said this, I recommend you start with my <a href="/introduction">introductory post</a>, there I give an overview of what's to expect of this work and some very needed disambiguation.
+						Having said this, I recommend you start with my <a href="//obscurity.wiki/artificial-minds/introduction.html">introductory post</a>, there I give an overview of what's to expect of this work and some very needed disambiguation.
 					</p>
 					<h2>
 						Publications
 					</h2>
 					<p>
-						All public work will initially be uploaded to my <a href="//obscurity.wiki">personal wiki</a>. This makes it easier for me to not get distracted by being able to use my rudimentary linux laptop. Here's a list of the most recent publications, there's no time delay between my wiki and this site so expect this to be always up to date.
+						All public work will initially be uploaded to my <a href="//obscurity.wiki/">personal wiki</a>. This makes it easier for me to not get distracted by being able to use my rudimentary linux laptop.
 					</p>
-					<ul class="list-roman pl-5">
+					<!-- <p>Here's a list of the most recent publications, there's no time delay between my wiki and this site so expect this to be always up to date.</p> -->
+					<!-- <ul class="list-roman pl-5">
 						<li>
-							<a href="/cognitive-research/introduction">
+							<a href="/cognitive-research/introduction/">
 								An introduction to artificial minds
 							</a>
 						</li>
-					</ul>
+					</ul> -->
 					<h2>
 						Support my work
 					</h2>
 					<p>
-						Lastly, if you would like to support my work and get notified whenever I publish something, you can follow me on these social media platforms.
+						Lastly, if you would like to support my work you can follow me on these social media platforms and share with your friends.
 						{#if 0}
 						you can suscribe using your email. I promise you that the only purpose of this is to notify you whenever I do `git push` on this site. It also helps me know that real people are reading.
 						{/if}

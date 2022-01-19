@@ -1,23 +1,23 @@
 ---
-title: 'VX2F3D (outdated)'
+title: 'VX2F3D'
 description: ''
 author: Fernando Garcia
-date: '2021-06-13'
-dateFormatted: 'Jun 2021'
+date: '2015-12-17'
+dateFormatted: 'Dec 2015'
 links:
-  - label: 'Play Game'
-    url: 'https://surerytabe.netlify.app/'
-  - label: 'Fork Code'
-    url: 'https://github.com/Fergarram/surery-tabe'
-  - label: 'Submission'
-    url: 'https://fergarram.itch.io/surery-tabe'
+  - label: 'Download Tool'
+    url: 'https://fergarram.itch.io/vx2f3d'
 primaryTag: 'Personal Tool'
 secondaryTags:
-  - Web Development
-  - Svelte
+  - Game Development
+  - Game Maker
+  - Java
+  - Voxels
 cover:
   url: '/images/vox.jpg'
   alt: ''
 ---
 
-quick draw
+VX2F3D stands for "Voxels to Fake3D". This little tool allowed one to convert a [Magicavoxel](https://ephtracy.github.io/) `.vox` file to a `.png` strip of layers used to render game graphics using the [sprite stacking technique](https://medium.com/@avsnoopy/beginners-guide-to-sprite-stacking-in-gamemaker-studio-2-and-magica-voxel-part-1-f7a1394569c0). 
+
+Back in 2015, when I created this tool, magicavoxel was not as popular as it is today and neither was sprite stacking so there was no tool for this. But now there are multiple tools like [Spritestack.io](https://spritestack.io/); even magicavoxel itself has an option to export a PNG strip file.

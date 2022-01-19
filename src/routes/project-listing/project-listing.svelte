@@ -32,7 +32,7 @@
 				<p class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-10 md:mb-16">
 					{ @html fields.paragraph }
 				</p>
-				<fieldset>
+				<!-- <fieldset>
 					<legend class="block text-18 xs:text-20 font-normal mb-2">
 						Filter by tags:
 					</legend>
@@ -53,7 +53,7 @@
 							</div>
 						{/each}
 					</div>
-				</fieldset>
+				</fieldset> -->
 			</section>
 			<section
 				id="posts-section"

@@ -10,30 +10,13 @@
 		},
 		heading: 'About Me',
 		content: `
-			<p>
-				As you could already tell, my name is Fernando Garcia. I am a frontend developer currently based in Mexico. I specialize in web technology although I have <a href="/">created apps</a> for Android and iOS, too.
-			</p>
-			<p>
-				My prefered frontend frameworks are usually VueJS, Svelte, or NextJS. It really depends on who the project is for and what the requirements are.
-			</p>
-			<p>
-				Although, I’ll push for Vue for more complex web applications and Next for headless marketing sites since it’s a more developed ecosystem. For personal projects, I will most likely use Svelte or Vue, though.
-			</p>
-			<h2>
-				More stuff about me lol
-			</h2>
-			<p>
-				I am really passionate about UI design and software development. I love to write about my experiences and document what I learn or observe.
-			</p>
-			<p>
-				Generally, you’ll find me playing around with fun toys like the Raspberry Pi, joining a game jam, or messing around with Ansi C and Linux. I’ve always wanted to create my own OS since I was a child. But, as it turns out, doing so is way more challenging than I would have thought. Still, this doesn’t stop me of dreaming and writing a few notes about <a href="/">how operating systems might evolve in the future</a>.
-			</p>
-			<p>
-				I also happen to host a <a href="/">podcast</a>. I really enjoy talking with other creatives out there making a living (or trying to) by building stuff with their computers. It’s really cool that in this day and age I can simply contact anyone in the world and have a call. It’s just mind blowing.
-			</p>
-			<p>
-				Just how you can send me a message right now ;)
-			</p>
+			<p>My name is Fernando Garcia. I love computers because they make me think everything is possible. I make websites and apps for a living, whether I’m designing or coding them.</p>
+
+			<p>On my digital free time, I love to write, make video games, design mockups or work on <a href="/projects/">interesting side projects</a>. For some reason I can’t stop having ideas of things to create with my computer, particularly <a href="/cognitive-research/">artificial minds</a>, so I just write them down.</p>
+
+			<p>In the physical plane, I do rock climbing and hit the gym weekly. I follow the <a href="https://stronglifts.com/5x5/">StrongLifts 5×5</a> routine since it's the easiest way to grow strong.</p>
+
+			<p>And in case you're wondering, I was born in Mexico in 1996. But as of writing this, I’m living in France with my girlfriend.</p>
 		`,
 		links: [
 			{
@@ -48,7 +31,7 @@
 			},
 			{
 				label: 'Email',
-				url: 'mailto:fergarram@gmail.com',
+				url: 'mailto:hello@fernando.works',
 				external: false
 			},
 		]
@@ -58,7 +41,7 @@
 <svelte:head>
 	<title>About - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-green.png">
-	<meta name="description" content="" />
+	<meta name="description" content="My name is Fernando Garcia. I love computers because they make me think everything is possible." />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>
 

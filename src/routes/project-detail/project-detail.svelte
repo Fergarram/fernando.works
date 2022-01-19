@@ -4,12 +4,14 @@
 
 	export let data, request;
 	const { html, frontmatter } = data;
+
+	const description = frontmatter.description || `${frontmatter.title} is a project made by Fernando Garcia.`
 </script>
 
 <svelte:head>
 	<title>{frontmatter.title} - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-dark-gray.png">
-	<meta name="description" content={frontmatter.description} />
+	<meta name="description" content={description} />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>
 
@@ -50,7 +52,7 @@
 
 <div class="bg-dark-gray">
 	<Nav hydrate-client={{}} />
-		<main class="bg-dark-gray min-h-screen pb-40">
+		<main class="min-h-screen pb-40">
 			<article>
 				<div class="max-w-screen-xl mx-auto sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4">
 					<picture class="cover block">
@@ -73,7 +75,7 @@
 					<h1 class="font-bold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-125 tracking-title mb-4">
 						{ frontmatter.title }
 					</h1>
-					<time class="block text-24 font-thin " datetime={ frontmatter.date }>
+					<time class="block text-24 font-thin" datetime={ frontmatter.date }>
 						{ frontmatter.dateFormatted }
 					</time>
 					<ul class="flex flex-wrap mb-6 sm:mb-10 lg:mb-14 mt-10">

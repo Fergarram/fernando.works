@@ -2,7 +2,7 @@ const getPosts = (articles, projects, helpers) => {
 
 	// Additional data
 	articles.forEach( post => {
-		post.frontmatter.type = 'blog post';
+		post.frontmatter.type = 'journal';
 		post.frontmatter.link = helpers.permalinks['article-detail']({ slug: post.slug });
 	});
 

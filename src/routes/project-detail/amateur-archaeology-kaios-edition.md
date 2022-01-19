@@ -10,7 +10,7 @@ links:
   - label: 'Fork Code'
     url: 'https://github.com/Fergarram/amateur-archaeology/'
   - label: 'Read Devlog'
-    url: '/archive/creating-a-game-for-feature-phones-using-javascript'
+    url: '/journal/creating-a-game-for-feature-phones-using-javascript'
 primaryTag: 'Video Game'
 secondaryTags:
   - Web Development
@@ -28,7 +28,7 @@ Back in December of 2015, my cousin [Mario](https://flogar.itch.io/) and I creat
 Amateur Archaeology KaiOS Edition, is a remaster of the original idea developed using Javascript and WebGL for KaiOS-powered feature phones such as the Nokia 8110 aka “Banana Phone”.
 
 ## Scope
-This project started as a way of trying out development for the KaiOS platform. I wanted to make a small game that would allow me quickly implement something meaningful. I thought that I could make this game in a weekend or two but in really took about two times that. I went into more detail in the [devlog](/blog). Something else that motivated me to work on this project was the idea of implementing a “simulator” to see how an app or game would look like inside a phone shell, so I implemented it, too.
+This project started as a way of trying out development for the KaiOS platform. I wanted to make a small game that would allow me quickly implement something meaningful. I thought that I could make this game in a weekend or two but in really took about two times that. I went into more detail in the devlog. Something else that motivated me to work on this project was the idea of implementing a “simulator” to see how an app or game would look like inside a phone shell, so I implemented it, too.
 
 ## Tech stack and tools
 I wanted the ability to easily test the game in my mac and real phone without having to run different build scripts. For the simulator, I used Svelte since I had recently found out about it and wanted to give it a try for a small project like this. I also didn’t want to use any third-party dependencies for the actual game (or the project) but ended up using Howler.js for audio playback. I wrote more details in the devlog about these decisions.

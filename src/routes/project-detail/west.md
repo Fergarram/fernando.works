@@ -1,23 +1,21 @@
 ---
 title: 'WEST'
-description: ''
+description: 'A tiny game made with LÖVE (Love2D).'
 author: Fernando Garcia
-date: '2021-06-13'
-dateFormatted: 'Jun 2021'
+date: '2017-08-16'
+dateFormatted: 'Aug 2017'
 links:
-  - label: 'Play Game'
-    url: 'https://surerytabe.netlify.app/'
-  - label: 'Fork Code'
-    url: 'https://github.com/Fergarram/surery-tabe'
-  - label: 'Submission'
-    url: 'https://fergarram.itch.io/surery-tabe'
+  - label: 'Download Game'
+    url: 'https://drive.google.com/file/d/1GDAuOUtO0Mh8jWpDSCmjZ5LQb1SAlXB7/view?usp=sharing'
 primaryTag: 'Video Game'
 secondaryTags:
-  - Web Development
-  - Svelte
+  - LÖVE (Love2D)
+  - Lua
 cover:
   url: '/images/west.jpg'
-  alt: ''
+  alt: 'Screenshot of WEST game'
 ---
 
-quick draw
+This is a tiny tiny game I coded in about 2 hours using Love2D with Lua. All graphics, sounds and game idea was created by my cousin [Mario](https://flogar.itch.io/).
+
+Warning: it's not fun.

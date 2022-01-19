@@ -9,9 +9,9 @@
 </script>
 
 <svelte:head>
-	<title>Blog Archive - Fernando Works</title>
+	<title>Journal - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-light-gray.png">
-	<meta name="description" content="" />
+	<meta name="description" content="A collection of thoughts that I wanted to make public." />
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>
 
@@ -31,9 +31,9 @@
 		<main class="bg-light-gray min-h-screen pb-40">
 			<section class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 md:mb-8">
 				<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-8 xs:mb-12 sm:mb-16">
-					Blog Archive
+					Journal
 				</h1>
-				{#if 1}
+<!-- 				{#if 1}
 					<div class="relative inline-flex items-center mb-6">
 						<svg
 							class="mr-2"
@@ -81,7 +81,7 @@
 							{/each}
 						</div>
 					</fieldset>
-				{/if}
+				{/if} -->
 			</section>
 			<section
 				id="posts-section"

@@ -6,23 +6,23 @@
 	const items = [
 		{
 			label: 'research',
-			slug: '/cognitive-research'
+			slug: '/cognitive-research/'
 		},
 		{
 			label: 'projects',
-			slug: '/projects'
+			slug: '/projects/'
 		},
 		{
-			label: 'blog',
-			slug: '/archive'
+			label: 'journal',
+			slug: '/journal/'
 		},
 		{
 			label: 'podcast',
-			slug: '/podcast'
+			slug: '/podcast/'
 		},
 		{
 			label: 'about',
-			slug: '/about'
+			slug: '/about/'
 		},
 	];
 </script>

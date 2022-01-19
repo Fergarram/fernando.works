@@ -979,11 +979,6 @@ video {
   padding: 1.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1098,12 +1093,12 @@ video {
   font-weight: 300;
 }
 
-.font-thin {
-  font-weight: 100;
-}
-
 .font-normal {
   font-weight: 400;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .uppercase {
@@ -1681,10 +1676,6 @@ video {
 
   .lg\:mb-14 {
     margin-bottom: 3.5rem;
-  }
-
-  .lg\:flex {
-    display: flex;
   }
 
   .lg\:transform-none {

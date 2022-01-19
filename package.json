@@ -6,7 +6,8 @@
 	"scripts": {
 		"start": "npm run dev",
 		"styles": "tailwindcss-cli -w build -i ./tailwind.css -o ./assets/style.css",
-		"build": "node ./src/cleanPublic.js && npm run build:rollup && npm run build:html",
+		"build:styles": "tailwindcss-cli build -i ./tailwind.css -o ./assets/style.css",
+		"build": "node ./src/cleanPublic.js && npm run build:styles && npm run build:rollup && npm run build:html",
 		"build:rollup": "rollup -c",
 		"build:html": "node ./src/build.js",
 		"dev": "rollup  -c -w --no-watch.clearScreen",

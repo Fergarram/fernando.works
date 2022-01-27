@@ -2,7 +2,7 @@
 	import Nav from '../../components/nav.svelte';
 	import Foot from '../../components/foot.svelte';
 
-	export let data, request;
+	export let data, request, helpers;
 	export let fields = {
 		heading: 'Cognitive Research',
 		links: [
@@ -41,25 +41,26 @@
 				</h1>
 				<div class="page-content max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-16">
 					<p>
-						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others as a means of inspiration or entertainment. In any case, since the concepts I talk about are very tecnical, I'm assuming you have some background in programming or at least are interested in how computers or minds work.
+						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others as a means of inspiration or entertainment. My long-term goal is to enable people to have their own artificial minds to do the things they want them to do. My job here would be to provide with tools to successfully create, train and raise artificial minds or super-minds.
 					</p>
 					<p>
-						Having said this, I recommend you start with my <a href="//obscurity.wiki/artificial-minds/introduction.html">introductory post</a>, there I give an overview of what's to expect of this work and some very needed disambiguation.
+						Having said this, I recommend you start with my <a href={helpers.permalinks['research-detail']({ slug: 'introduction' })}>introductory publication</a>, there I give an overview of what's to expect of this work.
 					</p>
 					<h2>
 						Publications
 					</h2>
 					<p>
-						All public work will initially be uploaded to my <a href="//obscurity.wiki/">personal wiki</a>. This makes it easier for me to not get distracted by being able to use my rudimentary linux laptop.
+						My research and notes are mainly published here for the readers. But if you're curious, you can also take a look at my <a href="//obscurity.wiki/">personal wiki</a>. My wiki is basically where I dump most of my thoughts about artificial minds, computers, etc. It's inspired by <a href="https://wiki.xxiivv.com/site/home.html">XXIIVV</a>.
 					</p>
-					<!-- <p>Here's a list of the most recent publications, there's no time delay between my wiki and this site so expect this to be always up to date.</p> -->
-					<!-- <ul class="list-roman pl-5">
-						<li>
-							<a href="/cognitive-research/introduction/">
-								An introduction to artificial minds
-							</a>
-						</li>
-					</ul> -->
+					<ul class="list-roman pl-5">
+						{#each data.posts.reverse() as post}
+							<li>
+								<a href={helpers.permalinks['research-detail']({ slug: post.slug })}>
+									{ post.frontmatter.title }
+								</a>
+							</li>
+						{/each}
+					</ul>
 					<h2>
 						Support my work
 					</h2>

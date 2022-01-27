@@ -24,7 +24,7 @@ module.exports = {
 	},
 	plugins: {
 		'@elderjs/plugin-markdown': {
-			routes: ['article-detail', 'project-detail'],
+			routes: ['article-detail', 'project-detail', 'research-detail'],
 		},
 		'@elderjs/plugin-browser-reload': {
 			// this reloads your browser when nodemon restarts your server.

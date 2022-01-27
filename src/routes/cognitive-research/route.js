@@ -1,18 +1,7 @@
 module.exports = {
-	// template: 'Simple.svelte',
-	// layout: 'Layout.svelte',
-	// all: async () => [{ slug: 'simple' }],
-	permalink: '/cognitive-research/', // this is the same as ({ request }) => `/${request.slug}/`;
-	data: async ({ request }) => {
-		return {
-			content: `
-				<p>
-					Some HTML content and a shortcode
-				</p>
-				{{yellow-box class="yellow"}}
-					Your content here
-				{{/yellow-box}}
-			`,
-		};
+	permalink: '/cognitive-research/',
+	data: ({ data }) => {
+		data.posts = data.markdown['research-detail'];
+		return data;
 	},
 };

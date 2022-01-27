@@ -18,9 +18,9 @@
 }
 
 .article-content {
-	@apply leading-175 text-16 md:text-18;
+	@apply leading-175 text-16 md:text-18 lg:text-20;
 
-	max-width: 45em;
+	max-width: 40em;
 }
 
 .article-content h2 {
@@ -73,8 +73,16 @@
 }
 
 .article-content a {
-	@apply font-medium text-blue hover:underline;
+	text-decoration: underline;
 }
+
+/*.article-content a::before {
+	content: '{';
+}
+
+.article-content a::after {
+	content: '}';
+}*/
 
 .article-content ul {
 	list-style: disc;

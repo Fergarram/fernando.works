@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -475,6 +475,18 @@ button,
   cursor: pointer;
 }
 
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -728,6 +740,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -924,7 +940,7 @@ video {
 
 .bg-darker-gray {
   --tw-bg-opacity: 1;
-  background-color: rgba(187, 179, 172, var(--tw-bg-opacity));
+  background-color: rgba(213, 203, 195, var(--tw-bg-opacity));
 }
 
 .bg-green {
@@ -1225,8 +1241,14 @@ video {
   }
 }
 
+@media (min-width: 64rem) {
+  .article-content {
+    font-size: 1.25rem;
+  }
+}
+
 .article-content {
-  max-width: 45em;
+  max-width: 40em;
 }
 
 .article-content h2 {
@@ -1310,14 +1332,16 @@ video {
 }
 
 .article-content a {
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  color: rgba(0, 86, 182, var(--tw-text-opacity));
-}
-
-.article-content a:hover {
   text-decoration: underline;
 }
+
+/*.article-content a::before {
+	content: '{';
+}
+
+.article-content a::after {
+	content: '}';
+}*/
 
 .article-content ul {
   list-style: disc;
@@ -1493,6 +1517,10 @@ video {
 
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
+  }
+
+  .sm\:mt-12 {
+    margin-top: 3rem;
   }
 
   .sm\:h-80 {
@@ -1676,6 +1704,10 @@ video {
 
   .lg\:mb-14 {
     margin-bottom: 3.5rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:transform-none {

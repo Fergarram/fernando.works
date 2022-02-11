@@ -75,7 +75,7 @@
 					<h1 class="font-bold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-125 tracking-title mb-4">
 						{ frontmatter.title }
 					</h1>
-					<time class="block text-24 font-thin" datetime={ frontmatter.date }>
+					<time class="block text-24 font-light" datetime={ frontmatter.date }>
 						{ frontmatter.dateFormatted }
 					</time>
 					<ul class="flex flex-wrap mb-6 sm:mb-10 lg:mb-14 mt-10">

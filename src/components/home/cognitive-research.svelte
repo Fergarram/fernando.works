@@ -2,7 +2,7 @@
 	export let helpers;
 	export let fields = {
 		heading: 'Cognitive Research',
-		paragraph: 'I like to spend my free time figuring out how to implement artificial minds.',
+		paragraph: 'I like to spend my free time reverse engineering my mind to implement an artificial one.',
 		cta: {
 			label: 'Read Introduction',
 			url: helpers.permalinks['cognitive-research']()

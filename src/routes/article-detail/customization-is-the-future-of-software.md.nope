@@ -1,0 +1,44 @@
+---
+title: 'Customization is the future of software'
+description: 'Today, being able to create your own note-taking, habit-tracking or time-scheduling tool requires quite a large list of abilities and resources.'
+date: '2022-01-25'
+dateFormatted: 'January 25, 2022'
+author: Fernando Garcia
+primaryTag: 'amos'
+secondaryTags:
+  - ui
+---
+
+Being able to code software is equivalent to being able to write in ancient times. If we jump back to when writing was a luxury or a rarity reserved to those few who knew how to do it and had the material to do it, we’ll see that it’s currently analogous to how today not everybody is able to write their own tools as easily, not because they don’t have access to information, but because they simply don’t know it.
+
+Today, being able to create your own note-taking, habit-tracking, time-scheduling, game-making, etc-doing tool requires quite a large list of abilities and resources. The ability to code, design and launch the tool for mobile and desktop devices. The resources to host, distribute, and most importantly, the time that it takes to actually produce a finished product. It’s insane how much one has to do for expressing a single “idea for an app”. 
+
+People who constantly use their computers (mobile or not), know more-or-less what they would like to customize. But most will struggle to do so do. Why? Because the language to express what we want or need in software is very technical compared to daily life vocabulary.
+
+So sure, there is a minimum of education needed to successfully express what it is that we want from software. So supposing that we do, how would it look like to actually be able to customize the software we use on a daily basis? Who can we gain control over our new digital paper and pen?
+
+Do we really need virtual assistants to achieve this goal? Probably not, but it sure would make things easier. And the principles would essentially be the same — to change the approach in which we think about software.
+
+Nowadays, we have accumulated some decent amount of knowledge about how we tend to use computer interfaces, about how to program them and understand them. But the translation from user stories to code is finicky. The sentence “As a user, I’m expecting to see what other people is currently listening to” assumes a lot of things about this app. But you as a human reading it probably understand very accurately what this means and what you expect of it.
+
+Recently, we’ve seen a lot of no-code tools like Webflow and Framer. And even though these tools are pretty good at what they do, they are not a solution for customizability.
+
+So what do we need to enable customization of software?
+
+* Universal APIs
+* A formalized language to describe user interfaces
+* Education on these subjects
+
+## A bit about browsers
+Ever since I started looking at The Browser Company, I started asking myself “What would I change from the way we use the internet“ and not surprised my answers where basically custom things I want for myself, in other words, customization and freedom. So I’ll talk about the aspects of web browsing that do not give me a sense of freedom.
+
+I feel like bookmarks and navigation history are very limited with the browsers we have today. Today, I have a mess when it comes to saving websites, whether for inspiration, reading or research.
+
+Sometimes I want to save websites in a temporary fashion, sometimes I find a really useful tool, sometimes I find something very inspiring, and sometimes I find an article that’s relevant to what I’m currently researching. 
+
+Depending on the case, I either use the bookmark toolbar, a sticky note, or Bear notes. But what if I could just save everything within the browser? and what if I could export a list of saved websites? Also, what if I could attach sticky notes to websites so that whenever I visit them there are my notes? Or what If I could visualize saved websites in a graph? What if websites where pretty much what they are — digital documents? What if websites could be frozen or “printed” as well? Maybe I don’t want to risk a website being deleted forever in time but don’t want to put the website files locally and manually in a folder in my operating system (although I wouldn’t mind a single-file format to save them locally).
+
+On the other hand, we also have web apps. These require a different treatment on top of the treatment to regular sites. Depending on the app, you might want to have them appear in a specific fashion depending on your workflow, so giving users options for how to see those opened sites would be good. For example, in MacOS you can split your screen with two or more windows, you can fullscreen them, or you can divide them into workspaces. You can also minimize the windows, etc. So I think giving users multiple options of displaying their apps would be really useful. I also think that giving people easy-to-use automation tools would be a game changer. I have a friend who works as a copy writer for Envato…
+
+### The internet is shaping UI language and people are learning it
+Whether we know it or not, there is an implicit language in how we interact with the web. For example, we have sidebars, nav bars, sticky side-things, modals and alerts, etc. These have names but the underlying interactions and utility of them are not very well formalized. The language is also implicit in our expectations on how things are clickable, swipeable, etc.

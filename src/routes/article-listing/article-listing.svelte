@@ -83,12 +83,29 @@
 					</fieldset>
 				{/if} -->
 			</section>
-			<section
+			<!-- <section
 				id="posts-section"
 				aria-live="polite"
 				class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 grid sm:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 lg:gap-16 xl:gap-8">
 				{#each data.posts as post}
 					<PostCard {post} {helpers} type="article-detail"/>
+				{/each}
+			</section> -->
+			<section
+				id="posts-section"
+				aria-live="polite"
+				class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 grid gap-8">
+				{#each data.posts as post}
+					<article>
+						<a class="block text-24 leading-125 font-bold" href={ helpers.permalinks['article-detail']({ slug: post.slug }) }>
+							{ post.frontmatter.title }
+						</a>
+						<time
+							class="block font-light text-16 md:text-18 xl:text-20 mt-1"
+							datetime={ post.frontmatter.date }>
+							{ post.frontmatter.dateFormatted }
+						</time>
+					</article>
 				{/each}
 			</section>
 		</main>

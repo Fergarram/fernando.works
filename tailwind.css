@@ -9,7 +9,7 @@
 	@apply mb-8 last:mb-0;
 }
 
-.page-content a {
+.page-content a:not(.no-underline) {
 	text-decoration: underline;
 }
 
@@ -34,14 +34,12 @@
 	@apply font-semibold tracking-title leading-125 text-24 lg:text-32;
 
 	margin-top: 0.8em;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.35em;
 }
 
 .article-content h4 {
-	@apply font-semibold tracking-title leading-125;
+	@apply font-semibold tracking-title leading-125 text-18 lg:text-24;
 
-	font-size: 1rem;
-	text-transform: uppercase;
 	margin-top: 0.8em;
 	margin-bottom: 0.2em;
 }
@@ -49,7 +47,7 @@
 .article-content h5 {
 	@apply font-semibold tracking-title leading-125;
 
-	font-size: 0.875rem;
+	font-size: 1;
 	text-transform: uppercase;
 	margin-top: 0.8em;
 	margin-bottom: 0.2em;

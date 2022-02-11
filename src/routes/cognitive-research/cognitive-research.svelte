@@ -41,26 +41,33 @@
 				</h1>
 				<div class="page-content max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-16">
 					<p>
-						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others as a means of inspiration or entertainment. My long-term goal is to enable people to have their own artificial minds to do the things they want them to do. My job here would be to provide with tools to successfully create, train and raise artificial minds or super-minds.
-					</p>
-					<p>
-						Having said this, I recommend you start with my <a href={helpers.permalinks['research-detail']({ slug: 'introduction' })}>introductory publication</a>, there I give an overview of what's to expect of this work.
+						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others as a means of inspiration or entertainment.
 					</p>
 					<h2>
 						Publications
 					</h2>
 					<p>
-						My research and notes are mainly published here for the readers. But if you're curious, you can also take a look at my <a href="//obscurity.wiki/">personal wiki</a>. My wiki is basically where I dump most of my thoughts about artificial minds, computers, etc. It's inspired by <a href="https://wiki.xxiivv.com/site/home.html">XXIIVV</a>.
+						These posts are condensed documents of my personal wiki which I haven't published yet.
 					</p>
-					<ul class="list-roman pl-5">
-						{#each data.posts.reverse() as post}
-							<li>
+					<div class="grid gap-8 py-6 pl-8 border-l-4 border-black-a-20">
+						{#each data.posts as post}
+							<!-- <li>
 								<a href={helpers.permalinks['research-detail']({ slug: post.slug })}>
 									{ post.frontmatter.title }
 								</a>
-							</li>
+							</li> -->
+							<article>
+								<a class="block text-24 leading-125 font-semibold no-underline hover:underline" href={ helpers.permalinks['research-detail']({ slug: post.slug }) }>
+									{ post.frontmatter.title }
+								</a>
+								<time
+									class="block font-light text-16 md:text-18 xl:text-20 mt-1"
+									datetime={ post.frontmatter.date }>
+									{ post.frontmatter.dateFormatted }
+								</time>
+							</article>
 						{/each}
-					</ul>
+					</div>
 					<h2>
 						Support my work
 					</h2>

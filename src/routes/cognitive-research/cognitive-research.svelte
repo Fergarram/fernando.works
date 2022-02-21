@@ -41,23 +41,19 @@
 				</h1>
 				<div class="page-content max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-16">
 					<p>
-						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others as a means of inspiration or entertainment.
+						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others a means of inspiration, utility, or entertainment.
 					</p>
+					<p>You can see my public <a href="https://github.com/Fergarram/research-vault">Obsidian repository in Github</a>. Here I organize all my ideas about how to implement an artificial mind. Collaboration is welcomed.</p> 
 					<h2>
-						Publications
+						Related Posts
 					</h2>
 					<p>
-						These posts are condensed documents of my personal wiki which I haven't published yet.
+						Sometimes I write in a more general sense about what I'm doing. I'm not trying to write formal papers on my findings, at least not yet.
 					</p>
 					<div class="grid gap-8 py-6 pl-8 border-l-4 border-black-a-20">
 						{#each data.posts as post}
-							<!-- <li>
-								<a href={helpers.permalinks['research-detail']({ slug: post.slug })}>
-									{ post.frontmatter.title }
-								</a>
-							</li> -->
 							<article>
-								<a class="block text-24 leading-125 font-semibold no-underline hover:underline" href={ helpers.permalinks['research-detail']({ slug: post.slug }) }>
+								<a class="block text-24 leading-125 font-semibold no-underline hover:underline" href={ helpers.permalinks['article-detail']({ slug: post.slug }) }>
 									{ post.frontmatter.title }
 								</a>
 								<time
@@ -69,7 +65,7 @@
 						{/each}
 					</div>
 					<h2>
-						Support my work
+						Support My Work
 					</h2>
 					<p>
 						Lastly, if you would like to support my work you can follow me on these social media platforms and share with your friends.

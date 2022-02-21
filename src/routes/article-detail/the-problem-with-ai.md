@@ -4,7 +4,7 @@ description: ''
 author: Fernando Garcia
 date: '2022-01-22'
 dateFormatted: 'January 22, 2022'
-next: ''
+research: true
 ---
 
 When we think about what's needed to revolutionize technology and humanity, one might think of the creation of sentient systems or highly intelligent robots whom we may talk to and collaborate with. But if we look at AI today, it doesn't seem to be heading that way. To me, it feels very narrow — one needs to implement a specific program for every problem that AI can solve. Not only that but the current AI systems we have require a ton of computational power.

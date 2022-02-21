@@ -5,7 +5,7 @@
 
 	export let data, request, helpers;
 
-	const { posts, tags, fields } = data;
+	const { posts, fields } = data;
 </script>
 
 <svelte:head>

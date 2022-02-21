@@ -36,10 +36,10 @@ const getPosts = (posts) => {
 module.exports = {
 	permalink: '/journal/',
 	data: ({ data }) => {
-		const { posts, tags } = getPosts( data.markdown['article-detail'] );
-
-		data.posts = posts;
-		data.tags = tags;
+		data.posts = [ ...data.markdown['article-detail'] ];
+		// const { posts, tags } = getPosts( data.markdown['article-detail'] );
+		// data.posts = posts;
+		// data.tags = tags;
 
 		return data;
 	},

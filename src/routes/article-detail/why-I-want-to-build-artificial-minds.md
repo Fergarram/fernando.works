@@ -1,10 +1,10 @@
 ---
-title: 'Introduction to artificial minds'
+title: 'Why I want to build artificial minds'
 description: 'A glimpse of how the future of technology with sentient systems might look like.'
 author: Fernando Garcia
 date: '2021-10-25'
 dateFormatted: 'October 25, 2021'
-next: '002'
+research: true
 ---
 
 ## Artificial minds are not AI
@@ -55,5 +55,3 @@ If we think about most cases, we don't really need to talk out loud to get this 
 ## My personal mission
 
 My main long-term goal is for people to be able to raise their own minds to do the things they want them to do. My job here would be to provide them with tools to successfully train and raise artificial minds. Although, saying this is easier than getting it done. So you might ask "How do you even plan on making something like this work?" and the answer is, I'm working on it, and you can read more about it here.
-
-In the next publication, I try to explain what's different in my approach to creating artificial minds and how we might make this a reality.

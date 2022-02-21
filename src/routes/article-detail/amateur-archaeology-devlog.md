@@ -5,10 +5,6 @@ slug: creating-a-game-for-feature-phones-using-javascript
 date: '2020-04-20'
 dateFormatted: 'April 20, 2020'
 author: Fernando Garcia
-primaryTag: 'Web Development'
-secondaryTags:
-  - Web Development
-  - Svelte
 cover:
   url: '/images/amateur.jpg'
   alt: 'Photo of Nokia banana phone with game'

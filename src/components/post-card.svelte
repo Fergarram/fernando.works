@@ -4,20 +4,23 @@
 </script>
 
 <style>
-	.responsive-thumb {
+	:global(.responsive-thumb img) {
+		width: 100%;
 		height: 50vw;
 		max-height: 13.75rem;
+		object-fit: cover;
+		object-position: center;
 	}
 
 	@media screen and (min-width: 37.5rem) {
-		.responsive-thumb {
+		:global(.responsive-thumb img) {
 			height: 23.5vw;
 			max-height: 100%;
 		}
 	}
 
 	@media screen and (min-width: 80rem) {
-		.responsive-thumb {
+		:global(.responsive-thumb img) {
 			height: 11rem;
 		}
 	}
@@ -31,11 +34,21 @@
 					{post.frontmatter.type}
 				</span>
 			{/if}
-			<img
+			{@html helpers.shortcode({
+				name: 'picture',
+				props: {
+					ignoreCssString: true,
+					src: post.frontmatter.cover.url,
+					alt: post.frontmatter.cover.alt,
+					wrap: 'rounded-md w-full responsive-thumb overflow-hidden',
+					maxWidth: 600
+				},
+			})}
+			<!-- <img
 				class="rounded-md w-full responsive-thumb object-cover object-center"
 				alt={post.frontmatter.cover.alt}
 				src={post.frontmatter.cover.url}
-			/>
+			/> -->
 		</a>
 		<span class="block mt-6 text-24 sm:text-20 md:text-24 lg:text-32 xl:text-24 leading-125 tracking-title font-bold">
 			{ post.frontmatter.title }

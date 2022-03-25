@@ -2,7 +2,7 @@
 	import Nav from '../../components/nav.svelte';
 	import Foot from '../../components/foot.svelte';
 
-	export let data, request;
+	export let data, request, helpers;
 	const { html, frontmatter } = data;
 
 	const description = frontmatter.description || `${frontmatter.title} is a project made by Fernando Garcia.`
@@ -16,35 +16,37 @@
 </svelte:head>
 
 <style>
-	.cover {
+	:global(.cover img) {
+		object-fit: cover;
+		object-position: center;
 		width: 100%;
 		height: 50vw;
 	}
 
 	/* SM */
 	@media screen and (min-width: 37.5rem) {
-		.cover {
+		:global(.cover img) {
 			height: calc((100vw - 6rem) / 2 );
 		}
 	}
 
 	/* MD */
 	@media screen and (min-width: 48rem) {
-		.cover {
+		:global(.cover img) {
 			height: calc((100vw - 8rem) / 2 );
 		}
 	}
 
 	/* LG */
 	@media screen and (min-width: 64rem) {
-		.cover {
+		:global(.cover img) {
 			height: calc((100vw - 10rem) / 2 );
 		}
 	}
 
 	/* XL */
 	@media screen and (min-width: 80rem) {
-		.cover {
+		:global(.cover img) {
 			height: 33rem
 		}
 	}
@@ -55,13 +57,16 @@
 		<main class="min-h-screen pb-40">
 			<article>
 				<div class="max-w-screen-xl mx-auto sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4">
-					<picture class="cover block">
-						<img
-							class="w-full h-full object-center object-cover"
-							alt={frontmatter.cover.alt}
-							src={frontmatter.cover.url}
-						/>
-					</picture>
+					{@html helpers.shortcode({
+						name: 'picture',
+						props: {
+							ignoreCssString: true,
+							src: frontmatter.cover.url,
+							alt: frontmatter.cover.alt,
+							wrap: 'cover block',
+							maxWidth: 1280
+						},
+					})}
 				</div>
 				<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 					<ul class="flex flex-wrap mb-4 xs:mb-8">

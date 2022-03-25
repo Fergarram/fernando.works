@@ -43,7 +43,8 @@ As a starting point, the game should have the same functionalities as the origin
 ## Day 1
 I’ll start by taking the intro image from the original game and adapting it to the resolution of the Banana Phone (240 x 320px). I use [Aseprite](https://www.aseprite.org/) for manipulating pixels and [Sketch](https://www.sketch.com/) for… level design? I like to use Sketch for moving the assets around and prototyping ideas.
 
-![Screenshot of Aseprite](https://dev-to-uploads.s3.amazonaws.com/i/risd06x3qwcokzaxo6wf.png)
+<!-- ![Screenshot of Aseprite](https://dev-to-uploads.s3.amazonaws.com/i/risd06x3qwcokzaxo6wf.png) -->
+{{picture src='/images/test.png' alt='Screenshot of Aseprite' maxWidth="1280" /}}
 
 After, cleaning some pixels with Aseprite I copied the assets to Sketch and placed them where I wanted them:
 

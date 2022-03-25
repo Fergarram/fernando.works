@@ -2,7 +2,7 @@
 	import Nav from '../../components/nav.svelte';
 	import Foot from '../../components/foot.svelte';
 
-	export let data, request;
+	export let data, request, helpers;
 	export let fields = {
 		image: {
 			url: '/images/about.jpg',
@@ -45,17 +45,26 @@
 	<link href={request.permalink} rel="canonical" />
 </svelte:head>
 
+<style>
+	:global(.about-cover .custom-ejs) {
+		height: 100%;
+	}
+</style>
+
 <div class="bg-green">
 	<Nav hydrate-client={{}} />
 		<main class="bg-green pb-40">
 			<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-				<picture class="block mb-8 md:mb-16">
-					<img
-						class="w-full max-w-xl h-48 xs:h-56 sm:h-80 md:h-96 rounded-md object-cover object-center"
-						alt={ fields.image.alt }
-						src={ fields.image.url }
-					/>
-				</picture>
+				{@html helpers.shortcode({
+					name: 'picture',
+					props: {
+						ignoreCssString: true,
+						src: fields.image.url,
+						alt: fields.image.alt,
+						wrap: 'about-cover block mb-8 md:mb-16 w-full max-w-xl h-48 xs:h-56 sm:h-80 md:h-96 rounded-md overflow-hidden full-image-cover',
+						maxWidth: 1280
+					},
+				})}
 				<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 					{@html fields.heading }
 				</h1>

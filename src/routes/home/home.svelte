@@ -20,7 +20,7 @@
 	<Nav hydrate-client={{}} />
 
 	<main>
-		<Hero />
+		<Hero {helpers} />
 		<Podcast {helpers} />
 		<CognitiveResearch {helpers} />
 		<Projects {helpers} />

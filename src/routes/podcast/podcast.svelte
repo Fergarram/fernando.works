@@ -7,7 +7,7 @@
 	const rubna = '/images/rubna.jpg';
 	const ray = '/images/ray.jpg';
 
-	export let data, request;
+	export let data, request, helpers;
 	export const fields = {
 		images: {
 			host: {
@@ -20,7 +20,7 @@
 			}
 		},
 		heading: 'Digital Crafters',
-		paragraph: 'I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations, whether it’s a piece of digital art, a tool, game, or product, they have found a way to fully dedicate themselves to work on the projects they own and love.',
+		paragraph: `I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who aim to make a living out of their digital creations, whether they're tools, video games, or products, they have found a way to fully dedicate themselves to work on the projects they own and love.`,
 		links: [
 			{
 				label: 'Youtube Channel',
@@ -69,14 +69,14 @@
 </script>
 
 <style>
-	.host-picture {
+	:global(.host-picture) {
 		display: block;
 		width: 70%;
 		height: 38vw;
 		max-height: 18.5rem;
 	}
 
-	.guest-picture {
+	:global(.guest-picture) {
 		display: block;
 		position: absolute;
 		width: 45%;
@@ -84,6 +84,14 @@
 		max-height: 12rem;
 		bottom: -15%;
 		right: 0;
+	}
+
+	:global(.host-picture .custom-ejs) {
+		height: 100%;
+	}
+
+	:global(.guest-picture .custom-ejs) {
+		height: 100%;
 	}
 </style>
 
@@ -100,20 +108,26 @@
 			<section class="bg-yellow pb-12 md:pb-16 lg:pb-20 xl:pb-28">
 				<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
 					<div class="relative mb-10 xs:mb-14 sm:mb-20 md:mb-32 max-w-2xl">
-						<picture class="host-picture">
-							<img
-								src={ fields.images.host.url }
-								alt={ fields.images.host.alt }
-								class="rounded-md object-cover object-center w-full h-full"
-							/>
-						</picture>
-						<picture class="guest-picture">
-							<img
-								src={ fields.images.guest.url }
-								alt={ fields.images.guest.alt }
-								class="rounded-md object-cover object-center w-full h-full"
-							/>
-						</picture>
+						{@html helpers.shortcode({
+							name: 'picture',
+							props: {
+								ignoreCssString: true,
+								src: fields.images.host.url,
+								alt: fields.images.host.alt,
+								wrap: 'host-picture rounded-md overflow-hidden full-image-cover',
+								maxWidth: 700
+							},
+						})}
+						{@html helpers.shortcode({
+							name: 'picture',
+							props: {
+								ignoreCssString: true,
+								src: fields.images.guest.url,
+								alt: fields.images.guest.alt,
+								wrap: 'guest-picture rounded-md overflow-hidden full-image-cover',
+								maxWidth: 400
+							},
+						})}
 					</div>
 					<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 						{@html fields.heading } 
@@ -140,7 +154,7 @@
 						Episodes
 					</h2>
 					{#each episodes as episode}
-						<Episode {episode} />
+						<Episode {episode} {helpers} />
 					{/each}
 				</div>
 			</section>

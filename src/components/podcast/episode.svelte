@@ -1,15 +1,17 @@
 <script>
-	export let episode;
+	export let episode, helpers;
 </script>
 
 <article class="mb-12 max-w-xl md:mb-20">
-	<picture class="block mb-4 sm:mb-6">
-		<img
-			src={episode.photo}
-			alt={episode.guest}
-			class="w-36 h-36 border-4"
-		/>
-	</picture>
+	{@html helpers.shortcode({
+		name: 'picture',
+		props: {
+			src: episode.photo,
+			alt: episode.guest,
+			wrap: 'block mb-4 sm:mb-6 w-36 h-36 border-4 full-image-cover',
+			maxWidth: 200
+		},
+	})}
 	<h3 class="font-semibold text-24 sm:text-28 lg:text-32 leading-115 tracking-title mb-5 sm:mb-6">
 		Episode {episode.number}  —  <span class="whitespace-nowrap">{episode.guest}</span>
 	</h3>

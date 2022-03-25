@@ -2,14 +2,14 @@
 	export let helpers;
 	export let fields = {
 		heading: 'Podcast<i>er</i>',
-		paragraph: 'I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who make a living out of their digital creations.',
+		paragraph: 'I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who aim to make a living out of their digital creations.',
 		cta: {
 			label: 'Watch Episodes',
 			url: helpers.permalinks['podcast']() + '#episodes'
 		},
 		logo: {
 			url: '/images/dc-cover.jpg',
-			alt: "Digital Crafters' podcast cover."
+			alt: 'Podcast poster'
 		}
 	};
 </script>
@@ -27,12 +27,14 @@
 				{ fields.cta.label }
 			</a>
 		</div>
-		<picture class="block md:col-span-5 self-center order-1 md:order-none">
-			<img
-				class="w-40 md:w-80 h-40 md:h-80 rounded-md object-contain object-center transform md:translate-x-10 lg:transform-none"
-				alt={ fields.logo.alt }
-				src={ fields.logo.url }
-			/>
-		</picture>
+		{@html helpers.shortcode({
+			name: 'picture',
+			props: {
+				src: fields.logo.url,
+				alt: fields.logo.alt,
+				wrap: 'block md:col-span-5 self-center order-1 md:order-none overflow-hidden w-40 md:w-80 h-40 md:h-80 rounded-md full-image-contain',
+				maxWidth: 320
+			},
+		})}
 	</div>
 </section>

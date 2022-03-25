@@ -1,4 +1,5 @@
 <script>
+	export let helpers;
 	export let fields = {
 		heading: 'Fernando Garcia',
 		avatar: {
@@ -29,13 +30,15 @@
 
 <section class="bg-green pb-12 md:pb-16 lg:pb-20 xl:pb-28">
 	<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
-		<picture class="block mb-10">
-			<img
-				class="w-60 h-60 rounded-tr-3xl"
-				alt={ fields.avatar.alt }
-				src={ fields.avatar.url }
-			/>
-		</picture>
+		{@html helpers.shortcode({
+			name: 'picture',
+			props: {
+				src: fields.avatar.url,
+				alt: fields.avatar.alt,
+				wrap: 'block mb-10 w-60 h-60 rounded-tr-3xl overflow-hidden full-image-cover',
+				maxWidth: 240
+			},
+		})}
 		<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 			{@html fields.heading }
 		</h1>

@@ -7,8 +7,6 @@ dateFormatted: 'March 23, 2022'
 research: true
 ---
 
-It’s actually not only artificial minds that I want to create, it’s also their bodies and whole digital worlds where they can live. But first, let me tell you my story.
-
 Back when I was about 19 years old, I was supposed to be going to college but instead found myself smoking weed all day with my roommates and making video games and other cool stuff in my computer.
 
 It was one day where I was thinking about what I wanted to do with my career. Video games and the entertainment industry did not seem to fully fulfill me. I wanted to create something big, something that would require all of my major interests: psychology, cognitive sciences, software development, etc. Back then, I was clearly very immature, but decided to fully commit myself to focus on making artificial minds.
@@ -27,7 +25,7 @@ Abandoning the goal of creating artificial minds helped me become more sane, mor
 
 > I used to hate school and academia.  
 
-So realizing how the dots connected, it was obvious that I needed to get start working on this again. But this time, with a different approach.
+So realizing how the dots connected, it was obvious that I needed to start working on this again. But this time, with a different approach.
 
 ## This is actually spiritual work for me
 I feel kinda hesitant to share this but I think it may be important. The reason why I want to build artificial minds is because it connects me to who I am. 

@@ -13,10 +13,6 @@
 			<p>My name is Fernando Garcia. I love computers because they make me think everything is possible. I make websites and apps for a living, whether I’m designing or coding them.</p>
 
 			<p>On my digital free time, I love to write, make video games, design mockups or work on <a href="/projects/">interesting side projects</a>. For some reason I can’t stop having ideas of things to create with my computer, particularly <a href="/cognitive-research/">artificial minds</a>, so I just write them down.</p>
-
-			<p>In the physical plane, I do rock climbing and hit the gym weekly. I follow the <a href="https://stronglifts.com/5x5/">StrongLifts 5×5</a> routine since it's the easiest way to grow strong.</p>
-
-			<p>And in case you're wondering, I was born in Mexico in 1996. But as of writing this, I’m living in France with my girlfriend.</p>
 		`,
 		links: [
 			{

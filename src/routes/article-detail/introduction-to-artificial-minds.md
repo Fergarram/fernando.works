@@ -50,8 +50,3 @@ Using artificial minds will initially take the form of a chat bot or a very smar
 Sometimes it's as simple as saying "send this person a message at 5:00pm saying that I won't be able to make it." Or "I only want to receive notifications from my this person.", okay one more “Create a copy of all my kids photos you can find in my files and put them in a new album/folder. Then send it to my mom, and when you do, ask me to write a message for her.”
 
 If we think about most cases, we don't really need to talk out loud to get this things done. It can be just like sending a message to our personal assistant.
-
-
-## My personal mission
-
-My main long-term goal is for people to be able to raise their own minds to do the things they want them to do. My job here would be to provide them with tools to successfully train and raise artificial minds. Although, saying this is easier than getting it done.

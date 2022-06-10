@@ -39,10 +39,19 @@
 
 	const episodes = [
 		{
+			guest: 'Nick Reese',
+			photo: '/images/nick.jpeg',
+			number: 4,
+			summary: `Nick Reese <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/nickreese/">(@nickreese)</a> is the creator of <a class="underline" target="_blank" rel="noopener" href="https://github.com/Elderjs/elderjs">Elder.js</a> and the founder of multiple successful businesses. He's a marketing expert and a very talented web developer.`,
+			youtubeUrl: 'https://www.youtube.com/watch?v=FJABMEgYavA',
+			amazonUrl: '',
+			spotifyUrl: '',
+		},
+		{
 			guest: 'Alejandro Leon',
 			photo: '/images/alelepd.jpg',
 			number: 3,
-			summary: `Alejandro Leon <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/alelepd/">(@alelepd)</a> is the founder and creator of <a class="underline" target="_blank" rel="noopener" href="//spline.design">spline.design</a>. He's a very talented designer and developer passionate about 3D graphics, UX, and many other topics.`,
+			summary: `Alejandro Leon <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/alelepd/">(@alelepd)</a> is the founder and creator of <a class="underline" target="_blank" rel="noopener" href="//spline.design">spline.design</a>. He's a very passionate designer and developer specializing in 3D graphics and UX.`,
 			youtubeUrl: 'https://www.youtube.com/watch?v=y7ns-_Ywb3o',
 			amazonUrl: '',
 			spotifyUrl: '',
@@ -51,7 +60,7 @@
 			guest: 'Ramon Santamaria',
 			photo: ray,
 			number: 2,
-			summary: `Ramon Santamaria <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/raysan5/">(@raysan5)</a> is the passionate creator of the <a class="underline" target="_blank" rel="noopener" href="https://www.raylib.com/">Raylib library</a>. He's a game development lecturer and software developer.`,
+			summary: `Ramon Santamaria <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/raysan5/">(@raysan5)</a> is the passionate creator of the <a class="underline" target="_blank" rel="noopener" href="https://www.raylib.com/">Raylib library</a>. He's a game development lecturer and very experienced software developer.`,
 			youtubeUrl: 'https://www.youtube.com/watch?v=wnbJpdjAHg8',
 			amazonUrl: '',
 			spotifyUrl: '',
@@ -60,7 +69,7 @@
 			guest: 'Ruben',
 			photo: rubna,
 			number: 1,
-			summary: `Ruben (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_/">@rubna_</a>) is a game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>. We'll be talking about his creative process, how he got to where he is, and what the future may hold for him.`,
+			summary: `Ruben (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_/">@rubna_</a>) is a dedicated game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>, a team of game developers where each member ships a game every two months.`,
 			youtubeUrl: 'https://www.youtube.com/watch?v=co0H6MBKPzk',
 			amazonUrl: 'https://music.amazon.com/podcasts/24ca2851-bb56-4bf9-916e-bbfa9031304b/episodes/74f11eca-144f-4bf9-a6ba-29f5db7944a3/digital-crafters-ep-1-ruben-arubna_',
 			spotifyUrl: 'https://open.spotify.com/episode/2WehpR6gbJym13La6sZePe?si=2517056630894afa',

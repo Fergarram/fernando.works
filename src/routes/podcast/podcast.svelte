@@ -39,6 +39,15 @@
 
 	const episodes = [
 		{
+			guest: 'Alexander Obenauer',
+			photo: '/images/alex.jpg',
+			number: 5,
+            summary: `Alex <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/alexobenauer">(@alexobenauer)</a> is a software developer, designer and consultant who is currently working on the operating system of the future, WonderOS.`,
+			youtubeUrl: 'https://www.youtube.com/watch?v=MfvPCztpI2I',
+			amazonUrl: '',
+			spotifyUrl: '',
+		},
+		{
 			guest: 'Nick Reese',
 			photo: '/images/nick.jpeg',
 			number: 4,

@@ -373,7 +373,7 @@ ul {
  */
 
 html {
-  font-family: -apple-system, Inter, Roboto;
+  font-family: Inter, -apple-system, Roboto;
   /* 1 */
   line-height: 1.5;
   /* 2 */
@@ -1139,7 +1139,11 @@ video {
 }
 
 .tracking-title {
-  letter-spacing: -0.005em;
+  letter-spacing: -0.05em;
+}
+
+.tracking-subtitle {
+  letter-spacing: -0.03em;
 }
 
 .text-white {
@@ -1242,24 +1246,19 @@ video {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.15;
-  letter-spacing: -0.005em;
-}
-
-@media (min-width: 37.5rem) {
-  .page-content h2 {
-    font-size: 2.5rem;
-  }
+  letter-spacing: -0.05em;
 }
 
 @media (min-width: 64rem) {
   .page-content h2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 }
 
 .article-content {
   font-size: 1rem;
   line-height: 1.75;
+  letter-spacing: -0.01em;
 }
 
 @media (min-width: 48rem) {
@@ -1282,7 +1281,7 @@ video {
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.05em;
 }
 
 @media (min-width: 37.5rem) {
@@ -1293,7 +1292,7 @@ video {
 
 @media (min-width: 64rem) {
   .article-content h2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -1306,7 +1305,7 @@ video {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.05em;
 }
 
 @media (min-width: 64rem) {
@@ -1324,7 +1323,7 @@ video {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.05em;
 }
 
 @media (min-width: 64rem) {
@@ -1341,7 +1340,7 @@ video {
 .article-content h5 {
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.05em;
   font-size: 1;
   text-transform: uppercase;
   margin-top: 0.8em;
@@ -1351,7 +1350,7 @@ video {
 .article-content h6 {
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.05em;
   font-size: 0.75rem;
   text-transform: uppercase;
   margin-top: 0.8em;

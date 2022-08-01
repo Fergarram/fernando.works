@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'mono': [ 'Roboto Mono', 'monospace' ],
-      'sans': [ '-apple-system', 'Inter', 'Roboto' ]
+      'sans': [ 'Inter', '-apple-system', 'Roboto' ]
     },
     fontSize: {
       '12': '0.75rem',
@@ -51,7 +51,9 @@ module.exports = {
       'black-a-70': 'rgba(0,0,0,0.7)',
     },
     letterSpacing: {
-      'title': '-0.005em'
+      'title': '-0.05em',
+      'subtitle': '-0.03em',
+      'paragraph': '-0.01em'
     },
     screens: {
       'xs': '23.4375rem',

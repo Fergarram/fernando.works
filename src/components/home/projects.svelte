@@ -15,7 +15,7 @@
 		<h2 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 			{@html fields.heading }
 		</h2>
-		<p class="max-w-24em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-10">
+		<p class="max-w-24em font-normal text-18 xs:text-20 md:text-24 leading-150 tracking-subtitle mb-10">
 			{ fields.paragraph }
 		</p>
 		<a class="link-button" href={ fields.cta.url }>

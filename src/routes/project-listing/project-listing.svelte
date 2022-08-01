@@ -12,7 +12,7 @@
 	<title>{fields.head.title}</title>
 	<link rel="icon" type="image/png" href="/icon-48-dark-gray.png">
 	<meta name="description" content="{fields.head.description}" />
-	<link href={request.permalink} rel="canonical" />
+	<link href="https://fernando.works{request.permalink}" rel="canonical" />
 </svelte:head>
 
 <style>
@@ -29,7 +29,7 @@
 				<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 					{@html fields.heading }
 				</h1>
-				<p class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-10 md:mb-16">
+				<p class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 tracking-subtitle mb-10 md:mb-16">
 					{ @html fields.paragraph }
 				</p>
 				<!-- <fieldset>

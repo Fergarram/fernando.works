@@ -10,7 +10,7 @@
 	<title>{frontmatter.title} - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-light-gray.png">
 	<meta name="description" content={frontmatter.description} />
-	<link href={request.permalink} rel="canonical" />
+	<link href="https://fernando.works{request.permalink}" rel="canonical" />
 </svelte:head>
 
 <div class="bg-light-gray">

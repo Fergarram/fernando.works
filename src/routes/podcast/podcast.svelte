@@ -117,7 +117,7 @@
 	<title>Digital Crafters - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-yellow.png">
 	<meta name="description" content="I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers." />
-	<link href={request.permalink} rel="canonical" />
+	<link href="https://fernando.works{request.permalink}" rel="canonical" />
 </svelte:head>
 
 <div class="bg-yellow">
@@ -150,7 +150,7 @@
 					<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 						{@html fields.heading } 
 					</h1>
-					<div class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-8 md:mb-16">
+					<div class="max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 tracking-subtitle mb-8 md:mb-16">
 						<p>
 							{@html fields.paragraph }
 						</p>

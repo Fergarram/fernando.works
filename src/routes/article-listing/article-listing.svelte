@@ -12,7 +12,7 @@
 	<title>Journal - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-light-gray.png">
 	<meta name="description" content="A collection of thoughts that I wanted to make public." />
-	<link href={request.permalink} rel="canonical" />
+	<link href="https://fernando.works{request.permalink}" rel="canonical" />
 </svelte:head>
 
 <style>
@@ -97,7 +97,7 @@
 				class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 mb-4 grid gap-8">
 				{#each data.posts as post}
 					<article>
-						<a class="block text-24 leading-125 font-bold" href={ helpers.permalinks['article-detail']({ slug: post.slug }) }>
+						<a class="block text-24 tracking-subtitle leading-125 font-bold" href={ helpers.permalinks['article-detail']({ slug: post.slug }) }>
 							{ post.frontmatter.title }
 						</a>
 						<time

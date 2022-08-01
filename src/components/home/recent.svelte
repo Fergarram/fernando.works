@@ -59,7 +59,7 @@
 							src={ post.frontmatter.cover.url }
 						/>
 					</a> -->
-					<span class="block mt-6 text-24 lg:text-32 leading-125 font-bold">
+					<span class="block mt-6 text-24 lg:text-32 leading-125 tracking-subtitle font-bold">
 						<a href={ post.frontmatter.link }>{ post.frontmatter.title }</a>
 					</span>
 					<time

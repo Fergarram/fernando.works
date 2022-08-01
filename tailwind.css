@@ -28,17 +28,17 @@
 }
 
 .page-content h2 {
-	@apply font-semibold text-32 sm:text-40 lg:text-44 leading-115 tracking-title mt-12 mb-6;
+	@apply font-semibold text-32 lg:text-40 leading-115 tracking-title mt-12 mb-6;
 }
 
 .article-content {
-	@apply leading-175 text-16 md:text-18 lg:text-20;
+	@apply leading-175 text-16 md:text-18 lg:text-20 tracking-paragraph;
 
 	max-width: 40em;
 }
 
 .article-content h2 {
-	@apply font-semibold tracking-title leading-125 text-28 sm:text-32 lg:text-44;
+	@apply font-semibold tracking-title leading-125 text-28 sm:text-32 lg:text-40;
 
 	margin-top: 1em;
 	margin-bottom: 0.4em;

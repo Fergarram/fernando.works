@@ -29,7 +29,7 @@
 	<title>Cognitive Research - Fernando Works</title>
 	<link rel="icon" type="image/png" href="/icon-48-dark-gray.png">
 	<meta name="description" content="Public research about the implementation of artifical minds." />
-	<link href={request.permalink} rel="canonical" />
+	<link href="https://fernando.works{request.permalink}" rel="canonical" />
 </svelte:head>
 
 <div class="bg-darker-gray">
@@ -39,11 +39,14 @@
 				<h1 class="font-semibold text-36 xs:text-40 sm:text-44 md:text-48 lg:text-56 xl:text-64 leading-115 tracking-title mb-4 md:mb-8">
 					{@html fields.heading }
 				</h1>
-				<div class="page-content max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 mb-16">
+				<div class="page-content max-w-30em font-normal text-18 xs:text-20 md:text-24 leading-150 tracking-subtitle mb-16">
 					<p>
 						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others a means of inspiration, utility, or entertainment.
 					</p>
-					<p>You can see my public <a href="https://github.com/Fergarram/research-vault">Obsidian repository in Github</a>. Here I organize all my ideas about how to implement an artificial mind. Collaboration is welcomed.</p> 
+					<h2>
+						Research Vault
+					</h2>
+					<p>I highly recommend you visit my public Obsidian research vault at <a rel="noopener" href="https://obscurity.wiki">Obscurity.Wiki</a>. Here I organize all my ideas about how to implement an artificial mind. I've designed this wiki to be used as the Obsidian app without the need to download it.</p> 
 					<h2>
 						Related Posts
 					</h2>

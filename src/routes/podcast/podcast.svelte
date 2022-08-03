@@ -75,10 +75,10 @@
 			spotifyUrl: '',
 		},
 		{
-			guest: 'Ruben',
+			guest: 'Ruben Naus',
 			photo: rubna,
 			number: 1,
-			summary: `Ruben (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_/">@rubna_</a>) is a dedicated game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>, a team of game developers where each member ships a game every two months.`,
+			summary: `Ruben Naus (<a class="underline" target="_blank" rel="noopener" href="https://twitter.com/rubna_/">@rubna_</a>) is a dedicated game developer from the Netherlands who’s part of <a class="underline" target="_blank" rel="noopener" href="https://sokpop.co/">Sokpop</a>, a team of game developers where each member ships a game every two months.`,
 			youtubeUrl: 'https://www.youtube.com/watch?v=co0H6MBKPzk',
 			amazonUrl: 'https://music.amazon.com/podcasts/24ca2851-bb56-4bf9-916e-bbfa9031304b/episodes/74f11eca-144f-4bf9-a6ba-29f5db7944a3/digital-crafters-ep-1-ruben-arubna_',
 			spotifyUrl: 'https://open.spotify.com/episode/2WehpR6gbJym13La6sZePe?si=2517056630894afa',

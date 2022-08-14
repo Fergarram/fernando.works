@@ -44,14 +44,14 @@
 						The main goal of my research is to figure out how to build artificial minds. I'm publicly documenting my research and work so that it may serve others a means of inspiration, utility, or entertainment.
 					</p>
 					<h2>
-						Research Vault
+						Wiki
 					</h2>
-					<p>I highly recommend you visit my public Obsidian research vault at <a rel="noopener" href="https://obscurity.wiki">Obscurity.Wiki</a>. Here I organize all my ideas about how to implement an artificial mind. I've designed this wiki to be used as the Obsidian app without the need to download it.</p> 
+					<p>I highly recommend you visit my public Obsidian vault at <a class="font-medium" rel="noopener" href="https://obscurity.wiki">Obscurity.Wiki</a> where I organize all my ideas about how to implement an artificial mind. I've designed this wiki to be used as the Obsidian app without the need to download it. You can also think about it as a digital garden.</p>
 					<h2>
 						Related Posts
 					</h2>
 					<p>
-						Sometimes I write in a more general sense about what I'm doing. I'm not trying to write formal papers on my findings, at least not yet.
+						Sometimes I write in a more general sense about what I'm doing.
 					</p>
 					<div class="grid gap-8 py-6 pl-8 border-l-4 border-black-a-20">
 						{#each data.posts as post}

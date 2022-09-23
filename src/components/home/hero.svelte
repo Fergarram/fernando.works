@@ -6,7 +6,7 @@
 			url: '/images/yo.jpg',
 			alt: "Fernando wearing a white shirt and cap with a round pair of glasses."
 		},
-		paragraph: 'I am a Frontend Developer and Designer. I make sure the products I build help their target audience reach their goals while keeping the codebase maintanable and joyful to work on.',
+		paragraph: 'I am a Software Developer and Designer. I make sure the products I build help their target audience reach their goals while keeping the codebase maintanable and joyful to work on.',
 		links: [
 			{
 				label: 'LinkedIn',

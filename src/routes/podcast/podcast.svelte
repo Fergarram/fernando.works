@@ -4,7 +4,7 @@
 	import Episode from '../../components/podcast/episode.svelte';
 	const yoyo = '/images/yoyo.jpg';
 	const rayray = '/images/rayray.jpg';
-	const rubna = '/images/rubna.jpg';
+	const rubna = '/images/rubna.png';
 	const ray = '/images/ray.jpg';
 
 	export let data, request, helpers;
@@ -20,7 +20,7 @@
 			}
 		},
 		heading: 'Digital Crafters',
-		paragraph: `I host a podcast called Digital Crafters where I have conversations with independent artists, designers, and developers who aim to make a living out of their digital creations, whether they're tools, video games, or products, they have found a way to fully dedicate themselves to work on the projects they own and love.`,
+		paragraph: `I host a podcast where I have conversations with independent artists, designers, engineers and researchers. Besides having a detailed conversation about their projects, these talks are oriented towards craftmanship in our digital age, work-life balance, funding, and anything that we see fit.`,
 		links: [
 			{
 				label: 'Youtube Channel',
@@ -42,7 +42,7 @@
 			guest: 'Alexander Obenauer',
 			photo: '/images/alex.jpg',
 			number: 5,
-            summary: `Alex <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/alexobenauer">(@alexobenauer)</a> is a software developer, designer and consultant who is currently working on the operating system of the future, WonderOS.`,
+            summary: `Alex <a class="underline" target="_blank" rel="noopener" href="https://twitter.com/alexobenauer">(@alexobenauer)</a> is a software developer, designer and independent researcher who is currently working on the operating system of the future, <a class="underline" target="_blank" rel="noopener" href="https://wonderos.org/">WonderOS</a>.`,
 			youtubeUrl: 'https://www.youtube.com/watch?v=MfvPCztpI2I',
 			amazonUrl: '',
 			spotifyUrl: '',

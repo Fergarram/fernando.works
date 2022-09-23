@@ -4,7 +4,7 @@
 	const { posts } = data;
 
 	export let fields = {
-		heading: 'Recent Activity',
+		heading: 'Recent Publications',
 		cta: {
 			label: 'See Journal',
 			url: helpers.permalinks['article-listing']()

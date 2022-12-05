@@ -3,7 +3,7 @@
 	export let fields = {
 		heading: 'Fernando Garcia',
 		avatar: {
-			url: '/images/yo.jpg',
+			url: '/images/yopo.jpg',
 			alt: "Fernando wearing a white shirt and cap with a round pair of glasses."
 		},
 		paragraph: 'I am a Software Developer and Designer. I make sure the products I build help their target audience reach their goals while keeping the codebase maintanable and joyful to work on.',
@@ -35,7 +35,7 @@
 			props: {
 				src: fields.avatar.url,
 				alt: fields.avatar.alt,
-				wrap: 'block mb-10 w-60 h-60 rounded-tr-3xl overflow-hidden full-image-cover',
+				wrap: 'block mb-10 w-60 h-60 rounded-[2rem] overflow-hidden full-image-cover',
 				maxWidth: 240
 			},
 		})}

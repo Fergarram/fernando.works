@@ -5,7 +5,7 @@
 	export let data, request, helpers;
 	export let fields = {
 		image: {
-			url: '/images/about.jpg',
+			url: '/images/newbanner2.jpg',
 			alt: 'Fernando semi-squating looking at the sky on top of an ancient mexican pyramid.'
 		},
 		heading: 'About Me',
@@ -47,7 +47,7 @@
 	}
 </style>
 
-<div class="bg-green">
+<div class="bg-green min-h-screen">
 	<Nav hydrate-client={{}} />
 		<main class="bg-green pb-40">
 			<div class="max-w-screen-xl mx-auto px-6 xs:px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28">
@@ -57,7 +57,7 @@
 						ignoreCssString: true,
 						src: fields.image.url,
 						alt: fields.image.alt,
-						wrap: 'about-cover block mb-8 md:mb-16 w-full max-w-xl h-48 xs:h-56 sm:h-80 md:h-96 rounded-md overflow-hidden full-image-cover',
+						wrap: 'about-cover block mb-8 md:mb-16 w-full max-w-xl h-48 xs:h-56 sm:h-80 md:h-96 rounded-[2rem] overflow-hidden full-image-cover',
 						maxWidth: 1280
 					},
 				})}

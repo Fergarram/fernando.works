@@ -132,7 +132,7 @@
 								ignoreCssString: true,
 								src: fields.images.host.url,
 								alt: fields.images.host.alt,
-								wrap: 'host-picture rounded-md overflow-hidden full-image-cover',
+								wrap: 'host-picture rounded-[2rem] overflow-hidden full-image-cover',
 								maxWidth: 700
 							},
 						})}
@@ -142,7 +142,7 @@
 								ignoreCssString: true,
 								src: fields.images.guest.url,
 								alt: fields.images.guest.alt,
-								wrap: 'guest-picture rounded-md overflow-hidden full-image-cover',
+								wrap: 'guest-picture rounded-[2rem] overflow-hidden full-image-cover',
 								maxWidth: 400
 							},
 						})}

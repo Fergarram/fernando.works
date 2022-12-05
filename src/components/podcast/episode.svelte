@@ -8,7 +8,7 @@
 		props: {
 			src: episode.photo,
 			alt: episode.guest,
-			wrap: 'block mb-4 sm:mb-6 w-36 h-36 border-4 full-image-cover',
+			wrap: 'block mb-4 sm:mb-6 w-36 h-36 rounded-[1rem] overflow-hidden full-image-cover',
 			maxWidth: 200
 		},
 	})}
